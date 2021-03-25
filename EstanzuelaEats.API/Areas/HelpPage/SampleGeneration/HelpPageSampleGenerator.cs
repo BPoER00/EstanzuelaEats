@@ -13,7 +13,7 @@ using System.Web.Http.Description;
 using System.Xml.Linq;
 using Newtonsoft.Json;
 
-namespace EstanzuelaEats.API.Areas.HelpPage
+namespace EstanzuelaEats.Api.Areas.HelpPage
 {
     /// <summary>
     /// This class will generate the samples for the help page.

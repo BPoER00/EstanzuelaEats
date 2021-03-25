@@ -1,0 +1,14 @@
+C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats\bin\Debug\netstandard2.0\EstanzuelaEats.deps.json
+C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats\bin\Debug\netstandard2.0\EstanzuelaEats.dll
+C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats\bin\Debug\netstandard2.0\ref\EstanzuelaEats.dll
+C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats\bin\Debug\netstandard2.0\EstanzuelaEats.pdb
+C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats\obj\Debug\netstandard2.0\EstanzuelaEats.csprojAssemblyReference.cache
+C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats\obj\Debug\netstandard2.0\EstanzuelaEats.AssemblyInfoInputs.cache
+C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats\obj\Debug\netstandard2.0\EstanzuelaEats.AssemblyInfo.cs
+C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats\obj\Debug\netstandard2.0\EstanzuelaEats.csproj.CoreCompileInputs.cache
+C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats\obj\Debug\netstandard2.0\EstanzuelaEats.dll
+C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats\obj\Debug\netstandard2.0\ref\EstanzuelaEats.dll
+C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats\obj\Debug\netstandard2.0\EstanzuelaEats.pdb

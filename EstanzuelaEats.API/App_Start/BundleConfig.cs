@@ -1,7 +1,7 @@
 ﻿using System.Web;
 using System.Web.Optimization;
 
-namespace EstanzuelaEats.API
+namespace EstanzuelaEats.Api
 {
     public class BundleConfig
     {

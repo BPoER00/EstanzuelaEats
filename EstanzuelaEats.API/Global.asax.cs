@@ -7,7 +7,7 @@ using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
 
-namespace EstanzuelaEats.API
+namespace EstanzuelaEats.Api
 {
     public class WebApiApplication : System.Web.HttpApplication
     {

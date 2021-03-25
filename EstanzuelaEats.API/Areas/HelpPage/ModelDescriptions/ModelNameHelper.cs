@@ -3,7 +3,7 @@ using System.Globalization;
 using System.Linq;
 using System.Reflection;
 
-namespace EstanzuelaEats.API.Areas.HelpPage.ModelDescriptions
+namespace EstanzuelaEats.Api.Areas.HelpPage.ModelDescriptions
 {
     internal static class ModelNameHelper
     {

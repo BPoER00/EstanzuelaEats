@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace EstanzuelaEats.API.Controllers
+namespace EstanzuelaEats.Api.Controllers
 {
     public class HomeController : Controller
     {

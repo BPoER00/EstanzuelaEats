@@ -1,10 +1,10 @@
 using System;
 using System.Web.Http;
 using System.Web.Mvc;
-using EstanzuelaEats.API.Areas.HelpPage.ModelDescriptions;
-using EstanzuelaEats.API.Areas.HelpPage.Models;
+using EstanzuelaEats.Api.Areas.HelpPage.ModelDescriptions;
+using EstanzuelaEats.Api.Areas.HelpPage.Models;
 
-namespace EstanzuelaEats.API.Areas.HelpPage.Controllers
+namespace EstanzuelaEats.Api.Areas.HelpPage.Controllers
 {
     /// <summary>
     /// The controller that will handle requests for the help page.

@@ -11,10 +11,10 @@ using System.Net.Http.Headers;
 using System.Web.Http;
 using System.Web.Http.Controllers;
 using System.Web.Http.Description;
-using EstanzuelaEats.API.Areas.HelpPage.ModelDescriptions;
-using EstanzuelaEats.API.Areas.HelpPage.Models;
+using EstanzuelaEats.Api.Areas.HelpPage.ModelDescriptions;
+using EstanzuelaEats.Api.Areas.HelpPage.Models;
 
-namespace EstanzuelaEats.API.Areas.HelpPage
+namespace EstanzuelaEats.Api.Areas.HelpPage
 {
     public static class HelpPageConfigurationExtensions
     {

@@ -3,7 +3,7 @@ using System.Text;
 using System.Web;
 using System.Web.Http.Description;
 
-namespace EstanzuelaEats.API.Areas.HelpPage
+namespace EstanzuelaEats.Api.Areas.HelpPage
 {
     public static class ApiDescriptionExtensions
     {

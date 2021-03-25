@@ -5,8 +5,9 @@ using System.Net;
 using System.Net.Http;
 using System.Web.Http;
 
-namespace EstanzuelaEats.API.Controllers
+namespace EstanzuelaEats.Api.Controllers
 {
+    [Authorize]
     public class ValuesController : ApiController
     {
         // GET api/values
@@ -22,12 +23,12 @@ namespace EstanzuelaEats.API.Controllers
         }
 
         // POST api/values
-        public void Post([FromBody] string value)
+        public void Post([FromBody]string value)
         {
         }
 
         // PUT api/values/5
-        public void Put(int id, [FromBody] string value)
+        public void Put(int id, [FromBody]string value)
         {
         }
 

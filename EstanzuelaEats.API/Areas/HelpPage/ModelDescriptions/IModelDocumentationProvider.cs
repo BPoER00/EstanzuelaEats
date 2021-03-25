@@ -1,7 +1,7 @@
 using System;
 using System.Reflection;
 
-namespace EstanzuelaEats.API.Areas.HelpPage.ModelDescriptions
+namespace EstanzuelaEats.Api.Areas.HelpPage.ModelDescriptions
 {
     public interface IModelDocumentationProvider
     {

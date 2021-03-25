@@ -1,6 +1,6 @@
 using System;
 
-namespace EstanzuelaEats.API.Areas.HelpPage.ModelDescriptions
+namespace EstanzuelaEats.Api.Areas.HelpPage.ModelDescriptions
 {
     /// <summary>
     /// Describes a type model.

@@ -1,7 +1,7 @@
 using System.Web.Http;
 using System.Web.Mvc;
 
-namespace EstanzuelaEats.API.Areas.HelpPage
+namespace EstanzuelaEats.Api.Areas.HelpPage
 {
     public class HelpPageAreaRegistration : AreaRegistration
     {
