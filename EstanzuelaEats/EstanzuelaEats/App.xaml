@@ -11,7 +11,7 @@
             <infra:InstanceLocator x:Key="Locator"/>
 
             <!-- Parameters -->
-            <x:String x:Key="UrlAPI">https://salesapi20210317003639.azurewebsites.net</x:String>
+            <x:String x:Key="UrlAPI">https://estanzuelaeatsapi20210325160926.azurewebsites.net</x:String>
             <x:String x:Key="UrlPrefix">/api</x:String>
             <x:String x:Key="UrlProductsController">/Productos</x:String>
 

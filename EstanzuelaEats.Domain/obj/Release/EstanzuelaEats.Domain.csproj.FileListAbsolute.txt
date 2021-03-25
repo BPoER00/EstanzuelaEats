@@ -1,0 +1,16 @@
+C:\Projects\EstanzuelaEats\EstanzuelaEats.Domain\bin\Release\EstanzuelaEats.Domain.dll.config
+C:\Projects\EstanzuelaEats\EstanzuelaEats.Domain\bin\Release\EstanzuelaEats.Domain.dll
+C:\Projects\EstanzuelaEats\EstanzuelaEats.Domain\bin\Release\EstanzuelaEats.Domain.pdb
+C:\Projects\EstanzuelaEats\EstanzuelaEats.Domain\bin\Release\EntityFramework.dll
+C:\Projects\EstanzuelaEats\EstanzuelaEats.Domain\bin\Release\EntityFramework.SqlServer.dll
+C:\Projects\EstanzuelaEats\EstanzuelaEats.Domain\bin\Release\EstanzuelaEats.Common.dll
+C:\Projects\EstanzuelaEats\EstanzuelaEats.Domain\bin\Release\Newtonsoft.Json.dll
+C:\Projects\EstanzuelaEats\EstanzuelaEats.Domain\bin\Release\EstanzuelaEats.Common.pdb
+C:\Projects\EstanzuelaEats\EstanzuelaEats.Domain\bin\Release\EntityFramework.xml
+C:\Projects\EstanzuelaEats\EstanzuelaEats.Domain\bin\Release\EntityFramework.SqlServer.xml
+C:\Projects\EstanzuelaEats\EstanzuelaEats.Domain\bin\Release\Newtonsoft.Json.xml
+C:\Projects\EstanzuelaEats\EstanzuelaEats.Domain\obj\Release\EstanzuelaEats.Domain.csprojAssemblyReference.cache
+C:\Projects\EstanzuelaEats\EstanzuelaEats.Domain\obj\Release\EstanzuelaEats.Domain.csproj.CoreCompileInputs.cache
+C:\Projects\EstanzuelaEats\EstanzuelaEats.Domain\obj\Release\EstanzuelaEats.Domain.csproj.CopyComplete
+C:\Projects\EstanzuelaEats\EstanzuelaEats.Domain\obj\Release\EstanzuelaEats.Domain.dll
+C:\Projects\EstanzuelaEats\EstanzuelaEats.Domain\obj\Release\EstanzuelaEats.Domain.pdb

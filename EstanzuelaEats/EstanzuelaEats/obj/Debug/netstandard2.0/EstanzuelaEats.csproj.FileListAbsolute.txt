@@ -4,7 +4,6 @@ C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats\bin\Debug\netstandard2.
 C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats\bin\Debug\netstandard2.0\EstanzuelaEats.pdb
 C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats\obj\Debug\netstandard2.0\EstanzuelaEats.csprojAssemblyReference.cache
 C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats\obj\Debug\netstandard2.0\App.xaml.g.cs
-C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
 C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats\obj\Debug\netstandard2.0\EstanzuelaEats.AssemblyInfoInputs.cache
 C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats\obj\Debug\netstandard2.0\EstanzuelaEats.AssemblyInfo.cs
 C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats\obj\Debug\netstandard2.0\EstanzuelaEats.csproj.CoreCompileInputs.cache
@@ -12,3 +11,18 @@ C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats\obj\Debug\netstandard2.
 C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats\obj\Debug\netstandard2.0\EstanzuelaEats.dll
 C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats\obj\Debug\netstandard2.0\ref\EstanzuelaEats.dll
 C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats\obj\Debug\netstandard2.0\EstanzuelaEats.pdb
+C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats\obj\Debug\netstandard2.0\EstanzuelaEats.Resources.Resource.resources
+C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats\obj\Debug\netstandard2.0\EstanzuelaEats.Resources.Resource.es.resources
+C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats\obj\Debug\netstandard2.0\EstanzuelaEats.Resources.Resource.it.resources
+C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats\obj\Debug\netstandard2.0\EstanzuelaEats.Resources.Resource.pt.resources
+C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats\obj\Debug\netstandard2.0\EstanzuelaEats.csproj.GenerateResource.cache
+C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats\obj\Debug\netstandard2.0\Views\ProductsPage.xaml.g.cs
+C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats\bin\Debug\netstandard2.0\es\EstanzuelaEats.resources.dll
+C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats\bin\Debug\netstandard2.0\it\EstanzuelaEats.resources.dll
+C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats\bin\Debug\netstandard2.0\pt\EstanzuelaEats.resources.dll
+C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats\bin\Debug\netstandard2.0\EstanzuelaEats.Common.dll
+C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats\bin\Debug\netstandard2.0\EstanzuelaEats.Common.pdb
+C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats\obj\Debug\netstandard2.0\es\EstanzuelaEats.resources.dll
+C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats\obj\Debug\netstandard2.0\it\EstanzuelaEats.resources.dll
+C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats\obj\Debug\netstandard2.0\pt\EstanzuelaEats.resources.dll
+C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats\obj\Debug\netstandard2.0\EstanzuelaEats.csproj.CopyComplete

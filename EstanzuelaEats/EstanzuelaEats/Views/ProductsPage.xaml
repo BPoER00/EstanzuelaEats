@@ -2,14 +2,13 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:i18n="clr-namespace:EstanzuelaEats.Helpers"
-             x:Class="EstanzuelaEats.View.ProductsPage"
+             x:Class="EstanzuelaEats.Views.ProductsPage"
              BindingContext="{Binding Main, Source={StaticResource Locator}}"
              Title="{i18n:Translate Products}">
     <ContentPage.Content>
         <StackLayout
             BindingContext="{Binding Productos}"
             Padding="5">
-
             <ListView
                 HasUnevenRows="True"
                 IsRefreshing="{Binding IsRefreshing}"
@@ -28,20 +27,19 @@
                                     FontSize="Title"
                                     FontAttributes="Bold"
                                     Grid.Column="0"
-                                    Text="{Binding Descripcion}">
+                                    Text="{Binding NombreProducto}">
                                 </Label>
                                 <Label
                                     FontSize="Title"
                                     Grid.Column="1"
                                     HorizontalOptions="End"
-                                    Text="{Binding Precio, StringFormat='{0:C2}'}">
+                                    Text="{Binding PrecioProducto, StringFormat='{0:C2}'}">
                                 </Label>
                             </Grid>
                         </ViewCell>
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
-
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -1,0 +1,9 @@
+C:\Projects\EstanzuelaEats\EstanzuelaEats.Common\bin\Release\EstanzuelaEats.Common.dll
+C:\Projects\EstanzuelaEats\EstanzuelaEats.Common\bin\Release\EstanzuelaEats.Common.pdb
+C:\Projects\EstanzuelaEats\EstanzuelaEats.Common\bin\Release\Newtonsoft.Json.dll
+C:\Projects\EstanzuelaEats\EstanzuelaEats.Common\bin\Release\Newtonsoft.Json.xml
+C:\Projects\EstanzuelaEats\EstanzuelaEats.Common\obj\Release\EstanzuelaEats.Common.csprojAssemblyReference.cache
+C:\Projects\EstanzuelaEats\EstanzuelaEats.Common\obj\Release\EstanzuelaEats.Common.csproj.CoreCompileInputs.cache
+C:\Projects\EstanzuelaEats\EstanzuelaEats.Common\obj\Release\EstanzuelaEats.Common.csproj.CopyComplete
+C:\Projects\EstanzuelaEats\EstanzuelaEats.Common\obj\Release\EstanzuelaEats.Common.dll
+C:\Projects\EstanzuelaEats\EstanzuelaEats.Common\obj\Release\EstanzuelaEats.Common.pdb

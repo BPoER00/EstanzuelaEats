@@ -38,35 +38,6 @@ namespace EstanzuelaEats.Helpers
         {
             get { return Resource.TurnOnInternet; }
         }
-
-        public static string IdProduct
-        {
-            get { return Resource.IdProduct; }
-        }
-
-        public static string Image
-        {
-            get { return Resource.Image; }
-        }
-
-        public static string IsAvailable
-        {
-            get { return Resource.IsAvailable; }
-        }
-
-        public static string Descripcion
-        {
-            get { return Resource.Descripcion; }
-        }
-
-        public static string Price
-        {
-            get { return Resource.Price; }
-        }
-
-        public static string PublishOn
-        {
-            get { return Resource.PublishOn; }
-        }
+            
     }
 }

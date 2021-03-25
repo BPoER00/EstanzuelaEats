@@ -3,7 +3,7 @@
 namespace EstanzuelaEats
 {
 
-    using EstanzuelaEats.View;
+    using EstanzuelaEats.Views;
     using Xamarin.Forms;
 
     public partial class App : Application

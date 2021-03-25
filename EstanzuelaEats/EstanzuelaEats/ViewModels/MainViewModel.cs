@@ -7,11 +7,11 @@ namespace EstanzuelaEats.ViewModels
 
     public class MainViewModel
     {
-        public ProductsViewModel Products { get; set; }
+        public ProductsViewModel Productos { get; set; }
 
         public MainViewModel()
         {
-            this.Products = new ProductsViewModel();
+            this.Productos = new ProductsViewModel();
         }
     }
 }

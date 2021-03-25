@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EstanzuelaEats.Android", "E
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EstanzuelaEats.iOS", "EstanzuelaEats\EstanzuelaEats.iOS\EstanzuelaEats.iOS.csproj", "{5CEBFFBF-BEBC-46A7-943C-91F9367DD733}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EstanzuelaEats", "EstanzuelaEats\EstanzuelaEats\EstanzuelaEats.csproj", "{88CA198B-C58F-4C73-9020-98DF10E40694}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EstanzuelaEats", "EstanzuelaEats\EstanzuelaEats\EstanzuelaEats.csproj", "{88CA198B-C58F-4C73-9020-98DF10E40694}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EstanzuelaEats.Domain", "EstanzuelaEats.Domain\EstanzuelaEats.Domain.csproj", "{28B5C90A-E386-4C47-9FBD-741DC8FC379E}"
 EndProject
@@ -20,7 +20,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		.editorconfig = .editorconfig
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EstanzuelaEats.Api", "EstanzuelaEats.Api\EstanzuelaEats.Api.csproj", "{FB77FD81-63B1-491F-A68B-D124F023D974}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EstanzuelaEats.Api", "EstanzuelaEats.Api\EstanzuelaEats.Api.csproj", "{CD8A2465-C322-44D7-BF21-393587C2B0F5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -122,18 +122,18 @@ Global
 		{BB8EA2B9-4A2D-446A-94AC-15C7B5546954}.Release|iPhone.Build.0 = Release|Any CPU
 		{BB8EA2B9-4A2D-446A-94AC-15C7B5546954}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
 		{BB8EA2B9-4A2D-446A-94AC-15C7B5546954}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
-		{FB77FD81-63B1-491F-A68B-D124F023D974}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FB77FD81-63B1-491F-A68B-D124F023D974}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{FB77FD81-63B1-491F-A68B-D124F023D974}.Debug|iPhone.ActiveCfg = Debug|Any CPU
-		{FB77FD81-63B1-491F-A68B-D124F023D974}.Debug|iPhone.Build.0 = Debug|Any CPU
-		{FB77FD81-63B1-491F-A68B-D124F023D974}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
-		{FB77FD81-63B1-491F-A68B-D124F023D974}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
-		{FB77FD81-63B1-491F-A68B-D124F023D974}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{FB77FD81-63B1-491F-A68B-D124F023D974}.Release|Any CPU.Build.0 = Release|Any CPU
-		{FB77FD81-63B1-491F-A68B-D124F023D974}.Release|iPhone.ActiveCfg = Release|Any CPU
-		{FB77FD81-63B1-491F-A68B-D124F023D974}.Release|iPhone.Build.0 = Release|Any CPU
-		{FB77FD81-63B1-491F-A68B-D124F023D974}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
-		{FB77FD81-63B1-491F-A68B-D124F023D974}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
+		{CD8A2465-C322-44D7-BF21-393587C2B0F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD8A2465-C322-44D7-BF21-393587C2B0F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD8A2465-C322-44D7-BF21-393587C2B0F5}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{CD8A2465-C322-44D7-BF21-393587C2B0F5}.Debug|iPhone.Build.0 = Debug|Any CPU
+		{CD8A2465-C322-44D7-BF21-393587C2B0F5}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{CD8A2465-C322-44D7-BF21-393587C2B0F5}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{CD8A2465-C322-44D7-BF21-393587C2B0F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD8A2465-C322-44D7-BF21-393587C2B0F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD8A2465-C322-44D7-BF21-393587C2B0F5}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{CD8A2465-C322-44D7-BF21-393587C2B0F5}.Release|iPhone.Build.0 = Release|Any CPU
+		{CD8A2465-C322-44D7-BF21-393587C2B0F5}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{CD8A2465-C322-44D7-BF21-393587C2B0F5}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
