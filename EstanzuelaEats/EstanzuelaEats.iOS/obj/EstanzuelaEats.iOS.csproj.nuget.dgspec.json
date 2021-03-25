@@ -4,6 +4,16 @@
     "C:\\Projects\\EstanzuelaEats\\EstanzuelaEats\\EstanzuelaEats.iOS\\EstanzuelaEats.iOS.csproj": {}
   },
   "projects": {
+    "C:\\Projects\\EstanzuelaEats\\EstanzuelaEats.Common\\EstanzuelaEats.Common.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Projects\\EstanzuelaEats\\EstanzuelaEats.Common\\EstanzuelaEats.Common.csproj",
+        "projectName": "EstanzuelaEats.Common",
+        "projectPath": "C:\\Projects\\EstanzuelaEats\\EstanzuelaEats.Common\\EstanzuelaEats.Common.csproj"
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
     "C:\\Projects\\EstanzuelaEats\\EstanzuelaEats\\EstanzuelaEats.iOS\\EstanzuelaEats.iOS.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -96,7 +106,11 @@
         "frameworks": {
           "netstandard2.0": {
             "targetAlias": "netstandard2.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Projects\\EstanzuelaEats\\EstanzuelaEats.Common\\EstanzuelaEats.Common.csproj": {
+                "projectPath": "C:\\Projects\\EstanzuelaEats\\EstanzuelaEats.Common\\EstanzuelaEats.Common.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -109,6 +123,10 @@
         "netstandard2.0": {
           "targetAlias": "netstandard2.0",
           "dependencies": {
+            "MvvmLightLibs": {
+              "target": "Package",
+              "version": "[5.4.1.1, )"
+            },
             "NETStandard.Library": {
               "suppressParent": "All",
               "target": "Package",
@@ -118,6 +136,10 @@
             "Newtonsoft.Json": {
               "target": "Package",
               "version": "[12.0.2, )"
+            },
+            "Xam.Plugin.Connectivity": {
+              "target": "Package",
+              "version": "[3.2.0, )"
             },
             "Xamarin.Essentials": {
               "target": "Package",

@@ -11,6 +11,21 @@
           "lib/netstandard1.0/_._": {}
         }
       },
+      "MvvmLightLibs/5.4.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/net45/GalaSoft.MvvmLight.Extras.dll": {},
+          "lib/net45/GalaSoft.MvvmLight.Platform.dll": {},
+          "lib/net45/GalaSoft.MvvmLight.dll": {},
+          "lib/net45/System.Windows.Interactivity.dll": {}
+        },
+        "runtime": {
+          "lib/net45/GalaSoft.MvvmLight.Extras.dll": {},
+          "lib/net45/GalaSoft.MvvmLight.Platform.dll": {},
+          "lib/net45/GalaSoft.MvvmLight.dll": {},
+          "lib/net45/System.Windows.Interactivity.dll": {}
+        }
+      },
       "NETStandard.Library/2.0.3": {
         "type": "package",
         "dependencies": {
@@ -44,6 +59,20 @@
           "lib/netstandard2.0/System.Numerics.Vectors.dll": {}
         }
       },
+      "Xam.Plugin.Connectivity/3.2.0": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1"
+        },
+        "compile": {
+          "lib/netstandard1.0/Plugin.Connectivity.Abstractions.dll": {},
+          "lib/netstandard1.0/Plugin.Connectivity.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.0/Plugin.Connectivity.Abstractions.dll": {},
+          "lib/netstandard1.0/Plugin.Connectivity.dll": {}
+        }
+      },
       "Xamarin.Essentials/1.5.3.2": {
         "type": "package",
         "dependencies": {
@@ -72,6 +101,15 @@
           "buildTransitive/Xamarin.Forms.props": {},
           "buildTransitive/Xamarin.Forms.targets": {}
         }
+      },
+      "EstanzuelaEats.Common/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/EstanzuelaEats.Common.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/EstanzuelaEats.Common.dll": {}
+        }
       }
     }
   },
@@ -89,6 +127,126 @@
         "microsoft.netcore.platforms.1.1.0.nupkg.sha512",
         "microsoft.netcore.platforms.nuspec",
         "runtime.json"
+      ]
+    },
+    "MvvmLightLibs/5.4.1.1": {
+      "sha512": "xYpVzOYnIz/M6T0pdc3w5t0vrt2ZKspSS+CZjQ+pZE+5yHv9qXSWkncHJXb6D7Egstalso4ivnIUkA1xEClViw==",
+      "type": "package",
+      "path": "mvvmlightlibs/5.4.1.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/SL5/GalaSoft.MvvmLight.Extras.dll",
+        "lib/SL5/GalaSoft.MvvmLight.Extras.pdb",
+        "lib/SL5/GalaSoft.MvvmLight.Extras.xml",
+        "lib/SL5/GalaSoft.MvvmLight.dll",
+        "lib/SL5/GalaSoft.MvvmLight.pdb",
+        "lib/SL5/GalaSoft.MvvmLight.xml",
+        "lib/SL5/System.Windows.Interactivity.dll",
+        "lib/monoandroid1/GalaSoft.MvvmLight.Extras.XML",
+        "lib/monoandroid1/GalaSoft.MvvmLight.Extras.dll",
+        "lib/monoandroid1/GalaSoft.MvvmLight.Extras.dll.mdb",
+        "lib/monoandroid1/GalaSoft.MvvmLight.Extras.pdb",
+        "lib/monoandroid1/GalaSoft.MvvmLight.Platform.XML",
+        "lib/monoandroid1/GalaSoft.MvvmLight.Platform.dll",
+        "lib/monoandroid1/GalaSoft.MvvmLight.Platform.dll.mdb",
+        "lib/monoandroid1/GalaSoft.MvvmLight.Platform.pdb",
+        "lib/monoandroid1/GalaSoft.MvvmLight.XML",
+        "lib/monoandroid1/GalaSoft.MvvmLight.dll",
+        "lib/monoandroid1/GalaSoft.MvvmLight.dll.mdb",
+        "lib/monoandroid1/GalaSoft.MvvmLight.pdb",
+        "lib/net35/GalaSoft.MvvmLight.Extras.dll",
+        "lib/net35/GalaSoft.MvvmLight.Extras.pdb",
+        "lib/net35/GalaSoft.MvvmLight.Extras.xml",
+        "lib/net35/GalaSoft.MvvmLight.dll",
+        "lib/net35/GalaSoft.MvvmLight.pdb",
+        "lib/net35/GalaSoft.MvvmLight.xml",
+        "lib/net35/System.Windows.Interactivity.dll",
+        "lib/net35/System.Windows.Interactivity.xml",
+        "lib/net40/GalaSoft.MvvmLight.Extras.dll",
+        "lib/net40/GalaSoft.MvvmLight.Extras.pdb",
+        "lib/net40/GalaSoft.MvvmLight.Extras.xml",
+        "lib/net40/GalaSoft.MvvmLight.dll",
+        "lib/net40/GalaSoft.MvvmLight.pdb",
+        "lib/net40/GalaSoft.MvvmLight.xml",
+        "lib/net40/System.Windows.Interactivity.dll",
+        "lib/net40/System.Windows.Interactivity.xml",
+        "lib/net45/GalaSoft.MvvmLight.Extras.dll",
+        "lib/net45/GalaSoft.MvvmLight.Extras.pdb",
+        "lib/net45/GalaSoft.MvvmLight.Extras.xml",
+        "lib/net45/GalaSoft.MvvmLight.Platform.dll",
+        "lib/net45/GalaSoft.MvvmLight.Platform.pdb",
+        "lib/net45/GalaSoft.MvvmLight.Platform.xml",
+        "lib/net45/GalaSoft.MvvmLight.dll",
+        "lib/net45/GalaSoft.MvvmLight.pdb",
+        "lib/net45/GalaSoft.MvvmLight.xml",
+        "lib/net45/System.Windows.Interactivity.dll",
+        "lib/portable-net45+wp8+wpa81+netcore45+monoandroid1+xamarin.ios10/GalaSoft.MvvmLight.Extras.XML",
+        "lib/portable-net45+wp8+wpa81+netcore45+monoandroid1+xamarin.ios10/GalaSoft.MvvmLight.Extras.dll",
+        "lib/portable-net45+wp8+wpa81+netcore45+monoandroid1+xamarin.ios10/GalaSoft.MvvmLight.Extras.pdb",
+        "lib/portable-net45+wp8+wpa81+netcore45+monoandroid1+xamarin.ios10/GalaSoft.MvvmLight.XML",
+        "lib/portable-net45+wp8+wpa81+netcore45+monoandroid1+xamarin.ios10/GalaSoft.MvvmLight.dll",
+        "lib/portable-net45+wp8+wpa81+netcore45+monoandroid1+xamarin.ios10/GalaSoft.MvvmLight.pdb",
+        "lib/uap10.0/GalaSoft.MvvmLight.Extras.dll",
+        "lib/uap10.0/GalaSoft.MvvmLight.Extras.pdb",
+        "lib/uap10.0/GalaSoft.MvvmLight.Extras.xml",
+        "lib/uap10.0/GalaSoft.MvvmLight.Platform.dll",
+        "lib/uap10.0/GalaSoft.MvvmLight.Platform.pdb",
+        "lib/uap10.0/GalaSoft.MvvmLight.Platform.pri",
+        "lib/uap10.0/GalaSoft.MvvmLight.Platform.xml",
+        "lib/uap10.0/GalaSoft.MvvmLight.dll",
+        "lib/uap10.0/GalaSoft.MvvmLight.pdb",
+        "lib/uap10.0/GalaSoft.MvvmLight.xml",
+        "lib/windows81/GalaSoft.MvvmLight.Extras.dll",
+        "lib/windows81/GalaSoft.MvvmLight.Extras.pdb",
+        "lib/windows81/GalaSoft.MvvmLight.Extras.xml",
+        "lib/windows81/GalaSoft.MvvmLight.Platform.dll",
+        "lib/windows81/GalaSoft.MvvmLight.Platform.pdb",
+        "lib/windows81/GalaSoft.MvvmLight.Platform.pri",
+        "lib/windows81/GalaSoft.MvvmLight.Platform.xml",
+        "lib/windows81/GalaSoft.MvvmLight.dll",
+        "lib/windows81/GalaSoft.MvvmLight.pdb",
+        "lib/windows81/GalaSoft.MvvmLight.xml",
+        "lib/wp8/GalaSoft.MvvmLight.Extras.dll",
+        "lib/wp8/GalaSoft.MvvmLight.Extras.pdb",
+        "lib/wp8/GalaSoft.MvvmLight.Extras.xml",
+        "lib/wp8/GalaSoft.MvvmLight.Platform.dll",
+        "lib/wp8/GalaSoft.MvvmLight.Platform.pdb",
+        "lib/wp8/GalaSoft.MvvmLight.Platform.xml",
+        "lib/wp8/GalaSoft.MvvmLight.dll",
+        "lib/wp8/GalaSoft.MvvmLight.pdb",
+        "lib/wp8/GalaSoft.MvvmLight.xml",
+        "lib/wp8/System.Windows.Interactivity.dll",
+        "lib/wp81/GalaSoft.MvvmLight.Extras.dll",
+        "lib/wp81/GalaSoft.MvvmLight.Extras.pdb",
+        "lib/wp81/GalaSoft.MvvmLight.Extras.xml",
+        "lib/wp81/GalaSoft.MvvmLight.Platform.dll",
+        "lib/wp81/GalaSoft.MvvmLight.Platform.pdb",
+        "lib/wp81/GalaSoft.MvvmLight.Platform.xml",
+        "lib/wp81/GalaSoft.MvvmLight.dll",
+        "lib/wp81/GalaSoft.MvvmLight.pdb",
+        "lib/wp81/GalaSoft.MvvmLight.xml",
+        "lib/wp81/System.Windows.Interactivity.dll",
+        "lib/wpa81/GalaSoft.MvvmLight.Extras.XML",
+        "lib/wpa81/GalaSoft.MvvmLight.Extras.dll",
+        "lib/wpa81/GalaSoft.MvvmLight.Extras.pdb",
+        "lib/wpa81/GalaSoft.MvvmLight.Platform.XML",
+        "lib/wpa81/GalaSoft.MvvmLight.Platform.dll",
+        "lib/wpa81/GalaSoft.MvvmLight.Platform.pdb",
+        "lib/wpa81/GalaSoft.MvvmLight.Platform.pri",
+        "lib/wpa81/GalaSoft.MvvmLight.XML",
+        "lib/wpa81/GalaSoft.MvvmLight.dll",
+        "lib/wpa81/GalaSoft.MvvmLight.pdb",
+        "lib/xamarin.ios10/GalaSoft.MvvmLight.Extras.XML",
+        "lib/xamarin.ios10/GalaSoft.MvvmLight.Extras.dll",
+        "lib/xamarin.ios10/GalaSoft.MvvmLight.Extras.pdb",
+        "lib/xamarin.ios10/GalaSoft.MvvmLight.Platform.XML",
+        "lib/xamarin.ios10/GalaSoft.MvvmLight.Platform.dll",
+        "lib/xamarin.ios10/GalaSoft.MvvmLight.XML",
+        "lib/xamarin.ios10/GalaSoft.MvvmLight.dll",
+        "lib/xamarin.ios10/GalaSoft.MvvmLight.pdb",
+        "mvvmlightlibs.5.4.1.1.nupkg.sha512",
+        "mvvmlightlibs.nuspec"
       ]
     },
     "NETStandard.Library/2.0.3": {
@@ -295,6 +453,74 @@
         "system.numerics.vectors.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
+      ]
+    },
+    "Xam.Plugin.Connectivity/3.2.0": {
+      "sha512": "ZV45TaBTCJg7XQNEl3fPyyJcuMMhdDEQ6BCLc/5pMuTv38M226ER0WTu5sbmba8jlliDuzeRqkRFHwrGdWAgyg==",
+      "type": "package",
+      "path": "xam.plugin.connectivity/3.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/MonoAndroid10/Plugin.Connectivity.Abstractions.dll",
+        "lib/MonoAndroid10/Plugin.Connectivity.Abstractions.pdb",
+        "lib/MonoAndroid10/Plugin.Connectivity.Abstractions.xml",
+        "lib/MonoAndroid10/Plugin.Connectivity.dll",
+        "lib/MonoAndroid10/Plugin.Connectivity.dll.mdb",
+        "lib/MonoAndroid10/Plugin.Connectivity.pdb",
+        "lib/MonoAndroid10/Plugin.Connectivity.xml",
+        "lib/UAP10/Plugin.Connectivity.Abstractions.dll",
+        "lib/UAP10/Plugin.Connectivity.Abstractions.pdb",
+        "lib/UAP10/Plugin.Connectivity.Abstractions.xml",
+        "lib/UAP10/Plugin.Connectivity.XML",
+        "lib/UAP10/Plugin.Connectivity.dll",
+        "lib/UAP10/Plugin.Connectivity.pdb",
+        "lib/UAP10/Plugin.Connectivity.pri",
+        "lib/UAP10/Plugin.Connectivity/Properties/Plugin.Connectivity.rd.xml",
+        "lib/Xamarin.Mac20/Plugin.Connectivity.Abstractions.dll",
+        "lib/Xamarin.Mac20/Plugin.Connectivity.Abstractions.pdb",
+        "lib/Xamarin.Mac20/Plugin.Connectivity.Abstractions.xml",
+        "lib/Xamarin.Mac20/Plugin.Connectivity.dll",
+        "lib/Xamarin.Mac20/Plugin.Connectivity.pdb",
+        "lib/Xamarin.Mac20/Plugin.Connectivity.xml",
+        "lib/Xamarin.iOS10/Plugin.Connectivity.Abstractions.dll",
+        "lib/Xamarin.iOS10/Plugin.Connectivity.Abstractions.pdb",
+        "lib/Xamarin.iOS10/Plugin.Connectivity.Abstractions.xml",
+        "lib/Xamarin.iOS10/Plugin.Connectivity.dll",
+        "lib/Xamarin.iOS10/Plugin.Connectivity.pdb",
+        "lib/Xamarin.iOS10/Plugin.Connectivity.xml",
+        "lib/XamarinTVOS/Plugin.Connectivity.Abstractions.dll",
+        "lib/XamarinTVOS/Plugin.Connectivity.Abstractions.pdb",
+        "lib/XamarinTVOS/Plugin.Connectivity.Abstractions.xml",
+        "lib/XamarinTVOS/Plugin.Connectivity.dll",
+        "lib/XamarinTVOS/Plugin.Connectivity.pdb",
+        "lib/XamarinTVOS/Plugin.Connectivity.xml",
+        "lib/net45/Plugin.Connectivity.Abstractions.dll",
+        "lib/net45/Plugin.Connectivity.Abstractions.pdb",
+        "lib/net45/Plugin.Connectivity.Abstractions.xml",
+        "lib/net45/Plugin.Connectivity.XML",
+        "lib/net45/Plugin.Connectivity.dll",
+        "lib/net45/Plugin.Connectivity.pdb",
+        "lib/netcoreapp2.0/Plugin.Connectivity.Abstractions.dll",
+        "lib/netcoreapp2.0/Plugin.Connectivity.Abstractions.pdb",
+        "lib/netcoreapp2.0/Plugin.Connectivity.Abstractions.xml",
+        "lib/netcoreapp2.0/Plugin.Connectivity.deps.json",
+        "lib/netcoreapp2.0/Plugin.Connectivity.dll",
+        "lib/netcoreapp2.0/Plugin.Connectivity.xml",
+        "lib/netstandard1.0/Plugin.Connectivity.Abstractions.dll",
+        "lib/netstandard1.0/Plugin.Connectivity.Abstractions.pdb",
+        "lib/netstandard1.0/Plugin.Connectivity.Abstractions.xml",
+        "lib/netstandard1.0/Plugin.Connectivity.deps.json",
+        "lib/netstandard1.0/Plugin.Connectivity.dll",
+        "lib/netstandard1.0/Plugin.Connectivity.pdb",
+        "lib/netstandard1.0/Plugin.Connectivity.xml",
+        "lib/tizen40/Plugin.Connectivity.Abstractions.dll",
+        "lib/tizen40/Plugin.Connectivity.Abstractions.pdb",
+        "lib/tizen40/Plugin.Connectivity.Abstractions.xml",
+        "lib/tizen40/Plugin.Connectivity.deps.json",
+        "lib/tizen40/Plugin.Connectivity.dll",
+        "xam.plugin.connectivity.3.2.0.nupkg.sha512",
+        "xam.plugin.connectivity.nuspec"
       ]
     },
     "Xamarin.Essentials/1.5.3.2": {
@@ -660,12 +886,20 @@
         "xamarin.forms.4.8.0.1451.nupkg.sha512",
         "xamarin.forms.nuspec"
       ]
+    },
+    "EstanzuelaEats.Common/1.0.0": {
+      "type": "project",
+      "path": "../../EstanzuelaEats.Common/EstanzuelaEats.Common.csproj",
+      "msbuildProject": "../../EstanzuelaEats.Common/EstanzuelaEats.Common.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
+      "EstanzuelaEats.Common >= 1.0.0",
+      "MvvmLightLibs >= 5.4.1.1",
       "NETStandard.Library >= 2.0.3",
       "Newtonsoft.Json >= 12.0.2",
+      "Xam.Plugin.Connectivity >= 3.2.0",
       "Xamarin.Essentials >= 1.5.3.2",
       "Xamarin.Forms >= 4.8.0.1451"
     ]
@@ -701,7 +935,11 @@
       "frameworks": {
         "netstandard2.0": {
           "targetAlias": "netstandard2.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Projects\\EstanzuelaEats\\EstanzuelaEats.Common\\EstanzuelaEats.Common.csproj": {
+              "projectPath": "C:\\Projects\\EstanzuelaEats\\EstanzuelaEats.Common\\EstanzuelaEats.Common.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -714,6 +952,10 @@
       "netstandard2.0": {
         "targetAlias": "netstandard2.0",
         "dependencies": {
+          "MvvmLightLibs": {
+            "target": "Package",
+            "version": "[5.4.1.1, )"
+          },
           "NETStandard.Library": {
             "suppressParent": "All",
             "target": "Package",
@@ -723,6 +965,10 @@
           "Newtonsoft.Json": {
             "target": "Package",
             "version": "[12.0.2, )"
+          },
+          "Xam.Plugin.Connectivity": {
+            "target": "Package",
+            "version": "[3.2.0, )"
           },
           "Xamarin.Essentials": {
             "target": "Package",
@@ -746,5 +992,17 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.104\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "El paquete \"MvvmLightLibs 5.4.1.1\" se restauró con \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8\" en lugar de la plataforma de destino del proyecto \".NETStandard,Version=v2.0\". Puede que el paquete no sea totalmente compatible con el proyecto.",
+      "libraryId": "MvvmLightLibs",
+      "targetGraphs": [
+        ".NETStandard,Version=v2.0"
+      ]
+    }
+  ]
 }
