@@ -142,3 +142,7 @@ C:\Projects\EstanzuelaEats\EstanzuelaEats.Api\obj\Release\EstanzuelaEats.Api.csp
 C:\Projects\EstanzuelaEats\EstanzuelaEats.Api\obj\Release\EstanzuelaEats.Api.csproj.CopyComplete
 C:\Projects\EstanzuelaEats\EstanzuelaEats.Api\obj\Release\EstanzuelaEats.Api.dll
 C:\Projects\EstanzuelaEats\EstanzuelaEats.Api\obj\Release\EstanzuelaEats.Api.pdb
+C:\Projects\EstanzuelaEats\EstanzuelaEats.Api\bin\Microsoft.Web.Delegation.dll
+C:\Projects\EstanzuelaEats\EstanzuelaEats.Api\bin\Microsoft.Web.Deployment.dll
+C:\Projects\EstanzuelaEats\EstanzuelaEats.Api\bin\Microsoft.Web.Deployment.Tracing.dll
+C:\Projects\EstanzuelaEats\EstanzuelaEats.Api\bin\Microsoft.Web.Administration.dll
