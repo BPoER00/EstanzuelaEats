@@ -1,17 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data;
-using System.Data.Entity;
-using System.Linq;
-using System.Threading.Tasks;
-using System.Net;
-using System.Web;
-using System.Web.Mvc;
-using EstanzuelaEats.Backend.Models;
-using EstanzuelaEats.Common.Modelos;
-
+﻿
 namespace EstanzuelaEats.Backend.Controllers
 {
+    using System.Data.Entity;
+    using System.Linq;
+    using System.Net;
+    using System.Threading.Tasks;
+    using System.Web.Mvc;
+    using Backend.Models;
+    using Common.Modelos;
+    
+
     public class ProductosController : Controller
     {
         private LocalDataContext db = new LocalDataContext();
@@ -19,7 +17,7 @@ namespace EstanzuelaEats.Backend.Controllers
         // GET: Productos
         public async Task<ActionResult> Index()
         {
-            return View(await db.Productos.ToListAsync());
+            return View(await this.db.Productos.OrderBy(p => p.DescripcionProducto).ToListAsync());
         }
 
         // GET: Productos/Details/5
@@ -29,7 +27,7 @@ namespace EstanzuelaEats.Backend.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Productos productos = await db.Productos.FindAsync(id);
+            var productos = await db.Productos.FindAsync(id);
             if (productos == null)
             {
                 return HttpNotFound();
@@ -43,12 +41,10 @@ namespace EstanzuelaEats.Backend.Controllers
             return View();
         }
 
-        // POST: Productos/Create
-        // Para protegerse de ataques de publicación excesiva, habilite las propiedades específicas a las que quiere enlazarse. Para obtener 
-        // más detalles, vea https://go.microsoft.com/fwlink/?LinkId=317598.
+      
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<ActionResult> Create([Bind(Include = "ProductoId,NombreProducto,PrecioProducto,DescripcionProducto,PublicacionProducto")] Productos productos)
+        public async Task<ActionResult> Create(Productos productos)
         {
             if (ModelState.IsValid)
             {
@@ -67,7 +63,7 @@ namespace EstanzuelaEats.Backend.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Productos productos = await db.Productos.FindAsync(id);
+            var productos = await db.Productos.FindAsync(id);
             if (productos == null)
             {
                 return HttpNotFound();
@@ -75,12 +71,9 @@ namespace EstanzuelaEats.Backend.Controllers
             return View(productos);
         }
 
-        // POST: Productos/Edit/5
-        // Para protegerse de ataques de publicación excesiva, habilite las propiedades específicas a las que quiere enlazarse. Para obtener 
-        // más detalles, vea https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<ActionResult> Edit([Bind(Include = "ProductoId,NombreProducto,PrecioProducto,DescripcionProducto,PublicacionProducto")] Productos productos)
+        public async Task<ActionResult> Edit(Productos productos)
         {
             if (ModelState.IsValid)
             {
@@ -98,7 +91,7 @@ namespace EstanzuelaEats.Backend.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Productos productos = await db.Productos.FindAsync(id);
+            var productos = await db.Productos.FindAsync(id);
             if (productos == null)
             {
                 return HttpNotFound();
@@ -111,7 +104,7 @@ namespace EstanzuelaEats.Backend.Controllers
         [ValidateAntiForgeryToken]
         public async Task<ActionResult> DeleteConfirmed(int id)
         {
-            Productos productos = await db.Productos.FindAsync(id);
+            var productos = await db.Productos.FindAsync(id);
             db.Productos.Remove(productos);
             await db.SaveChangesAsync();
             return RedirectToAction("Index");

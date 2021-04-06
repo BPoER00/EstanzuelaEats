@@ -6,45 +6,56 @@
 
 <h2>Details</h2>
 
-<div>
-    <h4>Productos</h4>
-    <hr />
-    <dl class="dl-horizontal">
-        <dt>
+<table class="table table-bordered">
+    <tr>
+        <td>
+            @Html.DisplayNameFor(model => model.ProductoId)
+        </td>
+        <td>
             @Html.DisplayNameFor(model => model.NombreProducto)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.NombreProducto)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.PrecioProducto)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.PrecioProducto)
-        </dd>
-
-        <dt>
+        </td>
+        <td>
             @Html.DisplayNameFor(model => model.DescripcionProducto)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.DescripcionProducto)
-        </dd>
-
-        <dt>
+        </td>
+        <td>
+            @Html.DisplayNameFor(model => model.PrecioProducto)
+        </td>
+        <td>
+            @Html.DisplayNameFor(model => model.ImagePath)
+        </td>
+        <td>
+            @Html.DisplayNameFor(model => model.Existencias)
+        </td>
+        <td>
             @Html.DisplayNameFor(model => model.PublicacionProducto)
-        </dt>
+        </td>
+    </tr>
 
-        <dd>
+    <tr>
+        <th>
+            @Html.DisplayFor(model => model.ProductoId)
+        </th>
+        <th>
+            @Html.DisplayFor(model => model.NombreProducto)
+        </th>
+        <th>
+            @Html.DisplayFor(model => model.DescripcionProducto)
+        </th>
+        <th>
+            @Html.DisplayFor(model => model.PrecioProducto)
+        </th>
+        <th>
+            @Html.DisplayFor(model => model.ImagePath)
+        </th>
+        <th>
+            @Html.DisplayFor(model => model.Existencias)
+        </th>
+        <th>
             @Html.DisplayFor(model => model.PublicacionProducto)
-        </dd>
-
-    </dl>
-</div>
+        </th>
+    </tr>
+</table>
 <p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.ProductoId }) |
-    @Html.ActionLink("Back to List", "Index")
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ProductoId }, new { @class = "btn btn-warning"}) 
+    @Html.ActionLink("Back to List", "Index", new { }, new { @class = "btn btn-success" })
 </p>

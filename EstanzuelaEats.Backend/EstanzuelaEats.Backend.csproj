@@ -171,6 +171,12 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\ProductosController.cs" />
+    <Compile Include="Helpers\FilesHelper.cs" />
+    <Compile Include="Migrations\202104051819144_AggImage.cs" />
+    <Compile Include="Migrations\202104051819144_AggImage.designer.cs">
+      <DependentUpon>202104051819144_AggImage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ProductView.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -254,6 +260,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Content\Productos\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
@@ -284,6 +291,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202103250654243_ActualizacionDeDatosDB.resx">
       <DependentUpon>202103250654243_ActualizacionDeDatosDB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202104051819144_AggImage.resx">
+      <DependentUpon>202104051819144_AggImage.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

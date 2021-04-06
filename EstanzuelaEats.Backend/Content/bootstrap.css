@@ -262,6 +262,7 @@ th {
   .table-bordered td {
     border: 1px solid #ddd !important;
   }
+
 }
 @font-face {
   font-family: "Glyphicons Halflings";
@@ -5059,7 +5060,7 @@ a.badge:focus {
 .jumbotron .container {
   max-width: 100%;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 750px) {
   .jumbotron {
     padding-top: 48px;
     padding-bottom: 48px;

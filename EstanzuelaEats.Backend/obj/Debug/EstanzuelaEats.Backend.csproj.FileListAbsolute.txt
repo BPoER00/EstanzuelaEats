@@ -108,8 +108,6 @@ C:\Projects\EstanzuelaEats\EstanzuelaEats.Backend\bin\Microsoft.Owin.Security.Tw
 C:\Projects\EstanzuelaEats\EstanzuelaEats.Backend\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 C:\Projects\EstanzuelaEats\EstanzuelaEats.Backend\bin\Microsoft.Owin.Security.OAuth.xml
 C:\Projects\EstanzuelaEats\EstanzuelaEats.Backend\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Projects\EstanzuelaEats\EstanzuelaEats.Backend\bin\es\EntityFramework.resources.dll
-C:\Projects\EstanzuelaEats\EstanzuelaEats.Backend\bin\es\EntityFramework.SqlServer.resources.dll
 C:\Projects\EstanzuelaEats\EstanzuelaEats.Backend\bin\es\System.Web.Helpers.resources.dll
 C:\Projects\EstanzuelaEats\EstanzuelaEats.Backend\bin\es\System.Web.Mvc.resources.dll
 C:\Projects\EstanzuelaEats\EstanzuelaEats.Backend\bin\es\System.Web.Optimization.resources.dll
@@ -133,3 +131,6 @@ C:\Projects\EstanzuelaEats\EstanzuelaEats.Backend\obj\Debug\EstanzuelaEats.Backe
 C:\Projects\EstanzuelaEats\EstanzuelaEats.Backend\obj\Debug\EstanzuelaEats.Backend.Migrations.InitialCreate.resources
 C:\Projects\EstanzuelaEats\EstanzuelaEats.Backend\obj\Debug\EstanzuelaEats.Backend.csproj.GenerateResource.cache
 C:\Projects\EstanzuelaEats\EstanzuelaEats.Backend\obj\Debug\EstanzuelaEats.Backend.Migrations.ActualizacionDeDatosDB.resources
+C:\Projects\EstanzuelaEats\EstanzuelaEats.Backend\obj\Debug\EstanzuelaEats.Backend.Migrations.AggImage.resources
+C:\Projects\EstanzuelaEats\EstanzuelaEats.Backend\bin\es\EntityFramework.resources.dll
+C:\Projects\EstanzuelaEats\EstanzuelaEats.Backend\bin\es\EntityFramework.SqlServer.resources.dll

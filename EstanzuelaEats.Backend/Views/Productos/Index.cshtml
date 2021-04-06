@@ -7,9 +7,9 @@
 <h2>Index</h2>
 
 <p>
-    @Html.ActionLink("Create New", "Create")
+    @Html.ActionLink("Crear Nuevo Producto", "Create", new { }, new { @class = "btn btn-primary"})
 </p>
-<table class="table">
+<table class="table table-bordered table-Dark">
     <tr>
         <th>
             @Html.DisplayNameFor(model => model.NombreProducto)
@@ -21,9 +21,15 @@
             @Html.DisplayNameFor(model => model.DescripcionProducto)
         </th>
         <th>
+            @Html.DisplayNameFor(model => model.ImagePath)
+        </th>
+        <th>
             @Html.DisplayNameFor(model => model.PublicacionProducto)
         </th>
-        <th></th>
+        <th>
+            @Html.DisplayNameFor(model => model.Existencias)
+        </th>
+        <th>Opciones :3</th>
     </tr>
 
 @foreach (var item in Model) {
@@ -38,12 +44,18 @@
             @Html.DisplayFor(modelItem => item.DescripcionProducto)
         </td>
         <td>
+            @Html.DisplayFor(modelItem => item.ImagePath)
+        </td>
+        <td>
             @Html.DisplayFor(modelItem => item.PublicacionProducto)
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.ProductoId }) |
-            @Html.ActionLink("Details", "Details", new { id=item.ProductoId }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.ProductoId })
+            @Html.DisplayFor(modelItem => item.Existencias)
+        </td>
+        <td>
+            @Html.ActionLink("Editar", "Edit", new { id=item.ProductoId }, new { @class = "btn btn-warning" }) 
+            @Html.ActionLink("Detalles", "Details", new { id=item.ProductoId }, new { @class = "btn btn-info" }) 
+            @Html.ActionLink("Eliminar", "Delete", new { id=item.ProductoId }, new { @class = "btn btn-danger" })
         </td>
     </tr>
 }

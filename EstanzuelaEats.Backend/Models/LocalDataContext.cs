@@ -10,7 +10,5 @@ namespace EstanzuelaEats.Backend.Models
     public class LocalDataContext : DataContext
     {
 
-        public new DbSet<EstanzuelaEats.Common.Modelos.Productos> Productos { get; set; }
-
     }
 }

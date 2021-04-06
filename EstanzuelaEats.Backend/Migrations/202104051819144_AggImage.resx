@@ -117,19 +117,10 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Accept" xml:space="preserve">
-    <value>Aceptar</value>
+  <data name="Target" xml:space="preserve">
+    <value>H4sIAAAAAAAEAM1Y227jNhB9L9B/EPTUAlkryaLANpB3kThJYTQ3rLL7PpbGDlFeVJIK7P21PvST+gsdWvdLFDs12sIvFjk8M3M4PBzprz/+DD+tBfeeURum5NQ/mRz7HspYJUyupn5ml+8++J8+fv9deJWItfe1tHvv7GilNFP/ydr0LAhM/IQCzESwWCujlnYSKxFAooLT4+Ofg5OTAAnCJyzPCz9n0jKB2wd6nCkZY2oz4LcqQW6KcZqJtqjeHQg0KcQ49a+MBfktQw5XYM3kAuLfUCaTfKHvnXMGFFSEfOl7IKWyYCnksy8GI6uVXEUpDQB/3KRIdkvgBotUzmrzXbM6PnVZBfXCEirOjFViT8CT9wVNQXf5m8j2KxqJyCsi3G5c1lsyp/6DVkkWW0Wcdb2dzbh2lj2yZ0oIJXOulZlUEEfeoOFRVTBUV+535M0ybjONU4mZ1cCPvIdswVn8K24eFe3jVGacN+OmyGmuNUBD5DhFbTefcdnJZp74XtBeH3QBquUDa/O059K+P/W9OwoGFhyrMmlQFFml8ReUqMFi8gDWoqZdnie4JboXRcfnnRILjaXn0i9VKJ0737uF9Q3KlX2a+j/RQbtma0zKgSKUL5LRKaU1Vmc4EOq4+weNMVNd95c0KID73na6UIQPvhfF4JCHGBl3c4km1iwlV3KHVE9Od8t13OdcwAppP55GPNHfA3jKSxeGsrukongkgdubsas1M5YEmESsxLpQiiPIV6DCoD7h/XNPAmuBUbEWbm4UbSkFCW4C13ZAA0gwCxkwBR3twHPgCG1fT+pIciGeNOaGYq6iq3U/yIW/vCCCF26I8BbSlHa3cWMUI16UXxezd9H+4ilyjCA2AxpaRVt5IimgmuvMkmuK9JppYx3RC3A7NktEz6y3Fy/wXLrr0t0Vx5r9coX7X5TX2OU5eRGzpvWaMhUkcduksYptJJ7taqcgoEd0d6Z4JuRrWj6G1lXUJmJ3bnfUrlC242zP7Y46qItN6EGD3fEbGthEbQzvwcCQyrVoGDLYHb+leE3c1kQfLww6Jdk9B0HvIHT6gu7JGlOmrknlvVKojhKFhSq83tD2ZCI3cbewemaJk4hoQ0yIiTOYRL/zGWeUb21wC5It0di8hfKpkTztNML/n6Y0MCbhu3am/3kjyBzNr7Z6e97xw72ffAYdP4HudX8Hae2Sf7G1G8xk29zVPt7UyZXAPwhY/7gv2ki3ltC+2gN1awtmD9qp9ZuIg7RhucZQ6gvHQh7rP+/S+poXBs1X/ZCqhq1qCPfiLzF2YlKDljZzuVQl35RfM6LSpLMdt2iB9hLOtWVLiC1Nx2jMtvv/CjxzOyYWmMzlfWbTzJ4bg2LBWy9rYTDuf9uKtmMO71P3ZA6RAoXJXDney4uM8aSK+3qgjl6AcBVTqBVFRW8/BLfaVEh3Su4IVNB3iSn1iKR1jyhSTmDmXkbwjG+JjV4qbnAF8aa8ul4GeX0j2rSHlwxWGoQpMOr17vNV4L5fffwbSDLahfESAAA=</value>
   </data>
-  <data name="Error" xml:space="preserve">
-    <value>Error</value>
-  </data>
-  <data name="NoInternet" xml:space="preserve">
-    <value>No hay conexión a Internet </value>
-  </data>
-  <data name="Products" xml:space="preserve">
-    <value>Productos</value>
-  </data>
-  <data name="TurnOnInternet" xml:space="preserve">
-    <value>¡Encienda la configuración de Internet!</value>
+  <data name="DefaultSchema" xml:space="preserve">
+    <value>dbo</value>
   </data>
 </root>

@@ -21,6 +21,9 @@ namespace EstanzuelaEats.Common.Modelos
         [DataType(DataType.MultilineText)]
         public string DescripcionProducto { get; set; }
 
+        [Display(Name = "Imagen")]
+        public string ImagePath { get; set; }
+
         [DataType(DataType.Date)]
         public DateTime PublicacionProducto { get; set; }
 
