@@ -5,6 +5,11 @@
              x:Class="EstanzuelaEats.Views.ProductsPage"
              BindingContext="{Binding Main, Source={StaticResource Locator}}"
              Title="{i18n:Translate Products}">
+    <ContentPage.ToolbarItems>
+
+        <ToolbarItem Icon="ic_action_add_circle_outline.png" Command="{Binding AddProductCommand}"/>
+
+    </ContentPage.ToolbarItems>
     <ContentPage.Content>
         <StackLayout
             BindingContext="{Binding Productos}"
@@ -29,13 +34,22 @@
                                     Source="{Binding ImageFullPath}"
                                     WidthRequest="100">
                                 </Image>
-                                <Label
-                                    FontSize="Title"
-                                    FontAttributes="Bold"
+                                <StackLayout
                                     Grid.Column="1"
-                                    Text="{Binding NombreProducto}"
                                     VerticalOptions="Center">
-                                </Label>
+
+                                    <Label
+                                        FontSize="Medium"
+                                        FontAttributes="Bold"
+                                        Text="{Binding NombreProducto}">
+                                    </Label>
+
+                                    <Label
+                                        FontSize="Body"
+                                        Text="{Binding DescripcionProducto}">
+                                    </Label>
+                                    
+                                </StackLayout>
                                 <Label
                                     FontSize="Body"
                                     Grid.Column="2"

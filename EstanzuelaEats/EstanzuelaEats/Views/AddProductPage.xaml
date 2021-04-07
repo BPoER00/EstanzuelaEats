@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:i18n="clr-namespace:EstanzuelaEats.Helpers"
+             x:Class="EstanzuelaEats.Views.AddProductPage"
+             BindingContext="{Binding Main, Source={StaticResource Locator}}"
+             Title="{i18n:Translate AddProduct}">
+    <ContentPage.Content>
+
+        <ScrollView
+            BindingContext="{Binding AddProduct}"
+            Padding="5">
+            <StackLayout>
+
+                <Label
+                    Text="{i18n:Translate Name}">
+                
+                </Label>
+                <Entry
+                    Placeholder="{i18n:Translate NamePlaceHolder}">
+                
+                </Entry>
+
+                <Label
+                    Text="{i18n:Translate Description}">
+
+                </Label>
+                <Editor
+                    VerticalOptions="FillAndExpand">
+                </Editor>
+
+                <Label
+                    Text="{i18n:Translate Price}">
+
+                </Label>
+                <Entry
+                    Keyboard="Numeric"
+                    Placeholder="{i18n:Translate PricePlaceHolder}">
+
+                </Entry>
+
+                <ActivityIndicator>
+                </ActivityIndicator>
+
+                <Button
+                    BackgroundColor="Navy"
+                    BorderRadius = "23"
+                    HeightRequest= "46"
+                    Text="{i18n:Translate Save}"
+                    TextColor = "White">  
+
+                </Button>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

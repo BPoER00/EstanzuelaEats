@@ -39,5 +39,45 @@ namespace EstanzuelaEats.Helpers
             get { return Resource.TurnOnInternet; }
         }
 
+        public static string AddProduct
+        {
+            get { return Resource.AddProduct; }
+        }
+
+        public static string Name
+        {
+            get { return Resource.Name; }
+        }
+
+        public static string NamePlaceHolder
+        {
+            get { return Resource.NamePlaceHolder; }
+        }
+
+        public static string Description
+        {
+            get { return Resource.Description; }
+        }
+
+        public static string DescriptionPlaceHolder
+        {
+            get { return Resource.DescriptionPlaceHolder; }
+        }
+
+        public static string Price
+        {
+            get { return Resource.Price; }
+        }
+
+        public static string PricePlaceHolder
+        {
+            get { return Resource.PricePlaceHolder; }
+        }
+
+        public static string Save
+        {
+            get { return Resource.Save; }
+        }
+
     }
 }

@@ -132,4 +132,28 @@
   <data name="TurnOnInternet" xml:space="preserve">
     <value>Attiva le impostazioni di Internet!</value>
   </data>
+  <data name="AddProduct" xml:space="preserve">
+    <value>Aggiungi prodotto</value>
+  </data>
+  <data name="Description" xml:space="preserve">
+    <value>Descrizione</value>
+  </data>
+  <data name="DescriptionPlaceHolder" xml:space="preserve">
+    <value>Aggiungi descrizione</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Nome</value>
+  </data>
+  <data name="NamePlaceHolder" xml:space="preserve">
+    <value>Aggiungi _NAME_</value>
+  </data>
+  <data name="Price" xml:space="preserve">
+    <value>Prezzo</value>
+  </data>
+  <data name="PricePlaceHolder" xml:space="preserve">
+    <value>Aggiungi prezzo</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>S&amp;alva</value>
+  </data>
 </root>

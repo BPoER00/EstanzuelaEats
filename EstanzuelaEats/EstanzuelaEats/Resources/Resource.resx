@@ -120,14 +120,38 @@
   <data name="Accept" xml:space="preserve">
     <value>Accept</value>
   </data>
+  <data name="AddProduct" xml:space="preserve">
+    <value>Add Product</value>
+  </data>
+  <data name="Description" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="DescriptionPlaceHolder" xml:space="preserve">
+    <value>Add Description</value>
+  </data>
   <data name="Error" xml:space="preserve">
     <value>Error</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="NamePlaceHolder" xml:space="preserve">
+    <value>Add Name</value>
   </data>
   <data name="NoInternet" xml:space="preserve">
     <value>No internet connection.</value>
   </data>
+  <data name="Price" xml:space="preserve">
+    <value>Price</value>
+  </data>
+  <data name="PricePlaceHolder" xml:space="preserve">
+    <value>Add Price</value>
+  </data>
   <data name="Products" xml:space="preserve">
     <value>Products</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>Save</value>
   </data>
   <data name="TurnOnInternet" xml:space="preserve">
     <value>Please turn on your internet settings</value>
