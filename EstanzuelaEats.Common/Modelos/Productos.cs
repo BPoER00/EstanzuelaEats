@@ -16,7 +16,7 @@ namespace EstanzuelaEats.Common.Modelos
         [Required]
         [DisplayFormat(DataFormatString = "{0:C2}", ApplyFormatInEditMode = false)]
         public decimal PrecioProducto { get; set; }
-        
+
         [StringLength(120)]
         [DataType(DataType.MultilineText)]
         public string DescripcionProducto { get; set; }
@@ -26,6 +26,19 @@ namespace EstanzuelaEats.Common.Modelos
 
         [DataType(DataType.Date)]
         public DateTime PublicacionProducto { get; set; }
+
+        public string ImageFullPath
+        {
+            get
+            {
+                if (string.IsNullOrEmpty(this.ImagePath))
+                {
+                    return "NoProducto.png";
+                }
+
+                return $"https://estanzuelaeatsbackend2021.azurewebsites.net/{this.ImagePath.Substring(1)}";
+            }
+        }
 
         public bool Existencias { get; set; }
         public override string ToString()

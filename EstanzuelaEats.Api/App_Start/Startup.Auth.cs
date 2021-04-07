@@ -1,15 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using EstanzuelaEats.Api.Models;
+using EstanzuelaEats.Api.Providers;
 using Microsoft.AspNet.Identity;
-using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.Owin;
 using Microsoft.Owin.Security.Cookies;
-using Microsoft.Owin.Security.Google;
 using Microsoft.Owin.Security.OAuth;
 using Owin;
-using EstanzuelaEats.Api.Providers;
-using EstanzuelaEats.Api.Models;
+using System;
 
 namespace EstanzuelaEats.Api
 {

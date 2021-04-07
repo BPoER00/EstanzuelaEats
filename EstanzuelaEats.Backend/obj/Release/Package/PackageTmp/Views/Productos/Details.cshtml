@@ -1,0 +1,61 @@
+﻿@model EstanzuelaEats.Common.Modelos.Productos
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<table class="table table-bordered">
+    <tr>
+        <td>
+            @Html.DisplayNameFor(model => model.ProductoId)
+        </td>
+        <td>
+            @Html.DisplayNameFor(model => model.NombreProducto)
+        </td>
+        <td>
+            @Html.DisplayNameFor(model => model.DescripcionProducto)
+        </td>
+        <td>
+            @Html.DisplayNameFor(model => model.PrecioProducto)
+        </td>
+        <td>
+            @Html.DisplayNameFor(model => model.ImagePath)
+        </td>
+        <td>
+            @Html.DisplayNameFor(model => model.Existencias)
+        </td>
+        <td>
+            @Html.DisplayNameFor(model => model.PublicacionProducto)
+        </td>
+    </tr>
+
+    <tr>
+        <th>
+            @Html.DisplayFor(model => model.ProductoId)
+        </th>
+        <th>
+            @Html.DisplayFor(model => model.NombreProducto)
+        </th>
+        <th>
+            @Html.DisplayFor(model => model.DescripcionProducto)
+        </th>
+        <th>
+            @Html.DisplayFor(model => model.PrecioProducto)
+        </th>
+        <th>
+            @Html.DisplayFor(model => model.ImagePath)
+        </th>
+        <th>
+            @Html.DisplayFor(model => model.Existencias)
+        </th>
+        <th>
+            @Html.DisplayFor(model => model.PublicacionProducto)
+        </th>
+    </tr>
+</table>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ProductoId }, new { @class = "btn btn-warning"}) 
+    @Html.ActionLink("Back to List", "Index", new { }, new { @class = "btn btn-success" })
+</p>

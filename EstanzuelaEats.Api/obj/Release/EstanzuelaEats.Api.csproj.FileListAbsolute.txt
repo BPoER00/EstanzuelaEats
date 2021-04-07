@@ -114,8 +114,6 @@ C:\Projects\EstanzuelaEats\EstanzuelaEats.Api\bin\Microsoft.Owin.Security.Micros
 C:\Projects\EstanzuelaEats\EstanzuelaEats.Api\bin\Microsoft.Owin.Security.OAuth.xml
 C:\Projects\EstanzuelaEats\EstanzuelaEats.Api\bin\System.Web.Http.Owin.xml
 C:\Projects\EstanzuelaEats\EstanzuelaEats.Api\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Projects\EstanzuelaEats\EstanzuelaEats.Api\bin\es\EntityFramework.resources.dll
-C:\Projects\EstanzuelaEats\EstanzuelaEats.Api\bin\es\EntityFramework.SqlServer.resources.dll
 C:\Projects\EstanzuelaEats\EstanzuelaEats.Api\bin\es\System.Net.Http.Formatting.resources.dll
 C:\Projects\EstanzuelaEats\EstanzuelaEats.Api\bin\es\System.Web.Helpers.resources.dll
 C:\Projects\EstanzuelaEats\EstanzuelaEats.Api\bin\es\System.Web.Http.resources.dll

@@ -1,8 +1,8 @@
+using EstanzuelaEats.Api.Areas.HelpPage.ModelDescriptions;
+using EstanzuelaEats.Api.Areas.HelpPage.Models;
 using System;
 using System.Web.Http;
 using System.Web.Mvc;
-using EstanzuelaEats.Api.Areas.HelpPage.ModelDescriptions;
-using EstanzuelaEats.Api.Areas.HelpPage.Models;
 
 namespace EstanzuelaEats.Api.Areas.HelpPage.Controllers
 {

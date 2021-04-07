@@ -53,6 +53,8 @@ C:\Projects\EstanzuelaEats\EstanzuelaEats.Api\bin\roslyn\VBCSCompiler.exe.config
 C:\Projects\EstanzuelaEats\EstanzuelaEats.Api\bin\Antlr3.Runtime.dll
 C:\Projects\EstanzuelaEats\EstanzuelaEats.Api\bin\EntityFramework.dll
 C:\Projects\EstanzuelaEats\EstanzuelaEats.Api\bin\EntityFramework.SqlServer.dll
+C:\Projects\EstanzuelaEats\EstanzuelaEats.Api\bin\EstanzuelaEats.Common.dll
+C:\Projects\EstanzuelaEats\EstanzuelaEats.Api\bin\EstanzuelaEats.Domain.dll
 C:\Projects\EstanzuelaEats\EstanzuelaEats.Api\bin\Microsoft.AspNet.Identity.Core.dll
 C:\Projects\EstanzuelaEats\EstanzuelaEats.Api\bin\Microsoft.AspNet.Identity.EntityFramework.dll
 C:\Projects\EstanzuelaEats\EstanzuelaEats.Api\bin\Microsoft.AspNet.Identity.Owin.dll
@@ -66,6 +68,9 @@ C:\Projects\EstanzuelaEats\EstanzuelaEats.Api\bin\Microsoft.Owin.Security.Google
 C:\Projects\EstanzuelaEats\EstanzuelaEats.Api\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
 C:\Projects\EstanzuelaEats\EstanzuelaEats.Api\bin\Microsoft.Owin.Security.OAuth.dll
 C:\Projects\EstanzuelaEats\EstanzuelaEats.Api\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Projects\EstanzuelaEats\EstanzuelaEats.Api\bin\Microsoft.Web.Delegation.dll
+C:\Projects\EstanzuelaEats\EstanzuelaEats.Api\bin\Microsoft.Web.Deployment.dll
+C:\Projects\EstanzuelaEats\EstanzuelaEats.Api\bin\Microsoft.Web.Deployment.Tracing.dll
 C:\Projects\EstanzuelaEats\EstanzuelaEats.Api\bin\Microsoft.Web.Infrastructure.dll
 C:\Projects\EstanzuelaEats\EstanzuelaEats.Api\bin\Newtonsoft.Json.dll
 C:\Projects\EstanzuelaEats\EstanzuelaEats.Api\bin\Owin.dll
@@ -81,6 +86,12 @@ C:\Projects\EstanzuelaEats\EstanzuelaEats.Api\bin\System.Web.WebPages.Deployment
 C:\Projects\EstanzuelaEats\EstanzuelaEats.Api\bin\System.Web.WebPages.dll
 C:\Projects\EstanzuelaEats\EstanzuelaEats.Api\bin\System.Web.WebPages.Razor.dll
 C:\Projects\EstanzuelaEats\EstanzuelaEats.Api\bin\WebGrease.dll
+C:\Projects\EstanzuelaEats\EstanzuelaEats.Api\bin\Microsoft.Web.Administration.dll
+C:\Projects\EstanzuelaEats\EstanzuelaEats.Api\bin\EstanzuelaEats.Common.pdb
+C:\Projects\EstanzuelaEats\EstanzuelaEats.Api\bin\EstanzuelaEats.Domain.pdb
+C:\Projects\EstanzuelaEats\EstanzuelaEats.Api\bin\EstanzuelaEats.Domain.dll.config
+C:\Projects\EstanzuelaEats\EstanzuelaEats.Api\bin\EntityFramework.xml
+C:\Projects\EstanzuelaEats\EstanzuelaEats.Api\bin\EntityFramework.SqlServer.xml
 C:\Projects\EstanzuelaEats\EstanzuelaEats.Api\bin\Newtonsoft.Json.xml
 C:\Projects\EstanzuelaEats\EstanzuelaEats.Api\bin\System.Net.Http.Formatting.xml
 C:\Projects\EstanzuelaEats\EstanzuelaEats.Api\bin\System.Web.Helpers.xml
@@ -93,8 +104,6 @@ C:\Projects\EstanzuelaEats\EstanzuelaEats.Api\bin\System.Web.WebPages.xml
 C:\Projects\EstanzuelaEats\EstanzuelaEats.Api\bin\System.Web.WebPages.Deployment.xml
 C:\Projects\EstanzuelaEats\EstanzuelaEats.Api\bin\System.Web.WebPages.Razor.xml
 C:\Projects\EstanzuelaEats\EstanzuelaEats.Api\bin\Antlr3.Runtime.pdb
-C:\Projects\EstanzuelaEats\EstanzuelaEats.Api\bin\EntityFramework.xml
-C:\Projects\EstanzuelaEats\EstanzuelaEats.Api\bin\EntityFramework.SqlServer.xml
 C:\Projects\EstanzuelaEats\EstanzuelaEats.Api\bin\Microsoft.AspNet.Identity.Core.xml
 C:\Projects\EstanzuelaEats\EstanzuelaEats.Api\bin\Microsoft.AspNet.Identity.Owin.xml
 C:\Projects\EstanzuelaEats\EstanzuelaEats.Api\bin\Microsoft.AspNet.Identity.EntityFramework.xml
@@ -119,8 +128,6 @@ C:\Projects\EstanzuelaEats\EstanzuelaEats.Api\bin\es\System.Web.Razor.resources.
 C:\Projects\EstanzuelaEats\EstanzuelaEats.Api\bin\es\System.Web.WebPages.resources.dll
 C:\Projects\EstanzuelaEats\EstanzuelaEats.Api\bin\es\System.Web.WebPages.Deployment.resources.dll
 C:\Projects\EstanzuelaEats\EstanzuelaEats.Api\bin\es\System.Web.WebPages.Razor.resources.dll
-C:\Projects\EstanzuelaEats\EstanzuelaEats.Api\bin\es\EntityFramework.resources.dll
-C:\Projects\EstanzuelaEats\EstanzuelaEats.Api\bin\es\EntityFramework.SqlServer.resources.dll
 C:\Projects\EstanzuelaEats\EstanzuelaEats.Api\bin\es\Microsoft.AspNet.Identity.Core.resources.dll
 C:\Projects\EstanzuelaEats\EstanzuelaEats.Api\bin\es\Microsoft.AspNet.Identity.Owin.resources.dll
 C:\Projects\EstanzuelaEats\EstanzuelaEats.Api\bin\es\Microsoft.AspNet.Identity.EntityFramework.resources.dll
@@ -137,12 +144,3 @@ C:\Projects\EstanzuelaEats\EstanzuelaEats.Api\obj\Debug\EstanzuelaEats.Api.cspro
 C:\Projects\EstanzuelaEats\EstanzuelaEats.Api\obj\Debug\EstanzuelaEats.Api.csproj.CopyComplete
 C:\Projects\EstanzuelaEats\EstanzuelaEats.Api\obj\Debug\EstanzuelaEats.Api.dll
 C:\Projects\EstanzuelaEats\EstanzuelaEats.Api\obj\Debug\EstanzuelaEats.Api.pdb
-C:\Projects\EstanzuelaEats\EstanzuelaEats.Api\bin\EstanzuelaEats.Common.dll
-C:\Projects\EstanzuelaEats\EstanzuelaEats.Api\bin\EstanzuelaEats.Domain.dll
-C:\Projects\EstanzuelaEats\EstanzuelaEats.Api\bin\Microsoft.Web.Delegation.dll
-C:\Projects\EstanzuelaEats\EstanzuelaEats.Api\bin\Microsoft.Web.Deployment.dll
-C:\Projects\EstanzuelaEats\EstanzuelaEats.Api\bin\Microsoft.Web.Deployment.Tracing.dll
-C:\Projects\EstanzuelaEats\EstanzuelaEats.Api\bin\Microsoft.Web.Administration.dll
-C:\Projects\EstanzuelaEats\EstanzuelaEats.Api\bin\EstanzuelaEats.Common.pdb
-C:\Projects\EstanzuelaEats\EstanzuelaEats.Api\bin\EstanzuelaEats.Domain.pdb
-C:\Projects\EstanzuelaEats\EstanzuelaEats.Api\bin\EstanzuelaEats.Domain.dll.config

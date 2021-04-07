@@ -1,19 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace EstanzuelaEats.ViewModels
+﻿namespace EstanzuelaEats.ViewModels
 {
-    using System;
-    using System.Collections.Generic;
-    using System.Collections.ObjectModel;
-    using System.Text;
-    using System.Windows.Input;
-    using Xamarin.Forms;
-    using GalaSoft.MvvmLight.Command;
     using Common.Modelos;
+    using GalaSoft.MvvmLight.Command;
     using Helpers;
     using Services;
+    using System.Collections.Generic;
+    using System.Collections.ObjectModel;
+    using System.Windows.Input;
+    using Xamarin.Forms;
 
     public class ProductsViewModel : BaseViewModel
     {

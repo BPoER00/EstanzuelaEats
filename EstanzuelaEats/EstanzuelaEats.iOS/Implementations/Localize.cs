@@ -2,11 +2,11 @@
 
 namespace EstanzuelaEats.iOS.Implementations
 {
-    using System.Globalization;
-    using System.Threading;
     using Foundation;
     using Helpers;
     using Interfaces;
+    using System.Globalization;
+    using System.Threading;
 
     public class Localize : ILocalize
     {

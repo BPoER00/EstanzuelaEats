@@ -1,8 +1,8 @@
 ﻿
 namespace EstanzuelaEats.Backend.Models
 {
-    using System.Web;
     using Common.Modelos;
+    using System.Web;
 
     public class ProductView : Productos
     {

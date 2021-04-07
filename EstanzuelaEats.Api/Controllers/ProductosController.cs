@@ -1,16 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data;
+﻿using EstanzuelaEats.Common.Modelos;
+using EstanzuelaEats.Domain.Modelos;
 using System.Data.Entity;
 using System.Data.Entity.Infrastructure;
 using System.Linq;
 using System.Net;
-using System.Net.Http;
 using System.Threading.Tasks;
 using System.Web.Http;
 using System.Web.Http.Description;
-using EstanzuelaEats.Common.Modelos;
-using EstanzuelaEats.Domain.Modelos;
 
 namespace EstanzuelaEats.Api.Controllers
 {

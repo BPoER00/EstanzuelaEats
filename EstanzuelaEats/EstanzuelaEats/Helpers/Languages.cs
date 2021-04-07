@@ -38,6 +38,6 @@ namespace EstanzuelaEats.Helpers
         {
             get { return Resource.TurnOnInternet; }
         }
-            
+
     }
 }

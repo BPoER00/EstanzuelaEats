@@ -1,12 +1,11 @@
-﻿using System;
+﻿using EstanzuelaEats.Backend.Models;
+using Microsoft.AspNet.Identity;
+using Microsoft.AspNet.Identity.Owin;
+using Microsoft.Owin.Security;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Web;
 using System.Web.Mvc;
-using Microsoft.AspNet.Identity;
-using Microsoft.AspNet.Identity.Owin;
-using Microsoft.Owin.Security;
-using EstanzuelaEats.Backend.Models;
 
 namespace EstanzuelaEats.Backend.Controllers
 {
@@ -32,9 +31,9 @@ namespace EstanzuelaEats.Backend.Controllers
             {
                 return _signInManager ?? HttpContext.GetOwinContext().Get<ApplicationSignInManager>();
             }
-            private set 
-            { 
-                _signInManager = value; 
+            private set
+            {
+                _signInManager = value;
             }
         }
 
@@ -333,7 +332,7 @@ namespace EstanzuelaEats.Backend.Controllers
             base.Dispose(disposing);
         }
 
-#region Aplicaciones auxiliares
+        #region Aplicaciones auxiliares
         // Se usan para protección XSRF al agregar inicios de sesión externos
         private const string XsrfKey = "XsrfId";
 
@@ -384,6 +383,6 @@ namespace EstanzuelaEats.Backend.Controllers
             Error
         }
 
-#endregion
+        #endregion
     }
 }

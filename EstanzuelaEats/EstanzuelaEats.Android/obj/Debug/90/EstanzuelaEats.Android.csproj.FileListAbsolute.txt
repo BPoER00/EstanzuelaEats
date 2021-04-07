@@ -528,3 +528,4 @@ C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats.Android\obj\Debug\90\an
 C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats.Android\obj\Debug\90\android\src\crc64e6bbec0cebca6418\DialogService_OnDismissListener.java
 C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats.Android\obj\Debug\90\android\src\crc64eb2743c2f6ea027b\ObservableAdapter_1.java
 C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats.Android\bin\Debug\EstanzuelaEats.Common.dll.mdb
+C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats.Android\obj\Debug\90\res\drawable\noproducto.png

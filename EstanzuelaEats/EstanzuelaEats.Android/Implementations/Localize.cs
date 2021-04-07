@@ -2,10 +2,10 @@
 
 namespace EstanzuelaEats.Droid.Implementations
 {
-    using System.Globalization;
-    using System.Threading;
     using Helpers;
     using Interfaces;
+    using System.Globalization;
+    using System.Threading;
 
     public class Localize : ILocalize
     {

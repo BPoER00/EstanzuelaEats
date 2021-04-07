@@ -1,14 +1,14 @@
 ﻿
 namespace EstanzuelaEats.Backend.Controllers
 {
+    using Backend.Models;
+    using Common.Modelos;
+    using EstanzuelaEats.Backend.Helpers;
     using System.Data.Entity;
     using System.Linq;
     using System.Net;
     using System.Threading.Tasks;
     using System.Web.Mvc;
-    using Backend.Models;
-    using Common.Modelos;
-    
 
     public class ProductosController : Controller
     {
@@ -41,19 +41,46 @@ namespace EstanzuelaEats.Backend.Controllers
             return View();
         }
 
-      
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<ActionResult> Create(Productos productos)
+        public async Task<ActionResult> Create(ProductView productos)
         {
             if (ModelState.IsValid)
             {
-                db.Productos.Add(productos);
+
+                var pic = string.Empty;
+                var folder = "~/Content/Productos";
+
+                if (productos.ImageFile != null)
+                {
+                    pic = FilesHelper.UploadPhoto(productos.ImageFile, folder);
+                    pic = $"{folder}/{pic}";
+                }
+
+                var product = this.ToProduct(productos, pic);
+
+
+                db.Productos.Add(product);
                 await db.SaveChangesAsync();
                 return RedirectToAction("Index");
             }
 
             return View(productos);
+        }
+
+        private Productos ToProduct(ProductView productos, string pic)
+        {
+            return new Productos
+            {
+                ProductoId = productos.ProductoId,
+                NombreProducto = productos.NombreProducto,
+                DescripcionProducto = productos.DescripcionProducto,
+                PrecioProducto = productos.PrecioProducto,
+                ImagePath = pic,
+                PublicacionProducto = productos.PublicacionProducto,
+                Existencias = productos.Existencias
+
+            };
         }
 
         // GET: Productos/Edit/5
@@ -68,17 +95,44 @@ namespace EstanzuelaEats.Backend.Controllers
             {
                 return HttpNotFound();
             }
-            return View(productos);
+
+            var productovista = this.ToView(productos);
+            return View(productovista);
+        }
+
+        private ProductView ToView(Productos productos)
+        {
+            return new ProductView
+            {
+                ProductoId = productos.ProductoId,
+                NombreProducto = productos.NombreProducto,
+                DescripcionProducto = productos.DescripcionProducto,
+                PrecioProducto = productos.PrecioProducto,
+                ImagePath = productos.ImagePath,
+                PublicacionProducto = productos.PublicacionProducto,
+                Existencias = productos.Existencias
+            };
         }
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<ActionResult> Edit(Productos productos)
+        public async Task<ActionResult> Edit(ProductView productos)
         {
             if (ModelState.IsValid)
             {
-                db.Entry(productos).State = EntityState.Modified;
-                await db.SaveChangesAsync();
+                var pic = string.Empty;
+                var folder = "~/Content/Productos";
+
+                if (productos.ImageFile != null)
+                {
+                    pic = FilesHelper.UploadPhoto(productos.ImageFile, folder);
+                    pic = $"{folder}/{pic}";
+                }
+
+                var product = this.ToProduct(productos, pic);
+
+                this.db.Entry(product).State = EntityState.Modified;
+                await this.db.SaveChangesAsync();
                 return RedirectToAction("Index");
             }
             return View(productos);

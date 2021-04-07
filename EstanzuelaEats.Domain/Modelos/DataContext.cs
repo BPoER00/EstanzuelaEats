@@ -2,13 +2,13 @@
 
 namespace EstanzuelaEats.Domain.Modelos
 {
-    using System.Data.Entity;
     using Common.Modelos;
-    
+    using System.Data.Entity;
+
     public class DataContext : DbContext
     {
         public DataContext()
-            :base("DefaultConnection")
+            : base("DefaultConnection")
         {
 
         }

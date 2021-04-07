@@ -20,20 +20,28 @@
                         <ViewCell>
                             <Grid>
                                 <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto"/>
                                     <ColumnDefinition Width="2*"/>
                                     <ColumnDefinition Width="*"/>
                                 </Grid.ColumnDefinitions>
+                                <Image
+                                    Grid.Column="0"
+                                    Source="{Binding ImageFullPath}"
+                                    WidthRequest="100">
+                                </Image>
                                 <Label
                                     FontSize="Title"
                                     FontAttributes="Bold"
-                                    Grid.Column="0"
-                                    Text="{Binding NombreProducto}">
+                                    Grid.Column="1"
+                                    Text="{Binding NombreProducto}"
+                                    VerticalOptions="Center">
                                 </Label>
                                 <Label
-                                    FontSize="Title"
-                                    Grid.Column="1"
+                                    FontSize="Body"
+                                    Grid.Column="2"
                                     HorizontalOptions="End"
-                                    Text="{Binding PrecioProducto, StringFormat='{0:C2}'}">
+                                    Text="{Binding PrecioProducto, StringFormat='{0:C2}'}"
+                                    VerticalOptions="Center">
                                 </Label>
                             </Grid>
                         </ViewCell>
