@@ -79,6 +79,15 @@ namespace EstanzuelaEats.Resources {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Touch The Image To Change It..
+        /// </summary>
+        public static string CambiarImagen {
+            get {
+                return ResourceManager.GetString("CambiarImagen", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Description.
         /// </summary>
         public static string Description {

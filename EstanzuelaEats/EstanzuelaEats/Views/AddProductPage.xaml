@@ -8,38 +8,81 @@
     <ContentPage.Content>
 
         <ScrollView
-            BindingContext="{Binding AddProduct}"
-            Padding="5">
-            <StackLayout>
+            BindingContext="{Binding AddProduct}">
+            <StackLayout
+                Padding="5">
 
+                <Image
+                    HeightRequest="400"
+                    Source="NoProducto.png">
+                </Image>
                 <Label
-                    Text="{i18n:Translate Name}">
+                    FontSize="Small"
+                    HorizontalOptions="Center"
+                    Text="{i18n:Translate CambiarImagen}">
+                    
+                </Label>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="2*"/>
+                    </Grid.RowDefinitions>
+
+                    <Label
+                        Grid.Column="0"
+                        Grid.Row="0"
+                        VerticalOptions="Center"
+                        FontAttributes="Bold"
+                        FontSize="Medium"
+                        Text="{i18n:Translate Name}">
+                    </Label>
+                    <Entry
+                        Grid.Column="1"
+                        Grid.Row="0"
+                        HeightRequest= "46"
+                        Placeholder="{i18n:Translate NamePlaceHolder}">
+                    </Entry>
+
+                    <Label
+                        Grid.Column="0"
+                        Grid.Row="1"
+                        VerticalOptions="Center"
+                        FontAttributes="Bold"
+                        FontSize="Medium"
+                        Text="{i18n:Translate Price}">
+                    </Label>
+                    <Entry
+                        Grid.Column="1"
+                        Grid.Row="1"
+                        Keyboard="Numeric"
+                        HeightRequest= "46"
+                        Placeholder="{i18n:Translate PricePlaceHolder}">
+                    </Entry>
+
+                    <Label
+                        Grid.Column="0"
+                        Grid.Row="2"
+                        VerticalOptions="Center"
+                        FontAttributes="Bold"
+                        FontSize="Medium"
+                        Text="{i18n:Translate Description}">
+                    </Label>
+                    <Editor
+                        Grid.Column="1"
+                        Grid.Row="2"
+                        VerticalOptions="FillAndExpand"
+                        HeightRequest="46">
+                    </Editor>
+                </Grid>
                 
-                </Label>
-                <Entry
-                    Placeholder="{i18n:Translate NamePlaceHolder}">
-                
-                </Entry>
 
-                <Label
-                    Text="{i18n:Translate Description}">
-
-                </Label>
-                <Editor
-                    VerticalOptions="FillAndExpand">
-                </Editor>
-
-                <Label
-                    Text="{i18n:Translate Price}">
-
-                </Label>
-                <Entry
-                    Keyboard="Numeric"
-                    Placeholder="{i18n:Translate PricePlaceHolder}">
-
-                </Entry>
-
-                <ActivityIndicator>
+                <ActivityIndicator
+                    VerticalOptions="CenterAndExpand">
                 </ActivityIndicator>
 
                 <Button

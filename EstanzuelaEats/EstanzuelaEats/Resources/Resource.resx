@@ -123,6 +123,9 @@
   <data name="AddProduct" xml:space="preserve">
     <value>Add Product</value>
   </data>
+  <data name="CambiarImagen" xml:space="preserve">
+    <value>Touch The Image To Change It.</value>
+  </data>
   <data name="Description" xml:space="preserve">
     <value>Description</value>
   </data>

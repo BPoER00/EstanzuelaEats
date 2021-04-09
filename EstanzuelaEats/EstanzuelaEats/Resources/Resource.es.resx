@@ -156,4 +156,7 @@
   <data name="Save" xml:space="preserve">
     <value>Guardar</value>
   </data>
+  <data name="CambiarImagen" xml:space="preserve">
+    <value>Toque la fecha para cambiar entre</value>
+  </data>
 </root>

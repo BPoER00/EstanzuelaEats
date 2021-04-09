@@ -79,5 +79,9 @@ namespace EstanzuelaEats.Helpers
             get { return Resource.Save; }
         }
 
+        public static string CambiarImagen
+        {
+            get { return Resource.CambiarImagen; }
+        }
     }
 }
