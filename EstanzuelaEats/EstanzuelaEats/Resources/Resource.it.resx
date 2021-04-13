@@ -159,4 +159,13 @@
   <data name="CambiarImagen" xml:space="preserve">
     <value>Per modificarlo è</value>
   </data>
+  <data name="DescriptionError" xml:space="preserve">
+    <value>Inserisci una descrizione</value>
+  </data>
+  <data name="PriceError" xml:space="preserve">
+    <value>La maggior parte entra in un prezzo!</value>
+  </data>
+  <data name="NameError" xml:space="preserve">
+    <value>Devi superare il quiz prima di continuare</value>
+  </data>
 </root>

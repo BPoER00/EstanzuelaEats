@@ -1,15 +1,17 @@
-﻿using EstanzuelaEats.Common.Modelos;
-using EstanzuelaEats.Domain.Modelos;
-using System.Data.Entity;
-using System.Data.Entity.Infrastructure;
-using System.Linq;
-using System.Net;
-using System.Threading.Tasks;
-using System.Web.Http;
-using System.Web.Http.Description;
-
+﻿
 namespace EstanzuelaEats.Api.Controllers
 {
+    using System;
+    using System.Data.Entity;
+    using System.Data.Entity.Infrastructure;
+    using System.Linq;
+    using System.Net;
+    using System.Threading.Tasks;
+    using System.Web.Http;
+    using System.Web.Http.Description;
+    using Common.Modelos;
+    using Domain.Modelos;
+
     public class ProductosController : ApiController
     {
         private DataContext db = new DataContext();
@@ -17,14 +19,15 @@ namespace EstanzuelaEats.Api.Controllers
         // GET: api/Productos
         public IQueryable<Productos> GetProductos()
         {
-            return db.Productos;
+            return db.Productos.OrderBy(p => p.NombreProducto);
         }
 
         // GET: api/Productos/5
         [ResponseType(typeof(Productos))]
         public async Task<IHttpActionResult> GetProductos(int id)
         {
-            Productos productos = await db.Productos.FindAsync(id);
+            var productos = await db.Productos.FindAsync(id);
+
             if (productos == null)
             {
                 return NotFound();
@@ -72,6 +75,9 @@ namespace EstanzuelaEats.Api.Controllers
         [ResponseType(typeof(Productos))]
         public async Task<IHttpActionResult> PostProductos(Productos productos)
         {
+            productos.Existencias = true;
+            productos.PublicacionProducto = DateTime.Now.ToUniversalTime();
+
             if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);

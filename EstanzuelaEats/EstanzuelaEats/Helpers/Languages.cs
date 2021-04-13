@@ -83,5 +83,20 @@ namespace EstanzuelaEats.Helpers
         {
             get { return Resource.CambiarImagen; }
         }
+
+        public static string DescriptionError
+        {
+            get { return Resource.DescriptionError; }
+        }
+
+        public static string PriceError
+        {
+            get { return Resource.PriceError; }
+        }
+
+        public static string NameError
+        {
+            get { return Resource.NameError; }
+        }
     }
 }

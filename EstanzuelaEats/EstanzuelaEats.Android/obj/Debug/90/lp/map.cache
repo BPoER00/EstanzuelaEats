@@ -41,3 +41,6 @@ Xamarin.Android.Support.ViewPager
 Xamarin.Essentials
 Xamarin.Forms.Platform.Android
 Xamarin.Forms.Platform
+Plugin.Media
+Plugin.Permissions
+Plugin.CurrentActivity

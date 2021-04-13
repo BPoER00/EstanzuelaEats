@@ -129,6 +129,9 @@
   <data name="Description" xml:space="preserve">
     <value>Description</value>
   </data>
+  <data name="DescriptionError" xml:space="preserve">
+    <value>You Most Enter A Description</value>
+  </data>
   <data name="DescriptionPlaceHolder" xml:space="preserve">
     <value>Add Description</value>
   </data>
@@ -138,6 +141,9 @@
   <data name="Name" xml:space="preserve">
     <value>Name</value>
   </data>
+  <data name="NameError" xml:space="preserve">
+    <value>Add a name before continuing</value>
+  </data>
   <data name="NamePlaceHolder" xml:space="preserve">
     <value>Add Name</value>
   </data>
@@ -146,6 +152,9 @@
   </data>
   <data name="Price" xml:space="preserve">
     <value>Price</value>
+  </data>
+  <data name="PriceError" xml:space="preserve">
+    <value>You Most Enter A Price</value>
   </data>
   <data name="PricePlaceHolder" xml:space="preserve">
     <value>Add Price</value>

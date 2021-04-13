@@ -159,4 +159,13 @@
   <data name="CambiarImagen" xml:space="preserve">
     <value>Toque na imagem para alterar.</value>
   </data>
+  <data name="DescriptionError" xml:space="preserve">
+    <value>Você mais digita uma descrição!</value>
+  </data>
+  <data name="PriceError" xml:space="preserve">
+    <value>Você mais digita um preço!</value>
+  </data>
+  <data name="NameError" xml:space="preserve">
+    <value>SELECIONE ALGUM REGISTRO ANTES DE CONTINUAR!</value>
+  </data>
 </root>

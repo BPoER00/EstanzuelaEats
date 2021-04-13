@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "BhiN0NEgT9OL7jDRPIVwTU8UpqmK9V4k0kXaw/xKvFkzsb/39F2B8CbIrsUfyKhEP7g44PMXKGqqQFMLBIr1bw==",
+  "dgSpecHash": "0o+lgIgZfRqvQhUaGF0CYGZksZh9TP7cKi7R6CPBiIup09JN/0YbF0S2aG6nCu8l7yb3kDM8ZJQ4hc9H4hiORQ==",
   "success": true,
   "projectFilePath": "C:\\Projects\\EstanzuelaEats\\EstanzuelaEats\\EstanzuelaEats.iOS\\EstanzuelaEats.iOS.csproj",
   "expectedPackageFiles": [
@@ -8,6 +8,7 @@
     "C:\\Users\\Bryan Paz Ramirez\\.nuget\\packages\\mvvmlightlibs\\5.4.1.1\\mvvmlightlibs.5.4.1.1.nupkg.sha512",
     "C:\\Users\\Bryan Paz Ramirez\\.nuget\\packages\\newtonsoft.json\\12.0.2\\newtonsoft.json.12.0.2.nupkg.sha512",
     "C:\\Users\\Bryan Paz Ramirez\\.nuget\\packages\\xam.plugin.connectivity\\3.2.0\\xam.plugin.connectivity.3.2.0.nupkg.sha512",
+    "C:\\Users\\Bryan Paz Ramirez\\.nuget\\packages\\xam.plugin.media\\5.0.1\\xam.plugin.media.5.0.1.nupkg.sha512",
     "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.5.3.2\\xamarin.essentials.1.5.3.2.nupkg.sha512",
     "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\4.8.0.1451\\xamarin.forms.4.8.0.1451.nupkg.sha512"
   ],

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "vElrKWNFKjJDGLtOUnaweDEbohQ0u2M1qEQB7MVl+NpGEWnliRR+dqZJmHHFr5aJCfnJQRTqwAoVH3eeOgGCNA==",
+  "dgSpecHash": "JE0Vz7HyXve4uuO977PPBuVDpa7fEaX8duYWsbS0aN3WfKeM/h7Z4XBnQxgQfINYsJTBs9CtyF36/9iG/yMgTA==",
   "success": true,
   "projectFilePath": "C:\\Projects\\EstanzuelaEats\\EstanzuelaEats\\EstanzuelaEats\\EstanzuelaEats.csproj",
   "expectedPackageFiles": [
@@ -10,6 +10,7 @@
     "C:\\Users\\Bryan Paz Ramirez\\.nuget\\packages\\newtonsoft.json\\12.0.2\\newtonsoft.json.12.0.2.nupkg.sha512",
     "C:\\Users\\Bryan Paz Ramirez\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Users\\Bryan Paz Ramirez\\.nuget\\packages\\xam.plugin.connectivity\\3.2.0\\xam.plugin.connectivity.3.2.0.nupkg.sha512",
+    "C:\\Users\\Bryan Paz Ramirez\\.nuget\\packages\\xam.plugin.media\\5.0.1\\xam.plugin.media.5.0.1.nupkg.sha512",
     "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.5.3.2\\xamarin.essentials.1.5.3.2.nupkg.sha512",
     "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\4.8.0.1451\\xamarin.forms.4.8.0.1451.nupkg.sha512"
   ],

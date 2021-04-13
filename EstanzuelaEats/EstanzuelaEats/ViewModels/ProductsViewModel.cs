@@ -12,6 +12,8 @@
     public class ProductsViewModel : BaseViewModel
     {
 
+        #region Atributos
+
         //objetos Privados
 
         //variable privada llamada Products que es la que actualiza cada uno de sus datos
@@ -24,10 +26,10 @@
         private ApiService apiService;
 
 
+        #endregion
 
-        //objetos Publicos
 
-        //actualiza los datos a la variable privada
+        #region Propiedades
         public ObservableCollection<Productos> Productos
         {
             get { return this.productos; }
@@ -40,23 +42,36 @@
             get { return this.isRefreshing; }
             set { this.SetValue(ref this.isRefreshing, value); }
         }
+        #endregion
 
-        //nos ayuda a refrescar la pagina en la que estamos en la lista
-        public ICommand RefreshCommand
-        {
-            get
-            {
-                return new RelayCommand(LoadProducts);
-            }
-        }
 
-        //nos funciona para llamar y conectar el productsviewmodel con el apiservice
+        #region Constructores
         public ProductsViewModel()
         {
+            instance = this;
             this.apiService = new ApiService();
             this.LoadProducts();
         }
+        #endregion
 
+
+        #region Singleton
+
+        private static ProductsViewModel instance;
+        public static ProductsViewModel GetInstance()
+        {
+            if(instance == null)
+            {
+                return new ProductsViewModel();
+            }
+
+            return instance;
+        }
+
+        #endregion
+
+
+        #region Metodos
         private async void LoadProducts()
         {
             //activamos el refresh
@@ -93,5 +108,21 @@
             this.Productos = new ObservableCollection<Productos>(lista);
             this.IsRefreshing = false;
         }
+        #endregion
+
+
+        #region Comandos
+        //nos ayuda a refrescar la pagina en la que estamos en la lista
+        public ICommand RefreshCommand
+        {
+            get
+            {
+                return new RelayCommand(LoadProducts);
+            }
+        }
+
+        #endregion
+
+
     }
 }

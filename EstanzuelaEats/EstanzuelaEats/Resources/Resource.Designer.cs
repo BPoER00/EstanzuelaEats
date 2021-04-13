@@ -97,6 +97,15 @@ namespace EstanzuelaEats.Resources {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a You Most Enter A Description.
+        /// </summary>
+        public static string DescriptionError {
+            get {
+                return ResourceManager.GetString("DescriptionError", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Add Description.
         /// </summary>
         public static string DescriptionPlaceHolder {
@@ -124,6 +133,15 @@ namespace EstanzuelaEats.Resources {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Add a name before continuing.
+        /// </summary>
+        public static string NameError {
+            get {
+                return ResourceManager.GetString("NameError", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Add Name.
         /// </summary>
         public static string NamePlaceHolder {
@@ -147,6 +165,15 @@ namespace EstanzuelaEats.Resources {
         public static string Price {
             get {
                 return ResourceManager.GetString("Price", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a You Most Enter A Price.
+        /// </summary>
+        public static string PriceError {
+            get {
+                return ResourceManager.GetString("PriceError", resourceCulture);
             }
         }
         

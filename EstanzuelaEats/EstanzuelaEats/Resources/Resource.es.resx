@@ -157,6 +157,15 @@
     <value>Guardar</value>
   </data>
   <data name="CambiarImagen" xml:space="preserve">
-    <value>Toque la fecha para cambiar entre</value>
+    <value>Toque la Imagen para cambiarla</value>
+  </data>
+  <data name="DescriptionError" xml:space="preserve">
+    <value>Usted debe escribir una descripción</value>
+  </data>
+  <data name="PriceError" xml:space="preserve">
+    <value>Usted más introduzca un precio!</value>
+  </data>
+  <data name="NameError" xml:space="preserve">
+    <value>Una pregunta antes de continuar</value>
   </data>
 </root>
