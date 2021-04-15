@@ -118,5 +118,35 @@ namespace EstanzuelaEats.Helpers
         {
             get { return Resource.Cancel; }
         }
+
+        public static string Edit
+        {
+            get { return Resource.Edit; }
+        }
+
+        public static string Delete
+        {
+            get { return Resource.Delete; }
+        }
+
+        public static string DeleteConfirmation
+        {
+            get { return Resource.DeleteConfirmation; }
+        }
+
+        public static string Yes
+        {
+            get { return Resource.Yes; }
+        }
+
+        public static string No
+        {
+            get { return Resource.No; }
+        }
+
+        public static string Confirm
+        {
+            get { return Resource.Confirm; }
+        }
     }
 }

@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <parameters>
-  <parameter name="DefaultConnection-Web.config Connection String" description="DefaultConnection Cadena de conexión que usa la aplicación en web.config para obtener acceso a la base de datos." defaultValue="Data Source=sql5102.site4now.net;Initial Catalog=DB_A6F836_MrKoBP; Persist Security Info=True; User=DB_A6F836_MrKoBP_admin; Password=BryanEmaPaRa32" tags="SqlConnectionString">
+  <parameter name="DefaultConnection-Web.config Connection String" description="DefaultConnection Cadena de conexión que usa la aplicación en web.config para obtener acceso a la base de datos." defaultValue="Data Source=sql5103.site4now.net;Initial Catalog=DB_A72BD5_ProyectoFinal21; Persist Security Info=True; User=DB_A72BD5_ProyectoFinal21_admin; Password=Proyecto2021" tags="SqlConnectionString">
     <parameterEntry kind="XmlFile" scope="C:\\Projects\\EstanzuelaEats\\EstanzuelaEats\.Api\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='DefaultConnection']/@connectionString" />
   </parameter>
 </parameters>

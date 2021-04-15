@@ -73,3 +73,5 @@ C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats.iOS\obj\iPhone\Debug\Es
 C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats.iOS\obj\iPhone\Debug\EstanzuelaEats.iOS.csproj.CopyComplete
 C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats.iOS\obj\iPhone\Debug\EstanzuelaEats.iOS.exe
 C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats.iOS\obj\iPhone\Debug\EstanzuelaEats.iOS.pdb
+C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats.iOS\bin\iPhone\Debug\Plugin.Media.dll
+C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats.iOS\bin\iPhone\Debug\Plugin.Media.pdb

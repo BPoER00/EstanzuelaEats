@@ -204,7 +204,17 @@ namespace EstanzuelaEats.ViewModels
 
             var newProduct = (Productos)response.Resultado;
             var MisProductos = ProductsViewModel.GetInstance();
-            MisProductos.Productos.Add(newProduct);
+            MisProductos.Productos.Add(new ProductItemViewModel
+            {
+                ProductoId = newProduct.ProductoId,
+                NombreProducto = newProduct.NombreProducto,
+                PrecioProducto = newProduct.PrecioProducto,
+                DescripcionProducto = newProduct.DescripcionProducto,
+                Existencias = newProduct.Existencias,
+                PublicacionProducto = newProduct.PublicacionProducto,
+                ImagePath = newProduct.ImagePath,
+                ImageArray = newProduct.ImageArray
+            });
 
             this.isRunning = false;
             this.isEnable = true;

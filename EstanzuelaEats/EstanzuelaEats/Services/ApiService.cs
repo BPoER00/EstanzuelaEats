@@ -142,5 +142,50 @@ namespace EstanzuelaEats.Services
                 };
             }
         }
+
+        public async Task<Respuestas> Delete(string UrlBase, string prefix, string controller, int Id)
+        {
+            //abrimos un try para evitar errores llamando aca una var llamada cliente y instanciandola con el metodo httpclient
+            //se le pasa al cliente la url de el backend que tendra los datos
+            //a los otros dos datos se les concatena en uno
+            //se crea una variable response que es la que termina de unir todo para obtener los resultados
+            //por ultimio se crea una variable answer para metodo de error por si este llega a fallar
+            try
+            {
+                var Cliente = new HttpClient();
+                Cliente.BaseAddress = new Uri(UrlBase);
+                var url = $"{prefix}{controller}/{Id}";
+                var response = await Cliente.DeleteAsync(url);
+                var answer = await response.Content.ReadAsStringAsync();
+
+                //si responsa no cumple su funcion este retorna el error
+                if (!response.IsSuccessStatusCode)
+                {
+                    return new Respuestas
+                    {
+                        Logrado = false,
+                        Mensaje = answer
+                    };
+                }
+
+                return new Respuestas
+                {
+                    Logrado = true
+                };
+            }
+            catch (Exception e)
+            {
+                //si falla retornamos que no fue posible y mostramos el mensaje de error
+                return new Respuestas
+                {
+                    Logrado = false,
+                    Resultado = e.Message,
+
+                };
+            }
+        }
+
+
+
     }
 }

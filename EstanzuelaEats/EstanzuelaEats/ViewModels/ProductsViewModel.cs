@@ -6,6 +6,7 @@
     using Services;
     using System.Collections.Generic;
     using System.Collections.ObjectModel;
+    using System.Linq;
     using System.Windows.Input;
     using Xamarin.Forms;
 
@@ -17,7 +18,7 @@
         //objetos Privados
 
         //variable privada llamada Products que es la que actualiza cada uno de sus datos
-        private ObservableCollection<Productos> productos;
+        private ObservableCollection<ProductItemViewModel> productos;
 
         //variable privada que nos ayuda a refrescar
         private bool isRefreshing;
@@ -30,7 +31,7 @@
 
 
         #region Propiedades
-        public ObservableCollection<Productos> Productos
+        public ObservableCollection<ProductItemViewModel> Productos
         {
             get { return this.productos; }
             set { this.SetValue(ref this.productos, value); }
@@ -105,7 +106,17 @@
 
             //si lo hizo devuelve la lista y la muestra en pantalla
             var lista = (List<Productos>)response.Resultado;
-            this.Productos = new ObservableCollection<Productos>(lista);
+            var myList = lista.Select(p => new ProductItemViewModel { 
+                ProductoId = p.ProductoId,
+                NombreProducto = p.NombreProducto,
+                PrecioProducto = p.PrecioProducto,
+                DescripcionProducto = p.DescripcionProducto,
+                Existencias = p.Existencias,
+                PublicacionProducto = p.PublicacionProducto,
+                ImagePath = p.ImagePath,
+                ImageArray = p.ImageArray
+            });
+            this.Productos = new ObservableCollection<ProductItemViewModel>(myList);
             this.IsRefreshing = false;
         }
         #endregion
