@@ -52,6 +52,21 @@ namespace EstanzuelaEats.Api.Controllers
                 return BadRequest();
             }
 
+            if (productos.ImageArray != null && productos.ImageArray.Length > 0)
+            {
+                var stream = new MemoryStream(productos.ImageArray);
+                var guid = Guid.NewGuid().ToString();
+                var file = $"{guid}.jpg";
+                var folder = "~/Content/Productos";
+                var fullPath = $"{folder}/{file}";
+                var response = FilesHelper.UploadPhoto(stream, folder, file);
+
+                if (response)
+                {
+                    productos.ImagePath = fullPath;
+                }
+            }
+
             db.Entry(productos).State = EntityState.Modified;
 
             try
@@ -70,7 +85,7 @@ namespace EstanzuelaEats.Api.Controllers
                 }
             }
 
-            return StatusCode(HttpStatusCode.NoContent);
+            return Ok(productos);
         }
 
         // POST: api/Productos

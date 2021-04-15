@@ -15,7 +15,6 @@
 
         #region Atributos
 
-        //objetos Privados
 
         //variable privada llamada Products que es la que actualiza cada uno de sus datos
         private ObservableCollection<ProductItemViewModel> productos;
@@ -31,6 +30,9 @@
 
 
         #region Propiedades
+
+        public List<Productos> MyProducts { get; set; }
+
         public ObservableCollection<ProductItemViewModel> Productos
         {
             get { return this.productos; }
@@ -105,8 +107,15 @@
             }
 
             //si lo hizo devuelve la lista y la muestra en pantalla
-            var lista = (List<Productos>)response.Resultado;
-            var myList = lista.Select(p => new ProductItemViewModel { 
+            this.MyProducts = (List<Productos>)response.Resultado;
+            this.RefreshList();
+            this.IsRefreshing = false;
+        }
+
+        public void RefreshList()
+        {
+            var myListProductItemViewModel = this.MyProducts.Select(p => new ProductItemViewModel
+            {
                 ProductoId = p.ProductoId,
                 NombreProducto = p.NombreProducto,
                 PrecioProducto = p.PrecioProducto,
@@ -116,8 +125,8 @@
                 ImagePath = p.ImagePath,
                 ImageArray = p.ImageArray
             });
-            this.Productos = new ObservableCollection<ProductItemViewModel>(myList);
-            this.IsRefreshing = false;
+            this.Productos = new ObservableCollection<ProductItemViewModel>(myListProductItemViewModel.OrderBy(p => p.NombreProducto));
+
         }
         #endregion
 

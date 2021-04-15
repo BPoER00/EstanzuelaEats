@@ -148,5 +148,15 @@ namespace EstanzuelaEats.Helpers
         {
             get { return Resource.Confirm; }
         }
+
+        public static string EditProduct
+        {
+            get { return Resource.EditProduct; }
+        }
+
+        public static string Available
+        {
+            get { return Resource.Available; }
+        }
     }
 }

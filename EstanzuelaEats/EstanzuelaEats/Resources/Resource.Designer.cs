@@ -79,6 +79,15 @@ namespace EstanzuelaEats.Resources {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Available.
+        /// </summary>
+        public static string Available {
+            get {
+                return ResourceManager.GetString("Available", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Touch The Image To Change It..
         /// </summary>
         public static string CambiarImagen {
@@ -156,6 +165,15 @@ namespace EstanzuelaEats.Resources {
         public static string Edit {
             get {
                 return ResourceManager.GetString("Edit", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Edit Product.
+        /// </summary>
+        public static string EditProduct {
+            get {
+                return ResourceManager.GetString("EditProduct", resourceCulture);
             }
         }
         

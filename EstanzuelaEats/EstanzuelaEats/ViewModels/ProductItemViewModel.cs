@@ -8,6 +8,7 @@ namespace EstanzuelaEats.ViewModels
     using GalaSoft.MvvmLight.Command;
     using Xamarin.Forms;
     using Helpers;
+    using EstanzuelaEats.Views;
 
     public class ProductItemViewModel : Productos
     {
@@ -27,6 +28,20 @@ namespace EstanzuelaEats.ViewModels
         #endregion
 
         #region Comandos
+
+        public ICommand EditProductCommand
+        {
+            get
+            {
+                return new RelayCommand(EditProduct);
+            }
+        }
+
+        private async void EditProduct()
+        {
+            MainViewModel.GetInstance().EditProduct = new EditProductViewModel(this);
+            await Application.Current.MainPage.Navigation.PushAsync(new EditProductPage());
+        }
 
         public ICommand DeleteProductCommand 
         { 

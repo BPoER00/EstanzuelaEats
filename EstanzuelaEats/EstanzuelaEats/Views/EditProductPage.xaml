@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:i18n="clr-namespace:EstanzuelaEats.Helpers"
+             x:Class="EstanzuelaEats.Views.EditProductPage"
+             BindingContext="{Binding Main, Source={StaticResource Locator}}"
+             Title="{i18n:Translate EditProduct}">
+    <ContentPage.Content>
+        <ScrollView
+            BindingContext="{Binding EditProduct}">
+            <StackLayout
+                Padding="5">
+
+                <Image
+                    HeightRequest="400"
+                    Source="{Binding ImageSource}">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding ChangeImageCommand}"/>
+                    </Image.GestureRecognizers>
+                </Image>
+                <Label
+                    FontSize="Small"
+                    HorizontalOptions="Center"
+                    Text="{i18n:Translate CambiarImagen}">
+
+                </Label>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="2*"/>
+                    </Grid.RowDefinitions>
+
+                    <Label
+                        Grid.Column="0"
+                        Grid.Row="0"
+                        VerticalOptions="Center"
+                        FontAttributes="Bold"
+                        FontSize="Medium"
+                        Text="{i18n:Translate Name}">
+                    </Label>
+                    <Entry
+                        Grid.Column="1"
+                        Grid.Row="0"
+                        HeightRequest= "46"
+                        Text="{Binding Product.NombreProducto}"
+                        Placeholder="{i18n:Translate NamePlaceHolder}">
+                    </Entry>
+
+                    <Label
+                        Grid.Column="0"
+                        Grid.Row="1"
+                        VerticalOptions="Center"
+                        FontAttributes="Bold"
+                        FontSize="Medium"
+                        Text="{i18n:Translate Price}">
+                    </Label>
+                    <Entry
+                        Grid.Column="1"
+                        Grid.Row="1"
+                        Keyboard="Numeric"
+                        HeightRequest= "46"
+                        Text="{Binding Product.PrecioProducto}"
+                        Placeholder="{i18n:Translate PricePlaceHolder}">
+                    </Entry>
+
+                    <Label
+                        Grid.Column="0"
+                        Grid.Row="2"
+                        VerticalOptions="Center"
+                        FontAttributes="Bold"
+                        FontSize="Medium"
+                        Text="{i18n:Translate Description}">
+                    </Label>
+                    <Editor
+                        Grid.Column="1"
+                        Grid.Row="2"
+                        Text="{Binding Product.DescripcionProducto}"
+                        VerticalOptions="FillAndExpand"
+                        HeightRequest="46">
+                    </Editor>
+                    
+                    <Label
+                        Grid.Column="0"
+                        Grid.Row="3"
+                        VerticalOptions="Center"
+                        FontAttributes="Bold"
+                        FontSize="Medium"
+                        Text="{i18n:Translate Available}"
+                        HeightRequest="46">
+                        
+                    </Label>
+                    <Switch
+                        Grid.Column="1"
+                        Grid.Row="3"
+                        HorizontalOptions="End"
+                        IsToggled="{Binding Product.Existencias}">
+                        
+                    </Switch>
+                </Grid>
+
+
+                <ActivityIndicator
+                    IsRunning="{Binding IsRunning}"
+                    VerticalOptions="CenterAndExpand">
+                </ActivityIndicator>
+
+                <Button
+                    BackgroundColor="Navy"
+                    BorderRadius = "23"
+                    HeightRequest= "46"
+                    Command="{Binding SaveCommand}"
+                    IsEnabled="{Binding IsEnable}"
+                    Text="{i18n:Translate Save}"
+                    TextColor = "White">
+
+                </Button>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

@@ -27,3 +27,4 @@ C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats\obj\Debug\netstandard2.
 C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats\obj\Debug\netstandard2.0\ref\EstanzuelaEats.dll
 C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats\obj\Debug\netstandard2.0\EstanzuelaEats.pdb
 C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats\obj\Debug\netstandard2.0\Views\AddProductPage.xaml.g.cs
+C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats\obj\Debug\netstandard2.0\Views\EditProductPage.xaml.g.cs
