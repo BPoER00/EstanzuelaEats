@@ -1,20 +1,23 @@
 ﻿
 namespace EstanzuelaEats.ViewModels
 {
-    using EstanzuelaEats.Common.Modelos;
-    using EstanzuelaEats.Helpers;
-    using EstanzuelaEats.Services;
-    using GalaSoft.MvvmLight.Command;
     using System;
     using System.Collections.Generic;
     using System.Linq;
     using System.Text;
+    using Common.Modelos;
+    using Helpers;
+    using Services;
+    using GalaSoft.MvvmLight.Command;
+    using Plugin.Media.Abstractions;
     using System.Windows.Input;
     using Xamarin.Forms;
+    using Plugin.Media;
 
     public class AddProductViewModel : BaseViewModel
     {
         #region Atributo
+        private MediaFile file;
         private ApiService api;
         private bool isRunning;
         private bool isEnable;
@@ -55,6 +58,57 @@ namespace EstanzuelaEats.ViewModels
         #endregion
 
         #region Comandos
+
+        public ICommand ChangeImageCommand 
+        {
+            get
+            {
+                return new RelayCommand(ChangeImage);
+            }
+        }
+
+        private async void ChangeImage()
+        {
+            await CrossMedia.Current.Initialize();
+
+            var source = await Application.Current.MainPage.DisplayActionSheet(
+                Languages.ImageSource,
+                Languages.Cancel,
+                null,
+                Languages.FromGallery,
+                Languages.NewPicture);
+
+            if (source == Languages.Cancel)
+            {
+                this.file = null;
+                return;
+            }
+
+            if (source == Languages.NewPicture)
+            {
+                this.file = await CrossMedia.Current.TakePhotoAsync(
+                    new StoreCameraMediaOptions
+                    {
+                        Directory = "Sample",
+                        Name = "test.jpg",
+                        PhotoSize = PhotoSize.Small,
+                    }
+                );
+            }
+            else
+            {
+                this.file = await CrossMedia.Current.PickPhotoAsync();
+            }
+
+            if (this.file != null)
+            {
+                this.ImageSource = ImageSource.FromStream(() =>
+                {
+                    var stream = this.file.GetStream();
+                    return stream;
+                });
+            }
+        }
 
         public ICommand SaveCommand {
             get
@@ -115,11 +169,18 @@ namespace EstanzuelaEats.ViewModels
                 return;
             }
 
+            byte[] imageArray = null;
+            if (this.file != null)
+            {
+                imageArray = FilesHelper.ReadFully(this.file.GetStream());
+            }
+
             var producto = new Productos
             {
                 NombreProducto = this.Name,
                 PrecioProducto = price,
                 DescripcionProducto = this.Description,
+                ImageArray = imageArray
             };
 
             //conectamos con el diccionario de recursos para traer la url de nuestro backend de datos

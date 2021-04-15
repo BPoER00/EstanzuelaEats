@@ -168,4 +168,16 @@
   <data name="NameError" xml:space="preserve">
     <value>Una pregunta antes de continuar</value>
   </data>
+  <data name="ImageSource" xml:space="preserve">
+    <value>¿De dónde vas a tomar la foto?</value>
+  </data>
+  <data name="FromGallery" xml:space="preserve">
+    <value>De la galería</value>
+  </data>
+  <data name="NewPicture" xml:space="preserve">
+    <value>Tomar una nueva imagen</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Cancelar</value>
+  </data>
 </root>

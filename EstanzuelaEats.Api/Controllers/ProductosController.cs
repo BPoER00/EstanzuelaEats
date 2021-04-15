@@ -4,6 +4,7 @@ namespace EstanzuelaEats.Api.Controllers
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
+    using System.IO;
     using System.Linq;
     using System.Net;
     using System.Threading.Tasks;
@@ -11,6 +12,7 @@ namespace EstanzuelaEats.Api.Controllers
     using System.Web.Http.Description;
     using Common.Modelos;
     using Domain.Modelos;
+    using EstanzuelaEats.Api.Helpers;
 
     public class ProductosController : ApiController
     {
@@ -81,6 +83,21 @@ namespace EstanzuelaEats.Api.Controllers
             if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
+            }
+
+            if (productos.ImageArray != null && productos.ImageArray.Length > 0)
+            {
+                var stream = new MemoryStream(productos.ImageArray);
+                var guid = Guid.NewGuid().ToString();
+                var file = $"{guid}.jpg";
+                var folder = "~/Content/Productos";
+                var fullPath = $"{folder}/{file}";
+                var response = FilesHelper.UploadPhoto(stream, folder, file);
+
+                if (response)
+                {
+                    productos.ImagePath = fullPath;
+                }
             }
 
             db.Productos.Add(productos);

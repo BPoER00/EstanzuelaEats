@@ -3,6 +3,7 @@ namespace EstanzuelaEats.Common.Modelos
 {
     using System;
     using System.ComponentModel.DataAnnotations;
+    using System.ComponentModel.DataAnnotations.Schema;
 
     public class Productos
     {
@@ -27,6 +28,9 @@ namespace EstanzuelaEats.Common.Modelos
         [DataType(DataType.Date)]
         public DateTime PublicacionProducto { get; set; }
 
+        [NotMapped]
+        public byte[] ImageArray { get; set; }
+
         public string ImageFullPath
         {
             get
@@ -36,7 +40,7 @@ namespace EstanzuelaEats.Common.Modelos
                     return "NoProducto.png";
                 }
 
-                return $"https://estanzuelaeatsbackend2021.azurewebsites.net/{this.ImagePath.Substring(1)}";
+                return $"https://estanzuelaeatsapi20212503.azurewebsites.net/{this.ImagePath.Substring(1)}";
             }
         }
 
