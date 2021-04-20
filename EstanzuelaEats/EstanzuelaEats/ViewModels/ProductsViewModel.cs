@@ -106,7 +106,7 @@
             var urlProductsController = Application.Current.Resources["UrlProductsController"].ToString();
 
             //hacemos nuestra conexion al backend para traer una lista de datos de la clase products que esta en el Common
-            var response = await this.apiService.GetList<Productos>(url, urlPrefix, urlProductsController);
+            var response = await this.apiService.GetList<Productos>(url, urlPrefix, urlProductsController, Settings.TokenType, Settings.AccessToken);
 
             //revisamos si realizo correctamenta la accion
             if (!response.Logrado)

@@ -189,7 +189,7 @@ namespace EstanzuelaEats.ViewModels
             var urlProductsController = Application.Current.Resources["UrlProductsController"].ToString();
 
             //hacemos nuestra conexion al backend para traer una lista de datos de la clase products que esta en el Common
-            var response = await this.api.Post<Productos>(url, urlPrefix, urlProductsController, producto);
+            var response = await this.api.Post<Productos>(url, urlPrefix, urlProductsController, producto, Settings.TokenType, Settings.AccessToken);
 
             if (!response.Logrado)
             {

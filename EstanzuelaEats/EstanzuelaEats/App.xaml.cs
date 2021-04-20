@@ -2,18 +2,30 @@
 
 namespace EstanzuelaEats
 {
-    using EstanzuelaEats.ViewModels;
-    using EstanzuelaEats.Views;
+    using Helpers;
+    using ViewModels;
+    using Views;
     using Xamarin.Forms;
 
     public partial class App : Application
     {
+        public static NavigationPage Navigator { get; internal set; }
+
         public App()
         {
             InitializeComponent();
 
-            MainViewModel.GetInstance().Login = new LoginViewModel();
-            MainPage = new LoginPage();
+            if (Settings.IsRemembered && !string.IsNullOrEmpty(Settings.AccessToken))
+            {
+                MainViewModel.GetInstance().Productos = new ProductsViewModel();
+                MainPage = new MasterPage();
+            }
+            else
+            {
+                MainViewModel.GetInstance().Login = new LoginViewModel();
+                MainPage = new NavigationPage(new LoginPage());
+            }
+
         }
 
         protected override void OnStart()

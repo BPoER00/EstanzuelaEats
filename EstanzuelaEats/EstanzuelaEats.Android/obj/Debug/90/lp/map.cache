@@ -4,6 +4,7 @@ Plugin.Connectivity
 Plugin.CurrentActivity
 Plugin.Media
 Plugin.Permissions
+Plugin.Settings
 Xamarin.Android.Arch.Core.Common
 Xamarin.Android.Arch.Core.Runtime
 Xamarin.Android.Arch.Lifecycle.Common

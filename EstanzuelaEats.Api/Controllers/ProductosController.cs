@@ -14,6 +14,7 @@ namespace EstanzuelaEats.Api.Controllers
     using Domain.Modelos;
     using EstanzuelaEats.Api.Helpers;
 
+    [Authorize]
     public class ProductosController : ApiController
     {
         private DataContext db = new DataContext();

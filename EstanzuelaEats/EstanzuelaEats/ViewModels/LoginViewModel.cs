@@ -1,17 +1,18 @@
-﻿using EstanzuelaEats.Helpers;
-using GalaSoft.MvvmLight.Command;
-using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Windows.Input;
-using Xamarin.Forms;
-
+﻿
 namespace EstanzuelaEats.ViewModels
 {
+    using System.Windows.Input;
+    using Helpers;
+    using Services;
+    using GalaSoft.MvvmLight.Command;
+    using Xamarin.Forms;
+    using EstanzuelaEats.Views;
+
     public class LoginViewModel : BaseViewModel
     {
         #region Atributos
 
+        private ApiService apiService;
         private bool isRunning;
         private bool isEnable;
 
@@ -42,6 +43,7 @@ namespace EstanzuelaEats.ViewModels
         {
             this.IsEnable = true;
             this.IsRemembered = true;
+            this.apiService = new ApiService();
         }
 
         #endregion
@@ -82,8 +84,44 @@ namespace EstanzuelaEats.ViewModels
                 return;
             }
 
+            //activamos el refresh
+            this.IsRunning = true;
+            this.isEnable = false;
+
+            //comprobamos si el usuario tiene conexion a internet
+            var Connection = await this.apiService.CheckConnection();
+            if (!Connection.Logrado)
+            {
+                this.IsRunning = false;
+                this.IsEnable = true;
+                await Application.Current.MainPage.DisplayAlert(Languages.Error, Connection.Mensaje, Languages.Accept);
+                return;
+            }
+
+            //conectamos con el diccionario de recursos para traer la url de nuestro backend de datos
+            var url = Application.Current.Resources["UrlAPI"].ToString();
+            var token = await this.apiService.GetToken(url, this.Email, this.Password);
+
+            if (token == null || string.IsNullOrEmpty(token.AccessToken))
+            {
+                await Application.Current.MainPage.DisplayAlert
+                    (Languages.Error,
+                    Languages.SomethingWrong,
+                    Languages.Accept
+                    );
+                return;
+            }
+
+            Settings.TokenType = token.TokenType;
+            Settings.AccessToken = token.AccessToken;
+            Settings.IsRemembered = this.IsRemembered;
 
 
+            this.IsRunning = false;
+            this.IsEnable = true;
+
+            MainViewModel.GetInstance().Productos = new ProductsViewModel();
+            Application.Current.MainPage = new ProductsPage();
         }
 
         #endregion

@@ -181,7 +181,7 @@ namespace EstanzuelaEats.ViewModels
             var urlProductsController = Application.Current.Resources["UrlProductsController"].ToString();
 
             //hacemos nuestra conexion al backend para traer una lista de datos de la clase products que esta en el Common
-            var response = await this.api.Put<Productos>(url, urlPrefix, urlProductsController, this.Product, this.Product.ProductoId);
+            var response = await this.api.Put<Productos>(url, urlPrefix, urlProductsController, this.Product, this.Product.ProductoId, Settings.TokenType, Settings.AccessToken);
 
             if (!response.Logrado)
             {
@@ -253,7 +253,7 @@ namespace EstanzuelaEats.ViewModels
             var urlProductsController = Application.Current.Resources["UrlProductsController"].ToString();
 
             //hacemos nuestra conexion al backend para traer una lista de datos de la clase products que esta en el Common
-            var response = await this.api.Delete(url, urlPrefix, urlProductsController, this.Product.ProductoId);
+            var response = await this.api.Delete(url, urlPrefix, urlProductsController, this.Product.ProductoId, Settings.TokenType, Settings.AccessToken);
 
             if (!response.Logrado)
             {

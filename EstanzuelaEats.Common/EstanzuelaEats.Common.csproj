@@ -48,6 +48,7 @@
     <Compile Include="Class1.cs" />
     <Compile Include="Modelos\Productos.cs" />
     <Compile Include="Modelos\Respuestas.cs" />
+    <Compile Include="Modelos\TokenResponse.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

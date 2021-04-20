@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "nzDhT3PXdytVCQZWAiKBEU9nVickajyE2H/LLDkfje83+Y5M3/D5RiieF37mBuiO3dv1ZzQ5nSCxNGfO/VMG0w==",
+  "dgSpecHash": "smNsDbNrAh2FBxJs5PxuMDXQtmjOEitRm6ZqpcvtSisn29zTefVRM1w4AL0HudpSY2hy0f8Khb2AS1KyALOywQ==",
   "success": true,
   "projectFilePath": "C:\\Projects\\EstanzuelaEats\\EstanzuelaEats\\EstanzuelaEats.Android\\EstanzuelaEats.Android.csproj",
   "expectedPackageFiles": [
@@ -11,6 +11,7 @@
     "C:\\Users\\Bryan Paz Ramirez\\.nuget\\packages\\plugin.permissions\\6.0.1\\plugin.permissions.6.0.1.nupkg.sha512",
     "C:\\Users\\Bryan Paz Ramirez\\.nuget\\packages\\xam.plugin.connectivity\\3.2.0\\xam.plugin.connectivity.3.2.0.nupkg.sha512",
     "C:\\Users\\Bryan Paz Ramirez\\.nuget\\packages\\xam.plugin.media\\5.0.1\\xam.plugin.media.5.0.1.nupkg.sha512",
+    "C:\\Users\\Bryan Paz Ramirez\\.nuget\\packages\\xam.plugins.settings\\3.1.1\\xam.plugins.settings.3.1.1.nupkg.sha512",
     "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.android.arch.core.common\\1.1.1.3\\xamarin.android.arch.core.common.1.1.1.3.nupkg.sha512",
     "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.android.arch.core.runtime\\1.1.1.3\\xamarin.android.arch.core.runtime.1.1.1.3.nupkg.sha512",
     "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.android.arch.lifecycle.common\\1.1.1.3\\xamarin.android.arch.lifecycle.common.1.1.1.3.nupkg.sha512",

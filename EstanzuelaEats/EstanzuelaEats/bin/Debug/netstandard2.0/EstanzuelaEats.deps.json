@@ -15,6 +15,7 @@
           "Newtonsoft.Json": "12.0.2",
           "Xam.Plugin.Connectivity": "3.2.0",
           "Xam.Plugin.Media": "5.0.1",
+          "Xam.Plugins.Settings": "3.1.1",
           "Xamarin.Essentials": "1.5.3.2",
           "Xamarin.Forms": "4.8.0.1451"
         },
@@ -98,6 +99,21 @@
           "lib/netstandard2.0/Plugin.Media.dll": {
             "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Xam.Plugins.Settings/3.1.1": {
+        "dependencies": {
+          "NETStandard.Library": "2.0.3"
+        },
+        "runtime": {
+          "lib/netstandard1.0/Plugin.Settings.Abstractions.dll": {
+            "assemblyVersion": "3.1.1.0",
+            "fileVersion": "3.1.1.0"
+          },
+          "lib/netstandard1.0/Plugin.Settings.dll": {
+            "assemblyVersion": "3.1.1.0",
+            "fileVersion": "3.1.1.0"
           }
         }
       },
@@ -189,6 +205,13 @@
       "sha512": "sha512-UUR31EEnhDVa4IXgVfQIAL3u9v6YAyppsb5UlO9MNJ4quGGkfcWX++JexjB1nMGqvCzsjAT2t32drKDIXoW4SQ==",
       "path": "xam.plugin.media/5.0.1",
       "hashPath": "xam.plugin.media.5.0.1.nupkg.sha512"
+    },
+    "Xam.Plugins.Settings/3.1.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-EQEYQJ64ZLqui5GWkLMavgqitHxwUHZHryTzUD1021UBuz1XwDSjPL45W0K4pPXjz9oKbg7YpRXKPR1luPr/5Q==",
+      "path": "xam.plugins.settings/3.1.1",
+      "hashPath": "xam.plugins.settings.3.1.1.nupkg.sha512"
     },
     "Xamarin.Essentials/1.5.3.2": {
       "type": "package",
