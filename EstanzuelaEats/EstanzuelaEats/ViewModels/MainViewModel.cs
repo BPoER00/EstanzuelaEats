@@ -11,6 +11,7 @@ namespace EstanzuelaEats.ViewModels
     {
         #region Propiedades
 
+        public LoginViewModel Login { get; set; }
         public ProductsViewModel Productos { get; set; }
         public AddProductViewModel AddProduct { get; set; }
         public EditProductViewModel EditProduct { get; set; }
@@ -23,8 +24,6 @@ namespace EstanzuelaEats.ViewModels
         public MainViewModel()
         {
             instance = this;
-            this.Productos = new ProductsViewModel();
-
         }
 
         #endregion

@@ -213,6 +213,74 @@ namespace EstanzuelaEats.ViewModels
 
         }
 
+        public ICommand DeleteProductCommand
+        {
+            get
+            {
+                return new RelayCommand(DeleteProduct);
+            }
+        }
+
+        private async void DeleteProduct()
+        {
+            var answer = await Application.Current.MainPage.DisplayAlert(
+                Languages.Confirm,
+                Languages.DeleteConfirmation,
+                Languages.Yes,
+                Languages.No
+                );
+
+            if (!answer)
+            {
+                return;
+            }
+
+            this.IsRunning = true;
+            this.IsEnable = false;
+
+            var Connection = await this.api.CheckConnection();
+            if (!Connection.Logrado)
+            {
+                this.IsRunning = false;
+                this.IsEnable = true;
+                await Application.Current.MainPage.DisplayAlert(Languages.Error, Connection.Mensaje, Languages.Accept);
+                return;
+            }
+
+            //conectamos con el diccionario de recursos para traer la url de nuestro backend de datos
+            var url = Application.Current.Resources["UrlAPI"].ToString();
+            var urlPrefix = Application.Current.Resources["UrlPrefix"].ToString();
+            var urlProductsController = Application.Current.Resources["UrlProductsController"].ToString();
+
+            //hacemos nuestra conexion al backend para traer una lista de datos de la clase products que esta en el Common
+            var response = await this.api.Delete(url, urlPrefix, urlProductsController, this.Product.ProductoId);
+
+            if (!response.Logrado)
+            {
+                //si no lo hizo mostrara error en unos mensajes que se tienen en el Common y lo saca
+                this.IsRunning = false;
+                this.IsEnable = true;
+                await Application.Current.MainPage.DisplayAlert(Languages.Error, response.Mensaje, Languages.Accept);
+                return;
+            }
+
+            var productsViewModel = ProductsViewModel.GetInstance();
+            var DeleteProduct = productsViewModel.MyProducts.Where(p => p.ProductoId == this.Product.ProductoId).FirstOrDefault();
+
+            if (DeleteProduct != null)
+            {
+                productsViewModel.MyProducts.Remove(DeleteProduct);
+
+            }
+
+            productsViewModel.RefreshList();
+
+            this.IsRunning = false;
+            this.IsEnable = true;
+
+            await Application.Current.MainPage.Navigation.PopAsync();
+        }
+
         #endregion
     }
 }

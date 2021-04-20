@@ -88,13 +88,15 @@ namespace EstanzuelaEats.ViewModels
             }
 
             var productsViewModel = ProductsViewModel.GetInstance();
-            var DeleteProduct = productsViewModel.Productos.Where(p => p.ProductoId == this.ProductoId).FirstOrDefault();
+            var DeleteProduct = productsViewModel.MyProducts.Where(p => p.ProductoId == this.ProductoId).FirstOrDefault();
 
             if (DeleteProduct != null)
             {
-                productsViewModel.Productos.Remove(DeleteProduct);
+                productsViewModel.MyProducts.Remove(DeleteProduct);
 
             }
+
+            productsViewModel.RefreshList();
         }
 
         #endregion

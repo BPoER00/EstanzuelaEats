@@ -109,7 +109,10 @@
                     VerticalOptions="CenterAndExpand">
                 </ActivityIndicator>
 
-                <Button
+                <StackLayout
+                    Orientation="Horizontal">
+                    <Button
+                    HorizontalOptions="FillAndExpand"    
                     BackgroundColor="Navy"
                     BorderRadius = "23"
                     HeightRequest= "46"
@@ -117,8 +120,20 @@
                     IsEnabled="{Binding IsEnable}"
                     Text="{i18n:Translate Save}"
                     TextColor = "White">
+                    </Button>
 
-                </Button>
+                    <Button
+                    HorizontalOptions="FillAndExpand"
+                    BackgroundColor="Red"
+                    BorderRadius = "23"
+                    HeightRequest= "46"
+                    Command="{Binding DeleteProductCommand}"
+                    IsEnabled="{Binding IsEnable}"
+                    Text="{i18n:Translate Delete}"
+                    TextColor = "White">
+                    </Button>
+                </StackLayout>
+
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>
