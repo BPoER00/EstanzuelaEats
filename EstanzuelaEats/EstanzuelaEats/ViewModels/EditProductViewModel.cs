@@ -209,7 +209,7 @@ namespace EstanzuelaEats.ViewModels
             this.isRunning = false;
             this.isEnable = true;
 
-            await Application.Current.MainPage.Navigation.PopAsync();
+            await App.Navigator.PopAsync();
 
         }
 
@@ -278,7 +278,7 @@ namespace EstanzuelaEats.ViewModels
             this.IsRunning = false;
             this.IsEnable = true;
 
-            await Application.Current.MainPage.Navigation.PopAsync();
+            await App.Navigator.PopAsync();
         }
 
         #endregion

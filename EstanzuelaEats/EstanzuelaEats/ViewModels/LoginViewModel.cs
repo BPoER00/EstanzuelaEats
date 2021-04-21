@@ -7,7 +7,7 @@ namespace EstanzuelaEats.ViewModels
     using GalaSoft.MvvmLight.Command;
     using Xamarin.Forms;
     using EstanzuelaEats.Views;
-
+     
     public class LoginViewModel : BaseViewModel
     {
         #region Atributos
@@ -121,7 +121,7 @@ namespace EstanzuelaEats.ViewModels
             this.IsEnable = true;
 
             MainViewModel.GetInstance().Productos = new ProductsViewModel();
-            Application.Current.MainPage = new ProductsPage();
+            Application.Current.MainPage = new MasterPage();
         }
 
         #endregion

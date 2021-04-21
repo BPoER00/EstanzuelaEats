@@ -1,9 +1,12 @@
 ﻿
 namespace EstanzuelaEats.ViewModels
 {
+    using EstanzuelaEats.Helpers;
+    using EstanzuelaEats.Views;
+    using GalaSoft.MvvmLight.Command;
     using System;
-    using System.Collections.Generic;
-    using System.Text;
+    using System.Windows.Input;
+    using Xamarin.Forms;
 
     public class MenuItemViewModel
     {
@@ -20,6 +23,27 @@ namespace EstanzuelaEats.ViewModels
 
 
         #region Comandos
+
+        public ICommand GotoCommand 
+        { get 
+            {
+                return new RelayCommand(Goto);
+            }
+                
+        }
+
+        private void Goto()
+        {
+            if (this.PageName == "LoginPage")
+            {
+                Settings.AccessToken = string.Empty;
+                Settings.TokenType = string.Empty;
+                Settings.IsRemembered = false;
+
+                MainViewModel.GetInstance().Login = new LoginViewModel();
+                Application.Current.MainPage = new NavigationPage(new LoginPage());
+            }
+        }
 
         #endregion
     }

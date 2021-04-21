@@ -44,7 +44,7 @@ namespace EstanzuelaEats.ViewModels
         private async void GoToAddProduct()
         {
             this.AddProduct = new AddProductViewModel();
-            await Application.Current.MainPage.Navigation.PushAsync(new AddProductPage());
+            await App.Navigator.PushAsync(new AddProductPage());
         }
         #endregion
 
@@ -70,21 +70,21 @@ namespace EstanzuelaEats.ViewModels
 
             this.Menu.Add(new MenuItemViewModel
             {
-                Icon = "ic_info",
+                Icon = "Informacion.png",
                 PageName = "AboutPage",
                 Title = Languages.About,
             });
 
             this.Menu.Add(new MenuItemViewModel
             {
-                Icon = "ic_phonelink_setup",
+                Icon = "Ajustes.png",
                 PageName = "SetupPage",
                 Title = Languages.Setup,
             });
 
             this.Menu.Add(new MenuItemViewModel
             {
-                Icon = "ic_exit_to_app",
+                Icon = "CerrarSesion.png",
                 PageName = "LoginPage",
                 Title = Languages.Exit,
             });

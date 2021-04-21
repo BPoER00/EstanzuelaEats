@@ -8,7 +8,7 @@
              BackgroundColor="Gray">
     <ContentPage.Content>
         <StackLayout
-            Padding="5">
+            Padding="10">
             <Image
                 Source="logoapp.png">
                 
@@ -21,7 +21,7 @@
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
-                            <Grid>
+                            <Grid Padding="10">
                                 <Grid.GestureRecognizers>
                                     <TapGestureRecognizer Command="{Binding GotoCommand}"/>
                                 </Grid.GestureRecognizers>
@@ -32,8 +32,10 @@
                                 <Image
                                     Grid.Column="0"
                                     Source="{Binding Icon}"
-                                    WidthRequest="50"
-                                    HeightRequest="50">
+                                    WidthRequest="40"
+                                    HeightRequest="40"
+                                    VerticalOptions="Center"
+                                    HorizontalOptions="Start">
                                 </Image>
                                 <Label
                                     Grid.Column="1"
