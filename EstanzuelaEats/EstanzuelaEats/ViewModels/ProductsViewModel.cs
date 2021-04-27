@@ -7,6 +7,7 @@
     using System.Collections.Generic;
     using System.Collections.ObjectModel;
     using System.Linq;
+    using System.Threading.Tasks;
     using System.Windows.Input;
     using Xamarin.Forms;
 
@@ -25,6 +26,8 @@
 
         //variable privada que nos ayuda a instanciar la clase ApiService que es donde tendremos cada uno de nuestros servicios
         private ApiService apiService;
+
+        private DataService dataService;
 
 
         #endregion
@@ -64,6 +67,7 @@
         {
             instance = this;
             this.apiService = new ApiService();
+            this.dataService = new DataService();
             this.LoadProducts();
         }
         #endregion
@@ -93,14 +97,49 @@
 
             //comprobamos si el usuario tiene conexion a internet
             var Connection = await this.apiService.CheckConnection();
-            if (!Connection.Logrado)
+            if (Connection.Logrado)
+            {
+                var answer = await this.LoadProductsFromApi();
+                if(answer)
+                {
+                    this.SaveProductsDB();
+                }
+            }
+            else
+            {
+                await this.LoadProductsFromDB();
+            }
+
+            if(this.MyProducts == null || this.MyProducts.Count == 0)
             {
                 this.IsRefreshing = false;
-                await Application.Current.MainPage.DisplayAlert(Languages.Error, Connection.Mensaje, Languages.Accept);
+                await Application.Current.MainPage.DisplayAlert(
+                    Languages.Error, 
+                    Languages.NoProductsMessage, 
+                    Languages.Accept);
                 return;
             }
 
+            this.RefreshList();
+            this.IsRefreshing = false;
+        }
+
+        private async Task LoadProductsFromDB()
+        {
+            this.MyProducts = await this.dataService.GetAllProducts();
+        }
+
+        private async Task SaveProductsDB()
+        {
+            await this.dataService.DeleteAllProducts();
+            dataService.Insert(this.MyProducts);
+        }
+
+        private async Task<bool> LoadProductsFromApi()
+        {
+
             //conectamos con el diccionario de recursos para traer la url de nuestro backend de datos
+
             var url = Application.Current.Resources["UrlAPI"].ToString();
             var urlPrefix = Application.Current.Resources["UrlPrefix"].ToString();
             var urlProductsController = Application.Current.Resources["UrlProductsController"].ToString();
@@ -111,16 +150,12 @@
             //revisamos si realizo correctamenta la accion
             if (!response.Logrado)
             {
-                //si no lo hizo mostrara error en unos mensajes que se tienen en el Common y lo saca
-                this.IsRefreshing = false;
-                await Application.Current.MainPage.DisplayAlert(Languages.Error, response.Mensaje, Languages.Accept);
-                return;
+               return false;
             }
 
             //si lo hizo devuelve la lista y la muestra en pantalla
             this.MyProducts = (List<Productos>)response.Resultado;
-            this.RefreshList();
-            this.IsRefreshing = false;
+            return true;
         }
 
         public void RefreshList()

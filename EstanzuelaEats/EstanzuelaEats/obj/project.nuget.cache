@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Kxy01KMG76lT3KdqTUMdtRuarEhrcoEiERsHpRYRCgJ35xFfs8KB6nUm4avWFQvUEAO4CbF49SRfzj1iMR46rw==",
+  "dgSpecHash": "zYyc9Se+p8Su4YR5bNB0zW5P64M5X5A2kg2e7XMytaji94jblEtox94Tuo0DI9u6SpwYiAPeSOICCkvOqp9HaA==",
   "success": true,
   "projectFilePath": "C:\\Projects\\EstanzuelaEats\\EstanzuelaEats\\EstanzuelaEats\\EstanzuelaEats.csproj",
   "expectedPackageFiles": [
@@ -8,7 +8,15 @@
     "C:\\Users\\Bryan Paz Ramirez\\.nuget\\packages\\mvvmlightlibs\\5.4.1.1\\mvvmlightlibs.5.4.1.1.nupkg.sha512",
     "C:\\Users\\Bryan Paz Ramirez\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
     "C:\\Users\\Bryan Paz Ramirez\\.nuget\\packages\\newtonsoft.json\\12.0.2\\newtonsoft.json.12.0.2.nupkg.sha512",
+    "C:\\Users\\Bryan Paz Ramirez\\.nuget\\packages\\sqlite-net-pcl\\1.7.335\\sqlite-net-pcl.1.7.335.nupkg.sha512",
+    "C:\\Users\\Bryan Paz Ramirez\\.nuget\\packages\\sqlitepclraw.bundle_green\\2.0.3\\sqlitepclraw.bundle_green.2.0.3.nupkg.sha512",
+    "C:\\Users\\Bryan Paz Ramirez\\.nuget\\packages\\sqlitepclraw.core\\2.0.3\\sqlitepclraw.core.2.0.3.nupkg.sha512",
+    "C:\\Users\\Bryan Paz Ramirez\\.nuget\\packages\\sqlitepclraw.lib.e_sqlite3\\2.0.3\\sqlitepclraw.lib.e_sqlite3.2.0.3.nupkg.sha512",
+    "C:\\Users\\Bryan Paz Ramirez\\.nuget\\packages\\sqlitepclraw.provider.e_sqlite3\\2.0.3\\sqlitepclraw.provider.e_sqlite3.2.0.3.nupkg.sha512",
+    "C:\\Users\\Bryan Paz Ramirez\\.nuget\\packages\\system.buffers\\4.4.0\\system.buffers.4.4.0.nupkg.sha512",
+    "C:\\Users\\Bryan Paz Ramirez\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",
     "C:\\Users\\Bryan Paz Ramirez\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\Bryan Paz Ramirez\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.2\\system.runtime.compilerservices.unsafe.4.5.2.nupkg.sha512",
     "C:\\Users\\Bryan Paz Ramirez\\.nuget\\packages\\xam.plugin.connectivity\\3.2.0\\xam.plugin.connectivity.3.2.0.nupkg.sha512",
     "C:\\Users\\Bryan Paz Ramirez\\.nuget\\packages\\xam.plugin.media\\5.0.1\\xam.plugin.media.5.0.1.nupkg.sha512",
     "C:\\Users\\Bryan Paz Ramirez\\.nuget\\packages\\xam.plugins.settings\\3.1.1\\xam.plugins.settings.3.1.1.nupkg.sha512",

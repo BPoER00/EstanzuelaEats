@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "smNsDbNrAh2FBxJs5PxuMDXQtmjOEitRm6ZqpcvtSisn29zTefVRM1w4AL0HudpSY2hy0f8Khb2AS1KyALOywQ==",
+  "dgSpecHash": "I+O7R0R0atcoQmtTXErhmy3oSlTWD9h7LUqZA/+0CegtOe7/JejRVQSFdjPPMmnYlyNIBt3R3XjbWrwCQBbb+g==",
   "success": true,
   "projectFilePath": "C:\\Projects\\EstanzuelaEats\\EstanzuelaEats\\EstanzuelaEats.Android\\EstanzuelaEats.Android.csproj",
   "expectedPackageFiles": [
@@ -9,6 +9,14 @@
     "C:\\Users\\Bryan Paz Ramirez\\.nuget\\packages\\newtonsoft.json\\12.0.2\\newtonsoft.json.12.0.2.nupkg.sha512",
     "C:\\Users\\Bryan Paz Ramirez\\.nuget\\packages\\plugin.currentactivity\\2.1.0.4\\plugin.currentactivity.2.1.0.4.nupkg.sha512",
     "C:\\Users\\Bryan Paz Ramirez\\.nuget\\packages\\plugin.permissions\\6.0.1\\plugin.permissions.6.0.1.nupkg.sha512",
+    "C:\\Users\\Bryan Paz Ramirez\\.nuget\\packages\\sqlite-net-pcl\\1.7.335\\sqlite-net-pcl.1.7.335.nupkg.sha512",
+    "C:\\Users\\Bryan Paz Ramirez\\.nuget\\packages\\sqlitepclraw.bundle_green\\2.0.3\\sqlitepclraw.bundle_green.2.0.3.nupkg.sha512",
+    "C:\\Users\\Bryan Paz Ramirez\\.nuget\\packages\\sqlitepclraw.core\\2.0.3\\sqlitepclraw.core.2.0.3.nupkg.sha512",
+    "C:\\Users\\Bryan Paz Ramirez\\.nuget\\packages\\sqlitepclraw.lib.e_sqlite3.android\\2.0.3\\sqlitepclraw.lib.e_sqlite3.android.2.0.3.nupkg.sha512",
+    "C:\\Users\\Bryan Paz Ramirez\\.nuget\\packages\\sqlitepclraw.provider.e_sqlite3\\2.0.3\\sqlitepclraw.provider.e_sqlite3.2.0.3.nupkg.sha512",
+    "C:\\Users\\Bryan Paz Ramirez\\.nuget\\packages\\system.buffers\\4.4.0\\system.buffers.4.4.0.nupkg.sha512",
+    "C:\\Users\\Bryan Paz Ramirez\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",
+    "C:\\Users\\Bryan Paz Ramirez\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.2\\system.runtime.compilerservices.unsafe.4.5.2.nupkg.sha512",
     "C:\\Users\\Bryan Paz Ramirez\\.nuget\\packages\\xam.plugin.connectivity\\3.2.0\\xam.plugin.connectivity.3.2.0.nupkg.sha512",
     "C:\\Users\\Bryan Paz Ramirez\\.nuget\\packages\\xam.plugin.media\\5.0.1\\xam.plugin.media.5.0.1.nupkg.sha512",
     "C:\\Users\\Bryan Paz Ramirez\\.nuget\\packages\\xam.plugins.settings\\3.1.1\\xam.plugins.settings.3.1.1.nupkg.sha512",

@@ -78,7 +78,8 @@
                 <StackLayout
                     Margin="40,0"
                     Orientation="Horizontal"
-                    VerticalOptions="CenterAndExpand">
+                    VerticalOptions="CenterAndExpand"
+                    HorizontalOptions="CenterAndExpand">
                     <Button
                         BackgroundColor="Navy"
                         BorderRadius="23"
@@ -101,7 +102,7 @@
                     </Button>
                 </StackLayout>
                 <StackLayout
-                    HorizontalOptions="Center"
+                    HorizontalOptions="CenterAndExpand"
                     Orientation="Horizontal"
                     VerticalOptions="EndAndExpand">
                     <Image

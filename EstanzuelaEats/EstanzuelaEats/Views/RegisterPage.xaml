@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:i18n="clr-namespace:EstanzuelaEats.Helpers"
+             x:Class="EstanzuelaEats.Views.RegisterPage"
+             BindingContext="{Binding Main, Source={StaticResource Locator}}"
+             Title="{i18n:Translate Register}">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Image
+                    Source="avatarlogin.png"
+                    HeightRequest="200">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding ChangeImageCommand}"/>
+                    </Image.GestureRecognizers>
+                </Image>
+                <Label
+                    FontSize="Small"
+                    HorizontalOptions="Center"
+                    Text="{i18n:Translate ChangeImage}">
+                </Label>
+
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    
+                    <Label
+                        Grid.Column="0"
+                        Grid.Row="0"
+                        VerticalOptions="Center"
+                        FontAttributes="Bold"
+                        FontSize="Medium"
+                        Text="{i18n:Translate FirstName}">
+                    </Label>
+                    <Entry
+                        Grid.Column="1"
+                        Grid.Row="0"
+                        HeightRequest= "46"
+                        Text="{Binding FirstName}"
+                        Placeholder="{i18n:Translate FirstNameHolder}">
+                    </Entry>
+
+                    <Label
+                        Grid.Column="0"
+                        Grid.Row="1"
+                        VerticalOptions="Center"
+                        FontAttributes="Bold"
+                        FontSize="Medium"
+                        Text="{i18n:Translate LastName}">
+
+                    </Label>
+                    <Entry
+                        Grid.Column="1"
+                        Grid.Row="1"
+                        HeightRequest="46"
+                        Text="{Binding LastName}"
+                        Placeholder="{i18n:Translate LastNamePlaceholder}">
+                        
+                    </Entry>
+
+                    <Label
+                        Grid.Column="0"
+                        Grid.Row="2"
+                        VerticalOptions="Center"
+                        FontAttributes="Bold"
+                        FontSize="Medium"
+                        Text="{i18n:Translate EMail}">
+                        
+                    </Label>
+                    <Entry
+                        Grid.Column="1"
+                        Grid.Row="2"
+                        HeightRequest="46"
+                        Text="{Binding EMail}"
+                        Placeholder="{i18n:Translate EmailPlaceHolder}">
+                        
+                    </Entry>
+
+                    <Label
+                        Grid.Column="0"
+                        Grid.Row="3"
+                        VerticalOptions="Center"
+                        FontAttributes="Bold"
+                        FontSize="Medium"
+                        Text="{i18n:Translate Phone}">
+                        
+                    </Label>
+                    <Entry
+                        Grid.Column="1"
+                        Grid.Row="3"
+                        HeightRequest="46"
+                        Text="{Binding Phone}"
+                        Placeholder="{i18n:Translate PhonePlaceHolder}">
+                        
+                    </Entry>
+
+                    <Label
+                        Grid.Column="0"
+                        Grid.Row="4"
+                        VerticalOptions="Center"
+                        FontAttributes="Bold"
+                        FontSize="Medium"
+                        Text="{i18n:Translate Address}">
+                        
+                    </Label>
+                    <Entry
+                        Grid.Column="1"
+                        Grid.Row="4"
+                        HeightRequest="46"
+                        Text="{Binding Address}"
+                        Placeholder="{i18n:Translate AddressPlaceHolder}">
+                        
+                    </Entry>
+
+                    <Label
+                        Grid.Column="0"
+                        Grid.Row="5"
+                        VerticalOptions="Center"
+                        FontAttributes="Bold"
+                        FontSize="Medium"
+                        Text="{i18n:Translate Password}">
+                        
+                    </Label>
+                    <Entry
+                        Grid.Column="1"
+                        Grid.Row="5"
+                        HeightRequest="46"
+                        Text="{Binding Password}"
+                        Placeholder="{i18n:Translate PasswordPlaceHolder}">
+                    </Entry>
+
+                    <Label
+                        Grid.Column="0"
+                        Grid.Row="6"
+                        VerticalOptions="Center"
+                        FontAttributes="Bold"
+                        FontSize="Medium"
+                        Text="{i18n:Translate PasswordConfirm}">
+                        
+                    </Label>
+                    <Entry
+                        Grid.Column="1"
+                        Grid.Row="6"
+                        HeightRequest="46"
+                        Text="{Binding PasswordConfirm}"
+                        Placeholder="{i18n:Translate PasswordConfirmPlaceHolder}">
+                        
+                    </Entry>
+                </Grid>
+                <ActivityIndicator
+                    IsRunning="{Binding IsRunning}"
+                    VerticalOptions="Center">
+                    
+                </ActivityIndicator>
+
+                <Button
+                    BackgroundColor="ForestGreen"
+                    BorderRadius="23"
+                    Command="{Binding SaveCommand}"
+                    HeightRequest="46"
+                    HorizontalOptions="CenterAndExpand"
+                    IsEnabled="{Binding IsEnabled}"
+                    Text="{i18n:Translate Save}"
+                    TextColor="White">
+                    
+                </Button>
+                
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
