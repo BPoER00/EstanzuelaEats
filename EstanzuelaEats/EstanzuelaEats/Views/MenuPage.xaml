@@ -13,6 +13,14 @@
                 Source="logoapp.png">
                 
             </Image>
+            <Label
+                FontAttributes="Bold"
+                FontSize="Large"
+                HorizontalOptions="Center"
+                Text="{Binding UserFullName}"
+                TextColor="White">
+                
+            </Label>
             <ListView
                 BackgroundColor="Transparent"
                 ItemsSource="{Binding Menu}"

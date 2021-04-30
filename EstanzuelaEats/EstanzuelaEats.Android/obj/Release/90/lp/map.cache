@@ -44,3 +44,5 @@ Xamarin.Forms.Platform
 Plugin.CurrentActivity
 Plugin.Media
 Plugin.Permissions
+Plugin.Settings
+SQLitePCLRaw.lib.e_sqlite3.android

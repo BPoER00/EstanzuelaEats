@@ -595,3 +595,9 @@ C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats.Android\obj\Debug\90\an
 C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats.Android\obj\Debug\90\android\assets\System.Buffers.dll
 C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats.Android\obj\Debug\90\android\assets\System.Memory.dll
 C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats.Android\obj\Debug\90\android\assets\System.Runtime.CompilerServices.Unsafe.dll
+C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats.Android\obj\Debug\90\res\mipmap-hdpi\avatarlogin.png
+C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats.Android\obj\Debug\90\res\mipmap-mdpi\avatarlogin.png
+C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats.Android\obj\Debug\90\res\mipmap-xhdpi\avatarlogin.png
+C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats.Android\obj\Debug\90\res\mipmap-xxhdpi\avatarlogin.png
+C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats.Android\obj\Debug\90\res\mipmap-xxxhdpi\avatarlogin.png
+C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats.Android\obj\Debug\90\res\drawable\avatarlogin.png

@@ -7,7 +7,9 @@ namespace EstanzuelaEats.ViewModels
     using GalaSoft.MvvmLight.Command;
     using Xamarin.Forms;
     using EstanzuelaEats.Views;
-     
+    using EstanzuelaEats.Common.Modelos;
+    using Newtonsoft.Json;
+
     public class LoginViewModel : BaseViewModel
     {
         #region Atributos
@@ -49,6 +51,20 @@ namespace EstanzuelaEats.ViewModels
         #endregion
 
         #region Comandos
+
+        public ICommand RegisterCommand
+        {
+            get
+            {
+                return new RelayCommand(Register);
+            }
+        }
+
+        private async void Register()
+        {
+            MainViewModel.GetInstance().Register = new RegisterViewModel();
+            await Application.Current.MainPage.Navigation.PushAsync(new RegisterPage());
+        }
 
         public ICommand LoginCommand 
         {
@@ -116,6 +132,15 @@ namespace EstanzuelaEats.ViewModels
             Settings.AccessToken = token.AccessToken;
             Settings.IsRemembered = this.IsRemembered;
 
+            var prefix = Application.Current.Resources["UrlPrefix"].ToString();
+            var controller = Application.Current.Resources["UrlUsersController"].ToString();
+            var response = await this.apiService.GetUser(url, prefix, $"{controller}/GetUser", this.Email, token.TokenType, token.AccessToken);
+            if (response.Logrado)
+            {
+                var userASP = (MyUserASP)response.Resultado;
+                MainViewModel.GetInstance().UserASP = userASP;
+                Settings.UserASP = JsonConvert.SerializeObject(userASP);
+            }
 
             this.IsRunning = false;
             this.IsEnable = true;

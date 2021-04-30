@@ -6,10 +6,11 @@
              BindingContext="{Binding Main, Source={StaticResource Locator}}"
              Title="{i18n:Translate Register}">
     <ContentPage.Content>
-        <ScrollView>
+        <ScrollView
+            BindingContext="{Binding Register}">
             <StackLayout>
                 <Image
-                    Source="avatarlogin.png"
+                    Source="{Binding ImageSource}"
                     HeightRequest="200">
                     <Image.GestureRecognizers>
                         <TapGestureRecognizer Command="{Binding ChangeImageCommand}"/>
@@ -18,10 +19,14 @@
                 <Label
                     FontSize="Small"
                     HorizontalOptions="Center"
-                    Text="{i18n:Translate ChangeImage}">
+                    Text="{i18n:Translate CambiarImagen}">
                 </Label>
 
-                <Grid>
+                <Grid
+                    Padding="10"
+                    Margin="10,0"
+                    VerticalOptions="CenterAndExpand"
+                    >
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="Auto"/>
                         <ColumnDefinition Width="*"/>
@@ -32,7 +37,7 @@
                         Grid.Row="0"
                         VerticalOptions="Center"
                         FontAttributes="Bold"
-                        FontSize="Medium"
+                        FontSize="Subtitle"
                         Text="{i18n:Translate FirstName}">
                     </Label>
                     <Entry
@@ -40,7 +45,7 @@
                         Grid.Row="0"
                         HeightRequest= "46"
                         Text="{Binding FirstName}"
-                        Placeholder="{i18n:Translate FirstNameHolder}">
+                        Placeholder="{i18n:Translate FirstNamePlaceholder}">
                     </Entry>
 
                     <Label
@@ -48,7 +53,7 @@
                         Grid.Row="1"
                         VerticalOptions="Center"
                         FontAttributes="Bold"
-                        FontSize="Medium"
+                        FontSize="Subtitle"
                         Text="{i18n:Translate LastName}">
 
                     </Label>
@@ -66,13 +71,14 @@
                         Grid.Row="2"
                         VerticalOptions="Center"
                         FontAttributes="Bold"
-                        FontSize="Medium"
+                        FontSize="Subtitle"
                         Text="{i18n:Translate EMail}">
                         
                     </Label>
                     <Entry
                         Grid.Column="1"
                         Grid.Row="2"
+                        Keyboard="Email"
                         HeightRequest="46"
                         Text="{Binding EMail}"
                         Placeholder="{i18n:Translate EmailPlaceHolder}">
@@ -84,13 +90,14 @@
                         Grid.Row="3"
                         VerticalOptions="Center"
                         FontAttributes="Bold"
-                        FontSize="Medium"
+                        FontSize="Subtitle"
                         Text="{i18n:Translate Phone}">
                         
                     </Label>
                     <Entry
                         Grid.Column="1"
                         Grid.Row="3"
+                        Keyboard="Numeric"
                         HeightRequest="46"
                         Text="{Binding Phone}"
                         Placeholder="{i18n:Translate PhonePlaceHolder}">
@@ -102,7 +109,7 @@
                         Grid.Row="4"
                         VerticalOptions="Center"
                         FontAttributes="Bold"
-                        FontSize="Medium"
+                        FontSize="Subtitle"
                         Text="{i18n:Translate Address}">
                         
                     </Label>
@@ -120,7 +127,7 @@
                         Grid.Row="5"
                         VerticalOptions="Center"
                         FontAttributes="Bold"
-                        FontSize="Medium"
+                        FontSize="Subtitle"
                         Text="{i18n:Translate Password}">
                         
                     </Label>
@@ -137,7 +144,7 @@
                         Grid.Row="6"
                         VerticalOptions="Center"
                         FontAttributes="Bold"
-                        FontSize="Medium"
+                        FontSize="Subtitle"
                         Text="{i18n:Translate PasswordConfirm}">
                         
                     </Label>
@@ -161,7 +168,7 @@
                     BorderRadius="23"
                     Command="{Binding SaveCommand}"
                     HeightRequest="46"
-                    HorizontalOptions="CenterAndExpand"
+                    HorizontalOptions="FillAndExpand"
                     IsEnabled="{Binding IsEnabled}"
                     Text="{i18n:Translate Save}"
                     TextColor="White">
