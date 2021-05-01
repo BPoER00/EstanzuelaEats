@@ -31,6 +31,18 @@ namespace EstanzuelaEats.ViewModels
                     return $"{this.UserASP.Claims[0].ClaimValue} {this.UserASP.Claims[1].ClaimValue}";
                 }
 
+                return "avatarlogin.png";
+            }
+        }
+
+        public string UserImageFullPath
+        {
+            get
+            {
+                if (this.UserASP != null && this.UserASP.Claims != null && this.UserASP.Claims.Count > 3)
+                {
+                    return $"https://estanzuelaeatsapi20212503.azurewebsites.net{this.UserASP.Claims[3].ClaimValue.Substring(1)}";
+                }
                 return null;
             }
         }

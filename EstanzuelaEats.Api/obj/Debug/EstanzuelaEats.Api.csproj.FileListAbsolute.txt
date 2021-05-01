@@ -144,3 +144,8 @@ C:\Projects\EstanzuelaEats\EstanzuelaEats.Api\obj\Debug\EstanzuelaEats.Api.cspro
 C:\Projects\EstanzuelaEats\EstanzuelaEats.Api\obj\Debug\EstanzuelaEats.Api.csproj.CopyComplete
 C:\Projects\EstanzuelaEats\EstanzuelaEats.Api\obj\Debug\EstanzuelaEats.Api.dll
 C:\Projects\EstanzuelaEats\EstanzuelaEats.Api\obj\Debug\EstanzuelaEats.Api.pdb
+C:\Projects\EstanzuelaEats\EstanzuelaEats.Api\bin\EstanzuelaEats.dll
+C:\Projects\EstanzuelaEats\EstanzuelaEats.Api\bin\EstanzuelaEats.pdb
+C:\Projects\EstanzuelaEats\EstanzuelaEats.Api\bin\es\EstanzuelaEats.resources.dll
+C:\Projects\EstanzuelaEats\EstanzuelaEats.Api\bin\it\EstanzuelaEats.resources.dll
+C:\Projects\EstanzuelaEats\EstanzuelaEats.Api\bin\pt\EstanzuelaEats.resources.dll

@@ -524,7 +524,6 @@ C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats.Android\obj\Debug\90\re
 C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats.Android\obj\Debug\90\res\mipmap-xxhdpi\ic_action_add_circle_outline.png
 C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats.Android\obj\Debug\90\res\mipmap-xxxhdpi\ic_action_add_circle_outline.png
 C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats.Android\obj\Debug\90\res\drawable\ic_action_add_circle_outline.png
-C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats.Android\obj\Debug\90\lp\39\jl\files.cache
 C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats.Android\obj\Debug\90\res\xml\file_paths.xml
 C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats.Android\obj\Debug\90\android\assets\Plugin.CurrentActivity.dll
 C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats.Android\obj\Debug\90\android\assets\Plugin.Media.dll
@@ -570,9 +569,7 @@ C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats.Android\obj\Debug\90\re
 C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats.Android\obj\Debug\90\res\mipmap-xhdpi\logotwitter.png
 C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats.Android\obj\Debug\90\res\mipmap-xxhdpi\logotwitter.png
 C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats.Android\obj\Debug\90\res\mipmap-xxxhdpi\logotwitter.png
-C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats.Android\obj\Debug\90\lp\19\jl\files.cache
 C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats.Android\obj\Debug\90\lp\40\jl\files.cache
-C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats.Android\obj\Debug\90\lp\45\jl\files.cache
 C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats.Android\obj\Debug\90\android\assets\Plugin.Settings.Abstractions.dll
 C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats.Android\obj\Debug\90\android\assets\Plugin.Settings.Abstractions.dll.mdb
 C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats.Android\obj\Debug\90\android\assets\Plugin.Settings.dll
@@ -581,10 +578,6 @@ C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats.Android\obj\Debug\90\re
 C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats.Android\obj\Debug\90\res\drawable\informacion.png
 C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats.Android\obj\Debug\90\res\drawable\cerrarsesion.png
 C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats.Android\obj\Debug\90\lp\20\jl\files.cache
-C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats.Android\obj\Debug\90\lp\24\jl\files.cache
-C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats.Android\obj\Debug\90\lp\26\jl\files.cache
-C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats.Android\obj\Debug\90\lp\33\jl\files.cache
-C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats.Android\obj\Debug\90\lp\37\jl\files.cache
 C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats.Android\obj\Debug\90\lp\41\jl\files.cache
 C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats.Android\obj\Debug\90\lp\46\jl\files.cache
 C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats.Android\obj\Debug\90\android\assets\SQLite-net.dll
@@ -601,3 +594,15 @@ C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats.Android\obj\Debug\90\re
 C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats.Android\obj\Debug\90\res\mipmap-xxhdpi\avatarlogin.png
 C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats.Android\obj\Debug\90\res\mipmap-xxxhdpi\avatarlogin.png
 C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats.Android\obj\Debug\90\res\drawable\avatarlogin.png
+C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats.Android\obj\Debug\90\lp\21\jl\files.cache
+C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats.Android\obj\Debug\90\lp\25\jl\files.cache
+C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats.Android\obj\Debug\90\lp\27\jl\files.cache
+C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats.Android\obj\Debug\90\lp\34\jl\files.cache
+C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats.Android\obj\Debug\90\lp\38\jl\files.cache
+C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats.Android\obj\Debug\90\lp\42\jl\files.cache
+C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats.Android\obj\Debug\90\lp\47\jl\files.cache
+C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats.Android\obj\Debug\90\android\assets\ImageCircle.Forms.Plugin.dll
+C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats.Android\obj\Debug\90\android\src\crc6436929b8ad3b40f6f\ImageCircleRenderer.java
+C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats.Android\obj\Debug\90\res\drawable\logodos
+C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats.Android\obj\Debug\90\res\drawable\splash.png
+C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats.Android\obj\Debug\90\android\src\crc645a432300e3e0fa5c\SplashActivity.java

@@ -86,3 +86,4 @@ C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats.iOS\bin\iPhone\Debug\Sy
 C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats.iOS\bin\iPhone\Debug\Plugin.Settings.Abstractions.dll
 C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats.iOS\bin\iPhone\Debug\Plugin.Settings.Abstractions.pdb
 C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats.iOS\bin\iPhone\Debug\Plugin.Settings.dll
+C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats.iOS\bin\iPhone\Debug\ImageCircle.Forms.Plugin.dll

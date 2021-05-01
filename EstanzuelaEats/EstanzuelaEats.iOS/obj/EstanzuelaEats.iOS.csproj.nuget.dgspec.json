@@ -60,6 +60,10 @@
               "target": "Package",
               "version": "[5.0.1, )"
             },
+            "Xam.Plugins.Forms.ImageCircle": {
+              "target": "Package",
+              "version": "[3.0.0.5, )"
+            },
             "Xam.Plugins.Settings": {
               "target": "Package",
               "version": "[3.1.1, )"
@@ -156,6 +160,10 @@
             "Xam.Plugin.Media": {
               "target": "Package",
               "version": "[5.0.1, )"
+            },
+            "Xam.Plugins.Forms.ImageCircle": {
+              "target": "Package",
+              "version": "[3.0.0.5, )"
             },
             "Xam.Plugins.Settings": {
               "target": "Package",

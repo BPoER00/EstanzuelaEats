@@ -1,5 +1,6 @@
 FormsViewGroup
 GalaSoft.MvvmLight.Platform
+ImageCircle.Forms.Plugin
 Plugin.Connectivity
 Plugin.CurrentActivity
 Plugin.Media
