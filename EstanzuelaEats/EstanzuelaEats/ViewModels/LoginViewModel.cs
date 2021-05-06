@@ -149,6 +149,87 @@ namespace EstanzuelaEats.ViewModels
             Application.Current.MainPage = new MasterPage();
         }
 
+        public ICommand LoginFacebookComand
+        {
+            get
+            {
+                return new RelayCommand(LoginFacebook);
+            }
+        }
+
+        private async void LoginFacebook()
+        {
+            var connection = await this.apiService.CheckConnection();
+
+            if (!connection.Logrado)
+            {
+                this.IsRunning = false;
+                this.IsEnable = true;
+                await Application.Current.MainPage.DisplayAlert(
+                    Languages.Error,
+                    connection.Mensaje,
+                    Languages.Accept);
+                return;
+            }
+
+            await Application.Current.MainPage.Navigation.PushAsync(
+                new LoginFacebookPage());
+        }
+
+        public ICommand LoginTwitterComand
+        {
+            get
+            {
+                return new RelayCommand(LoginTwitter);
+            }
+        }
+
+        private async void LoginTwitter()
+        {
+            var connection = await this.apiService.CheckConnection();
+
+            if (!connection.Logrado)
+            {
+                this.IsRunning = false;
+                this.IsEnable = true;
+                await Application.Current.MainPage.DisplayAlert(
+                    Languages.Error,
+                    connection.Mensaje,
+                    Languages.Accept);
+                return;
+            }
+
+            await Application.Current.MainPage.Navigation.PushAsync(
+                new LoginTwitterPage());
+        }
+
+        public ICommand LoginInstagramComand
+        {
+            get
+            {
+                return new RelayCommand(LoginInstagram);
+            }
+        }
+
+        private async void LoginInstagram()
+        {
+            var connection = await this.apiService.CheckConnection();
+
+            if (!connection.Logrado)
+            {
+                this.IsRunning = false;
+                this.IsEnable = true;
+                await Application.Current.MainPage.DisplayAlert(
+                    Languages.Error,
+                    connection.Mensaje,
+                    Languages.Accept);
+                return;
+            }
+
+            await Application.Current.MainPage.Navigation.PushAsync(
+                new LoginInstagramPage());
+        }
+
         #endregion
     }
 }

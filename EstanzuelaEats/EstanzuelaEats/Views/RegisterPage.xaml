@@ -138,6 +138,7 @@
                         Grid.Column="1"
                         Grid.Row="5"
                         HeightRequest="46"
+                        IsPassword="True"
                         Text="{Binding Password}"
                         Placeholder="{i18n:Translate PasswordPlaceHolder}">
                     </Entry>
@@ -155,6 +156,7 @@
                         Grid.Column="1"
                         Grid.Row="6"
                         HeightRequest="46"
+                        IsPassword="True"
                         Text="{Binding PasswordConfirm}"
                         Placeholder="{i18n:Translate PasswordConfirmPlaceHolder}">
                         

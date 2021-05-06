@@ -32,3 +32,6 @@ C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats\obj\Debug\netstandard2.
 C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats\obj\Debug\netstandard2.0\EstanzuelaEats.dll
 C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats\obj\Debug\netstandard2.0\ref\EstanzuelaEats.dll
 C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats\obj\Debug\netstandard2.0\EstanzuelaEats.pdb
+C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats\obj\Debug\netstandard2.0\Views\LoginFacebookPage.xaml.g.cs
+C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats\obj\Debug\netstandard2.0\Views\LoginInstagramPage.xaml.g.cs
+C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats\obj\Debug\netstandard2.0\Views\LoginTwitterPage.xaml.g.cs
