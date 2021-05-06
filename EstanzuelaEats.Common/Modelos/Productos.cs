@@ -40,7 +40,7 @@ namespace EstanzuelaEats.Common.Modelos
                     return "NoProducto.png";
                 }
 
-                return $"https://estanzuelaeatsapi2021.azurewebsites.net/{this.ImagePath.Substring(1)}";
+                return $"https://estanzuelaeats.azurewebsites.net/{this.ImagePath.Substring(1)}";
             }
         }
 

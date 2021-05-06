@@ -34,21 +34,30 @@ namespace EstanzuelaEats.ViewModels
                 return "avatarlogin.png";
             }
         }
-        
+
         public string UserImageFullPath
         {
             get
             {
-                if (this.UserASP != null && this.UserASP.Claims != null && this.UserASP.Claims.Count > 3)
+                foreach (var claim in this.UserASP.Claims)
                 {
-                    return $"https://estanzuelaeatsapi2021.azurewebsites.net{this.UserASP.Claims[3].ClaimValue.Substring(1)}";
+                    if (claim.ClaimType == "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/uri")
+                    {
+                        if (claim.ClaimValue.StartsWith("~"))
+                        {
+                            return $"https://estanzuelaeats.azurewebsites.net{claim.ClaimValue.Substring(1)}";
+                        }
+
+                        return claim.ClaimValue;
+                    }
                 }
+
                 return null;
             }
         }
         #endregion
 
-        #region Constructores
+            #region Constructores
 
         public MainViewModel()
         {

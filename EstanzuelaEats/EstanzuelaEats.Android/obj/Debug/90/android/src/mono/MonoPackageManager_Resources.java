@@ -3,8 +3,8 @@ public class MonoPackageManager_Resources {
 	public static String[] Assemblies = new String[]{
 		/* We need to ensure that "EstanzuelaEats.Android.dll" comes first in this list. */
 		"EstanzuelaEats.Android.dll",
-		"EstanzuelaEats.Common.dll",
 		"CommonServiceLocator.dll",
+		"EstanzuelaEats.Common.dll",
 		"EstanzuelaEats.dll",
 		"FormsViewGroup.dll",
 		"GalaSoft.MvvmLight.dll",
@@ -61,6 +61,7 @@ public class MonoPackageManager_Resources {
 		"Xamarin.Android.Support.Vector.Drawable.dll",
 		"Xamarin.Android.Support.VersionedParcelable.dll",
 		"Xamarin.Android.Support.ViewPager.dll",
+		"Xamarin.Auth.dll",
 		"Xamarin.Essentials.dll",
 		"Xamarin.Forms.Core.dll",
 		"Xamarin.Forms.Platform.Android.dll",

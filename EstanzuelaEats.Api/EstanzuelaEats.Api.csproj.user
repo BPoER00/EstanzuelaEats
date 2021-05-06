@@ -18,7 +18,7 @@
     <WebStackScaffolding_LayoutPageFile />
     <WebStackScaffolding_DbContextTypeFullName>EstanzuelaEats.Domain.Modelos.DataContext</WebStackScaffolding_DbContextTypeFullName>
     <WebStackScaffolding_IsAsyncSelected>True</WebStackScaffolding_IsAsyncSelected>
-    <NameOfLastUsedPublishProfile>EstanzuelaEatsApi2021 - Web Deploy</NameOfLastUsedPublishProfile>
+    <NameOfLastUsedPublishProfile>EstanzuelaEats - Web Deploy</NameOfLastUsedPublishProfile>
     <ProjectView>ProjectFiles</ProjectView>
   </PropertyGroup>
   <ProjectExtensions>

@@ -1,0 +1,30 @@
+{
+  "dependencies": {},
+  "parameters": {
+    "EstanzuelaEatsApi2021.resourceGroupName": {
+      "Name": "EstanzuelaEatsApi2021.resourceGroupName",
+      "Type": "resourceGroup",
+      "Value": "Prueba"
+    },
+    "EstanzuelaEatsApi2021.resourceName": {
+      "Name": "EstanzuelaEatsApi2021.resourceName",
+      "Type": null,
+      "Value": "EstanzuelaEatsApi2021"
+    },
+    "EstanzuelaEatsApi2021.resourceGroupLocation": {
+      "Name": "EstanzuelaEatsApi2021.resourceGroupLocation",
+      "Type": null,
+      "Value": "eastus"
+    },
+    "EstanzuelaEatsApi2021.subscriptionId": {
+      "Name": "EstanzuelaEatsApi2021.subscriptionId",
+      "Type": "subscription",
+      "Value": "9c8e8a9c-9119-47da-aa69-2a12ba3aeb75"
+    },
+    "subscriptionId": {
+      "Name": "subscriptionId",
+      "Type": "subscription",
+      "Value": "9c8e8a9c-9119-47da-aa69-2a12ba3aeb75"
+    }
+  }
+}

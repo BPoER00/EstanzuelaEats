@@ -267,6 +267,7 @@
     <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\CollectionModelDescription.cshtml" />
     <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ApiGroup.cshtml" />
     <Content Include="Areas\HelpPage\Views\Help\Api.cshtml" />
+    <None Include="Properties\PublishProfiles\EstanzuelaEats - Web Deploy.pubxml" />
     <None Include="Properties\PublishProfiles\EstanzuelaEatsApi2021 - Web Deploy.pubxml" />
     <None Include="Properties\PublishProfiles\EstanzuelaEatsApi20212503 - Web Deploy.pubxml" />
     <None Include="Properties\PublishProfiles\EstanzuelaEatsApi2021p - Web Deploy.pubxml" />
@@ -337,10 +338,6 @@
     <ProjectReference Include="..\EstanzuelaEats.Domain\EstanzuelaEats.Domain.csproj">
       <Project>{28b5c90a-e386-4c47-9fbd-741dc8fc379e}</Project>
       <Name>EstanzuelaEats.Domain</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats.csproj">
-      <Project>{88ca198b-c58f-4c73-9020-98df10e40694}</Project>
-      <Name>EstanzuelaEats</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

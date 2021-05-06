@@ -42,6 +42,9 @@
         "frameworks": {
           "xamarinios10": {
             "projectReferences": {
+              "C:\\Projects\\EstanzuelaEats\\EstanzuelaEats.Common\\EstanzuelaEats.Common.csproj": {
+                "projectPath": "C:\\Projects\\EstanzuelaEats\\EstanzuelaEats.Common\\EstanzuelaEats.Common.csproj"
+              },
               "C:\\Projects\\EstanzuelaEats\\EstanzuelaEats\\EstanzuelaEats\\EstanzuelaEats.csproj": {
                 "projectPath": "C:\\Projects\\EstanzuelaEats\\EstanzuelaEats\\EstanzuelaEats\\EstanzuelaEats.csproj"
               }
@@ -67,6 +70,10 @@
             "Xam.Plugins.Settings": {
               "target": "Package",
               "version": "[3.1.1, )"
+            },
+            "Xamarin.Auth": {
+              "target": "Package",
+              "version": "[1.7.0, )"
             },
             "Xamarin.Essentials": {
               "target": "Package",

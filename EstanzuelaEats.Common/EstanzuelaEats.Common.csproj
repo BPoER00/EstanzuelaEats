@@ -47,10 +47,13 @@
   <ItemGroup>
     <Compile Include="Class1.cs" />
     <Compile Include="Modelos\Claim.cs" />
+    <Compile Include="Modelos\FacebookResponse.cs" />
     <Compile Include="Modelos\GetUserRequest.cs" />
+    <Compile Include="Modelos\InstagramResponse.cs" />
     <Compile Include="Modelos\Productos.cs" />
     <Compile Include="Modelos\Respuestas.cs" />
     <Compile Include="Modelos\TokenResponse.cs" />
+    <Compile Include="Modelos\TwitterResponse.cs" />
     <Compile Include="Modelos\UserRequest.cs" />
     <Compile Include="Modelos\UsuariosASP.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

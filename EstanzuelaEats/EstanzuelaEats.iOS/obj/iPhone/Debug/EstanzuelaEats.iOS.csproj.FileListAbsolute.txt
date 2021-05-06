@@ -1,5 +1,6 @@
 C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats.iOS\bin\iPhone\Debug\EstanzuelaEats.iOS.exe
 C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats.iOS\bin\iPhone\Debug\EstanzuelaEats.iOS.pdb
+C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats.iOS\bin\iPhone\Debug\EstanzuelaEats.Common.dll.mdb
 C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats.iOS\bin\iPhone\Debug\CommonServiceLocator.dll
 C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats.iOS\bin\iPhone\Debug\GalaSoft.MvvmLight.Extras.dll
 C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats.iOS\bin\iPhone\Debug\GalaSoft.MvvmLight.Extras.pdb
@@ -25,6 +26,8 @@ C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats.iOS\bin\iPhone\Debug\Im
 C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats.iOS\bin\iPhone\Debug\Plugin.Settings.Abstractions.dll
 C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats.iOS\bin\iPhone\Debug\Plugin.Settings.Abstractions.pdb
 C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats.iOS\bin\iPhone\Debug\Plugin.Settings.dll
+C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats.iOS\bin\iPhone\Debug\Xamarin.Auth.dll
+C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats.iOS\bin\iPhone\Debug\Xamarin.Auth.pdb
 C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats.iOS\bin\iPhone\Debug\Xamarin.Essentials.dll
 C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats.iOS\bin\iPhone\Debug\Xamarin.Essentials.pdb
 C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats.iOS\bin\iPhone\Debug\Xamarin.Forms.Core.dll
@@ -66,13 +69,12 @@ C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats.iOS\bin\iPhone\Debug\vi
 C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats.iOS\bin\iPhone\Debug\zh-HK\Xamarin.Forms.Platform.iOS.resources.dll
 C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats.iOS\bin\iPhone\Debug\zh-Hans\Xamarin.Forms.Platform.iOS.resources.dll
 C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats.iOS\bin\iPhone\Debug\zh-Hant\Xamarin.Forms.Platform.iOS.resources.dll
+C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats.iOS\bin\iPhone\Debug\EstanzuelaEats.Common.dll
 C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats.iOS\bin\iPhone\Debug\EstanzuelaEats.dll
 C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats.iOS\bin\iPhone\Debug\Xamarin.Forms.Platform.iOS.dll
-C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats.iOS\bin\iPhone\Debug\EstanzuelaEats.Common.dll
+C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats.iOS\bin\iPhone\Debug\EstanzuelaEats.Common.pdb
 C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats.iOS\bin\iPhone\Debug\EstanzuelaEats.pdb
 C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats.iOS\bin\iPhone\Debug\Xamarin.Forms.Platform.iOS.pdb
-C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats.iOS\bin\iPhone\Debug\EstanzuelaEats.Common.pdb
-C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats.iOS\bin\iPhone\Debug\EstanzuelaEats.Common.dll.mdb
 C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats.iOS\bin\iPhone\Debug\es\EstanzuelaEats.resources.dll
 C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats.iOS\bin\iPhone\Debug\it\EstanzuelaEats.resources.dll
 C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats.iOS\bin\iPhone\Debug\pt\EstanzuelaEats.resources.dll
