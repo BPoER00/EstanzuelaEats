@@ -46,3 +46,4 @@ Plugin.Media
 Plugin.Permissions
 Plugin.Settings
 SQLitePCLRaw.lib.e_sqlite3.android
+ImageCircle.Forms.Plugin

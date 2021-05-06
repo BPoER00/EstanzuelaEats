@@ -483,7 +483,7 @@ namespace EstanzuelaEats.Services
                     };
                 }
 
-                var user = JsonConvert.DeserializeObject<MyUserASP>(answer);
+                var user = JsonConvert.DeserializeObject<UsuariosASP>(answer);
                 return new Respuestas
                 {
                     Logrado = true,

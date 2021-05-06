@@ -137,7 +137,7 @@ namespace EstanzuelaEats.ViewModels
             var response = await this.apiService.GetUser(url, prefix, $"{controller}/GetUser", this.Email, token.TokenType, token.AccessToken);
             if (response.Logrado)
             {
-                var userASP = (MyUserASP)response.Resultado;
+                var userASP = (UsuariosASP)response.Resultado;
                 MainViewModel.GetInstance().UserASP = userASP;
                 Settings.UserASP = JsonConvert.SerializeObject(userASP);
             }

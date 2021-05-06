@@ -24,7 +24,7 @@ namespace EstanzuelaEats
 
                 if (!string.IsNullOrEmpty(Settings.UserASP))
                 {
-                    mainViewModel.UserASP = JsonConvert.DeserializeObject<MyUserASP>(Settings.UserASP);
+                    mainViewModel.UserASP = JsonConvert.DeserializeObject<UsuariosASP>(Settings.UserASP);
                 }
 
                 mainViewModel.Productos = new ProductsViewModel();
