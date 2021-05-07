@@ -25,9 +25,9 @@
             <x:String x:Key="FacebookScope">email</x:String>
 
             <!-- Instagram -->
-            <x:String x:Key="InstagramAppID">efc75a941d87444ab8b12c17adfd9d2a</x:String>
+            <x:String x:Key="InstagramAppID">307761324273628</x:String>
             <x:String x:Key="InstagramAuthURL">https://api.instagram.com/oauth/authorize</x:String>
-            <x:String x:Key="InstagramRedirectURL">https://www.instagram.com</x:String>
+            <x:String x:Key="InstagramRedirectURL">https://estanzuelaeatsbackend2021.azurewebsites.net/</x:String>
             <x:String x:Key="InstagramScope">basic</x:String>
             <x:String x:Key="InstagramProfileInfoURL">https://api.instagram.com/v1/users/self/?access_token</x:String>
 

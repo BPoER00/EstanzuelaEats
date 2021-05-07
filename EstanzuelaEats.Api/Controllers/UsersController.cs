@@ -93,5 +93,81 @@ namespace EstanzuelaEats.Api.Controllers
             var answer = UsersHelper.CreateUserASP(userRequest);
             return Ok(answer);
         }
+
+        [HttpPost]
+        [Route("LoginTwitter")]
+        public IHttpActionResult LoginTwitter(TwitterResponse profile)
+        {
+            var user = UsersHelper.GetUserASP(profile.IdStr);
+            if (user != null)
+            {
+                return Ok(true); // TODO: Pending update the user with new twitter data
+            }
+
+            var firstName = string.Empty;
+            var lastName = string.Empty;
+            var fullName = profile.Name;
+            var posSpace = fullName.IndexOf(' ');
+            if (posSpace == -1)
+            {
+                firstName = fullName;
+                lastName = fullName;
+            }
+            else
+            {
+                firstName = fullName.Substring(0, posSpace);
+                lastName = fullName.Substring(posSpace + 1);
+            }
+
+            var userRequest = new UserRequest
+            {
+                EMail = profile.IdStr,
+                FirstName = firstName,
+                ImagePath = profile.ProfileImageUrl,
+                LastName = lastName,
+                Password = profile.IdStr,
+            };
+
+            var answer = UsersHelper.CreateUserASP(userRequest);
+            return Ok(answer);
+        }
+
+        [HttpPost]
+        [Route("LoginInstagram")]
+        public IHttpActionResult LoginInstagram(InstagramResponse profile)
+        {
+            var user = UsersHelper.GetUserASP(profile.UserData.Id);
+            if (user != null)
+            {
+                return Ok(true); // TODO: Pending update the user with new instagram data
+            }
+
+            var firstName = string.Empty;
+            var lastName = string.Empty;
+            var fullName = profile.UserData.FullName;
+            var posSpace = fullName.IndexOf(' ');
+            if (posSpace == -1)
+            {
+                firstName = fullName;
+                lastName = fullName;
+            }
+            else
+            {
+                firstName = fullName.Substring(0, posSpace);
+                lastName = fullName.Substring(posSpace + 1);
+            }
+
+            var userRequest = new UserRequest
+            {
+                EMail = profile.UserData.Id,
+                FirstName = firstName,
+                ImagePath = profile.UserData.ProfilePicture,
+                LastName = lastName,
+                Password = profile.UserData.Id,
+            };
+
+            var answer = UsersHelper.CreateUserASP(userRequest);
+            return Ok(answer);
+        }
     }
 }
