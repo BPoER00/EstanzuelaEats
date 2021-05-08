@@ -177,6 +177,15 @@
     <Compile Include="Migrations\202104051819144_AggImage.designer.cs">
       <DependentUpon>202104051819144_AggImage.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202105072251045_AgregandoYRelacionandoTablasProductosYCategory.cs" />
+    <Compile Include="Migrations\202105072251045_AgregandoYRelacionandoTablasProductosYCategory.designer.cs">
+      <DependentUpon>202105072251045_AgregandoYRelacionandoTablasProductosYCategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202105080021177_agregarCategorias.cs" />
+    <Compile Include="Migrations\202105080021177_agregarCategorias.designer.cs">
+      <DependentUpon>202105080021177_agregarCategorias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CategoryView.cs" />
     <Compile Include="Models\ProductView.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -298,6 +307,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202104051819144_AggImage.resx">
       <DependentUpon>202104051819144_AggImage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202105072251045_AgregandoYRelacionandoTablasProductosYCategory.resx">
+      <DependentUpon>202105072251045_AgregandoYRelacionandoTablasProductosYCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202105080021177_agregarCategorias.resx">
+      <DependentUpon>202105080021177_agregarCategorias.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

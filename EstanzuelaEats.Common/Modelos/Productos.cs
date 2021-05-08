@@ -1,14 +1,20 @@
 ﻿
 namespace EstanzuelaEats.Common.Modelos
 {
+    using Newtonsoft.Json;
     using System;
     using System.ComponentModel.DataAnnotations;
     using System.ComponentModel.DataAnnotations.Schema;
 
     public class Productos
     {
+
+        #region Atributos
+
         [Key]
         public int ProductoId { get; set; }
+
+        public int IdCategoria { get; set; }
 
         [Required]
         [StringLength(50)]
@@ -28,8 +34,23 @@ namespace EstanzuelaEats.Common.Modelos
         [DataType(DataType.Date)]
         public DateTime PublicacionProducto { get; set; }
 
+        [Required]
+        [StringLength(128)]
+        public string UserId { get; set; }
+
+        [JsonIgnore]
+        public virtual Category Category { get; set; }
+
         [NotMapped]
         public byte[] ImageArray { get; set; }
+
+        public bool Existencias { get; set; }
+
+        #endregion
+
+
+
+        #region Propiedades
 
         public string ImageFullPath
         {
@@ -44,10 +65,14 @@ namespace EstanzuelaEats.Common.Modelos
             }
         }
 
-        public bool Existencias { get; set; }
+
         public override string ToString()
         {
             return this.NombreProducto;
         }
+
+        #endregion
+
+
     }
 }

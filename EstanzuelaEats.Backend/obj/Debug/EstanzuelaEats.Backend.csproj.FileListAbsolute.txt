@@ -132,3 +132,5 @@ C:\Projects\EstanzuelaEats\EstanzuelaEats.Backend\obj\Debug\EstanzuelaEats.Backe
 C:\Projects\EstanzuelaEats\EstanzuelaEats.Backend\obj\Debug\EstanzuelaEats.Backend.csproj.CopyComplete
 C:\Projects\EstanzuelaEats\EstanzuelaEats.Backend\obj\Debug\EstanzuelaEats.Backend.dll
 C:\Projects\EstanzuelaEats\EstanzuelaEats.Backend\obj\Debug\EstanzuelaEats.Backend.pdb
+C:\Projects\EstanzuelaEats\EstanzuelaEats.Backend\obj\Debug\EstanzuelaEats.Backend.Migrations.AgregandoYRelacionandoTablasProductosYCategory.resources
+C:\Projects\EstanzuelaEats\EstanzuelaEats.Backend\obj\Debug\EstanzuelaEats.Backend.Migrations.agregarCategorias.resources

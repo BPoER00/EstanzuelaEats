@@ -46,6 +46,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
+    <Compile Include="Modelos\Category.cs" />
     <Compile Include="Modelos\Claim.cs" />
     <Compile Include="Modelos\FacebookResponse.cs" />
     <Compile Include="Modelos\GetUserRequest.cs" />
