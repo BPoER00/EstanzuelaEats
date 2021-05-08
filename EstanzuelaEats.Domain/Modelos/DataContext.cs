@@ -14,5 +14,6 @@ namespace EstanzuelaEats.Domain.Modelos
         }
 
         public DbSet<Productos> Productos { get; set; }
+        public DbSet<Category> Categories { get; set; }
     }
 }

@@ -7,6 +7,6 @@ namespace EstanzuelaEats.Backend.Models
 
     public class LocalDataContext : DataContext
     {
-
+        
     }
 }

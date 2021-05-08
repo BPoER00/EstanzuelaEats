@@ -1,3 +1,11 @@
+C:\Projects\EstanzuelaEats\EstanzuelaEats.Backend\obj\Debug\EstanzuelaEats.Backend.csprojAssemblyReference.cache
+C:\Projects\EstanzuelaEats\EstanzuelaEats.Backend\obj\Debug\EstanzuelaEats.Backend.Migrations.InitialCreate.resources
+C:\Projects\EstanzuelaEats\EstanzuelaEats.Backend\obj\Debug\EstanzuelaEats.Backend.Migrations.ActualizacionDeDatosDB.resources
+C:\Projects\EstanzuelaEats\EstanzuelaEats.Backend\obj\Debug\EstanzuelaEats.Backend.Migrations.AggImage.resources
+C:\Projects\EstanzuelaEats\EstanzuelaEats.Backend\obj\Debug\EstanzuelaEats.Backend.Migrations.AgregandoYRelacionandoTablasProductosYCategory.resources
+C:\Projects\EstanzuelaEats\EstanzuelaEats.Backend\obj\Debug\EstanzuelaEats.Backend.Migrations.agregarCategorias.resources
+C:\Projects\EstanzuelaEats\EstanzuelaEats.Backend\obj\Debug\EstanzuelaEats.Backend.csproj.GenerateResource.cache
+C:\Projects\EstanzuelaEats\EstanzuelaEats.Backend\obj\Debug\EstanzuelaEats.Backend.csproj.CoreCompileInputs.cache
 C:\Projects\EstanzuelaEats\EstanzuelaEats.Backend\bin\EstanzuelaEats.Backend.dll.config
 C:\Projects\EstanzuelaEats\EstanzuelaEats.Backend\bin\EstanzuelaEats.Backend.dll
 C:\Projects\EstanzuelaEats\EstanzuelaEats.Backend\bin\EstanzuelaEats.Backend.pdb
@@ -123,14 +131,6 @@ C:\Projects\EstanzuelaEats\EstanzuelaEats.Backend\bin\es\Microsoft.Owin.Security
 C:\Projects\EstanzuelaEats\EstanzuelaEats.Backend\bin\es\Microsoft.Owin.Security.Google.resources.dll
 C:\Projects\EstanzuelaEats\EstanzuelaEats.Backend\bin\es\Microsoft.Owin.Security.Twitter.resources.dll
 C:\Projects\EstanzuelaEats\EstanzuelaEats.Backend\bin\es\Microsoft.Owin.Security.MicrosoftAccount.resources.dll
-C:\Projects\EstanzuelaEats\EstanzuelaEats.Backend\obj\Debug\EstanzuelaEats.Backend.csprojAssemblyReference.cache
-C:\Projects\EstanzuelaEats\EstanzuelaEats.Backend\obj\Debug\EstanzuelaEats.Backend.Migrations.InitialCreate.resources
-C:\Projects\EstanzuelaEats\EstanzuelaEats.Backend\obj\Debug\EstanzuelaEats.Backend.Migrations.ActualizacionDeDatosDB.resources
-C:\Projects\EstanzuelaEats\EstanzuelaEats.Backend\obj\Debug\EstanzuelaEats.Backend.Migrations.AggImage.resources
-C:\Projects\EstanzuelaEats\EstanzuelaEats.Backend\obj\Debug\EstanzuelaEats.Backend.csproj.GenerateResource.cache
-C:\Projects\EstanzuelaEats\EstanzuelaEats.Backend\obj\Debug\EstanzuelaEats.Backend.csproj.CoreCompileInputs.cache
 C:\Projects\EstanzuelaEats\EstanzuelaEats.Backend\obj\Debug\EstanzuelaEats.Backend.csproj.CopyComplete
 C:\Projects\EstanzuelaEats\EstanzuelaEats.Backend\obj\Debug\EstanzuelaEats.Backend.dll
 C:\Projects\EstanzuelaEats\EstanzuelaEats.Backend\obj\Debug\EstanzuelaEats.Backend.pdb
-C:\Projects\EstanzuelaEats\EstanzuelaEats.Backend\obj\Debug\EstanzuelaEats.Backend.Migrations.AgregandoYRelacionandoTablasProductosYCategory.resources
-C:\Projects\EstanzuelaEats\EstanzuelaEats.Backend\obj\Debug\EstanzuelaEats.Backend.Migrations.agregarCategorias.resources

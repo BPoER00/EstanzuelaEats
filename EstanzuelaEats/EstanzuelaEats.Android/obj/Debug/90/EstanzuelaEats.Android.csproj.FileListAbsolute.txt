@@ -518,6 +518,7 @@ C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats.Android\obj\Debug\90\an
 C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats.Android\obj\Debug\90\android\src\crc64a0e0a82d0db9a07d\TextToSpeechImplementation.java
 C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats.Android\obj\Debug\90\android\src\crc64a0e0a82d0db9a07d\WebAuthenticatorCallbackActivity.java
 C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats.Android\obj\Debug\90\android\src\crc64a928fec72298c86b\LoginFacebookPageRenderer.java
+C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats.Android\obj\Debug\90\android\src\crc64a928fec72298c86b\LoginInstagramPageRenderer.java
 C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats.Android\obj\Debug\90\android\src\crc64a98abb514ffad9f1\CustomTabsServiceConnectionImpl.java
 C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats.Android\obj\Debug\90\android\src\crc64a98abb514ffad9f1\KeepAliveService.java
 C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats.Android\obj\Debug\90\android\src\crc64b5ccde371e18b5d0\CustomTabActivityHelper.java
@@ -623,5 +624,3 @@ C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats.Android\obj\Debug\90\st
 C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats.Android\obj\Debug\90\stamp\_GenerateJavaStubs.stamp
 C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats.Android\obj\Debug\90\stamp\_GeneratePackageManagerJava.stamp
 C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats.Android\obj\Debug\90\stamp\_ResolveLibraryProjectImports.stamp
-C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats.Android\bin\Debug\EstanzuelaEats.Common.dll.mdb
-C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats.Android\obj\Debug\90\android\src\crc64a928fec72298c86b\LoginInstagramPageRenderer.java
