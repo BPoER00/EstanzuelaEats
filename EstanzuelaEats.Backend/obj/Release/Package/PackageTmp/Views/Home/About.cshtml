@@ -1,7 +1,89 @@
 ﻿@{
-    ViewBag.Title = "About";
+    ViewBag.Title = "Tecnologias";
 }
-<h2>@ViewBag.Title.</h2>
-<h3>@ViewBag.Message</h3>
 
-<p>Use this area to provide additional information.</p>
+<style>
+    #color {
+        color: #000000;
+    }
+    #border {
+        border-radius: 50px;
+        background-color: #8db0ac;
+    }
+</style>
+
+<body class="bg-primary" id="color">
+    <br />
+    <br />
+    <center>
+        <div class="jumbotron" id="border">
+            <h1>Tecnologias de la App</h1>
+        </div>
+    </center>
+
+    <div class="jumbotron" id="border">
+        <div class="row">
+            <div class="col-md-3">
+                <img src="~/Content/Imagenes/github.png" alt="" width="150" height="150" class="d-inline-block align-text-top">
+            </div>
+            <div class="col-md-8">
+                <h1>GitHub</h1>
+                <p class="lead">
+                    En la aplicacion uno de los principales terceros que usamos es GitHub
+                    en uno de los repositorios que se encuentra en esta pagina web hemos estado guardando cada
+                    uno de los nuevos avances de la aplicacion y paginas web.
+                </p>
+                <a href="https://kinsta.com/es/base-de-conocimiento/que-es-github/#:~:text=GitHub%20es%20una%20compañía%20sin,versión%20de%20control%20y%20colaboración." class="btn btn-warning">Leer Mas Sobre GitHub</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="jumbotron" id="border">
+        <div class="row">
+            <div class="col-md-3">
+                <img src="~/Content/Imagenes/Xamarin.png" alt="" width="150" height="150" class="d-inline-block align-text-top">
+            </div>
+            <div class="col-md-8">
+                <h1>Xamarin</h1>
+                <p class="lead">
+                    La aplicacion movil esta diseñada en una tecnologia de Microsoft llamada
+                    Xamarin, esta es una tecnologia multiplataforma ya que puede programar sus aplicaciones
+                    tanto en aplicaciones de escritorio, aplicaciones moviles tanto como para Android y IOS.
+                </p>
+                <a href="https://docs.microsoft.com/en-us/xamarin/get-started/what-is-xamarin" class="btn btn-warning">Leer Mas Sobre Xamarin</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="jumbotron" id="border">
+        <div class="row">
+            <div class="col-md-3">
+                <img src="~/Content/Imagenes/VisualStudio.png" alt="" width="150" height="150" class="d-inline-block align-text-top">
+            </div>
+            <div class="col-md-8">
+                <h1>Visual Studio</h1>
+                <p class="lead">
+                    La IDE para el desarrollo de la aplicacion en Xamarin se realizo en
+                    Visual Studio.
+                </p>
+                <a href="https://es.wikipedia.org/wiki/Microsoft_Visual_Studio" class="btn btn-warning">Leer Mas Sobre Visual Studio</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="jumbotron" id="border">
+        <div class="row">
+            <div class="col-md-3">
+                <img src="~/Content/Imagenes/csharp.png" alt="" width="150" height="150" class="d-inline-block align-text-top">
+            </div>
+            <div class="col-md-8">
+                <h1>C#</h1>
+                <p class="lead">
+                    La aplicacion mayormente esta construida en el lenguaje de C# con la inclusion de
+                    HTML, CSS, XML.
+                </p>
+                <a href="https://es.wikipedia.org/wiki/C_Sharp" class="btn btn-warning">Leer Mas Sobre C#</a>
+            </div>
+        </div>
+    </div>
+</body>

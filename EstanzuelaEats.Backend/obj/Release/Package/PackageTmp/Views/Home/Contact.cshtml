@@ -1,17 +1,91 @@
 ﻿@{
-    ViewBag.Title = "Contact";
+    ViewBag.Title = "Informacion";
 }
-<h2>@ViewBag.Title.</h2>
-<h3>@ViewBag.Message</h3>
 
-<address>
-    One Microsoft Way<br />
-    Redmond, WA 98052-6399<br />
-    <abbr title="Phone">P:</abbr>
-    425.555.0100
-</address>
+<style>
+    #color {
+        color: #000000;
+    }
 
-<address>
-    <strong>Support:</strong>   <a href="mailto:Support@example.com">Support@example.com</a><br />
-    <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
-</address>
+    #border {
+        border-radius: 50px;
+        background-color: #8db0ac;
+    }
+</style>
+
+<body class="bg-primary" id="color">
+
+    <br />
+    <br />
+    <center>
+        <div class="jumbotron" id="border">
+            <h1>Informacion de la Aplicacion</h1>
+        </div>
+    </center>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="jumbotron" id="border">
+                <div class="col-md-13">
+                    <center>
+                        <img src="~/Content/Imagenes/Mision.jpg" alt="" width="200" height="150" class="d-inline-block align-text-top">
+                        <br />
+                        <h1>Mision</h1>
+                    </center>
+                    <p>
+                        Ayudar a cada uno de los negocios o personas emprendedores del pueblo de Estanzuela para que puedan
+                        vender y obtener ingresos de manera mas facil y efectiva, por el otro lado proteger a las personas del virus.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="jumbotron" id="border">
+                <div class="col-md-13">
+                    <center>
+                        <img src="~/Content/Imagenes/Objetivo.jpg" alt="" width="200" height="150" class="d-inline-block align-text-top">
+                        <br />
+                        <h1>Objetivo</h1>
+                    </center>
+                    <p>
+                        Objetivos ser reconocidos a nivel pueblo, ayudar tanto a comerciantes como a las personas para que no tengan
+                        que salir y arriesgar en la calle a la hora de comprar cada uno de los productos que necesiten.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="jumbotron" id="border">
+                <div class="col-md-13">
+                    <center>
+                        <img src="~/Content/Imagenes/Vision.jpg" alt="" width="200" height="150" class="d-inline-block align-text-top">
+                        <br />
+                        <h1>Vision</h1>
+                    </center>
+                    <p>
+                        Ser reconocidos a nivel de nuestro pueblo para ir creciendo y generando ingresos
+                        Adaptar la aplicacion a que pueda crecer un poco mas a nivel departamento y por ultimo lograr llegar al
+                        nivel mas alto que seria el nivel nacional.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="jumbotron" id="border">
+        <div class="row">
+            <div class="col-md-3">
+                <img src="~/Content/Imagenes/github.png" alt="" width="150" height="150" class="d-inline-block align-text-top">
+            </div>
+            <div class="col-md-8">
+                <h1>GitHub</h1>
+                <p class="lead">
+                    Nuestro repositorio lo encontrara en el siguiente enlace unicamente tiene que pulsar en el boton que dice ver repositorio.
+                </p>
+                <a href="https://github.com/BPoER00/EstanzuelaEats" class="btn btn-warning">Ver Repositorio</a>
+            </div>
+        </div>
+    </div>
+
+</body>
