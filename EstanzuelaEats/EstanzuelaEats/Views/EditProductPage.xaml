@@ -24,7 +24,10 @@
                     Text="{i18n:Translate CambiarImagen}">
 
                 </Label>
-                <Grid>
+                <Grid
+                    Padding="10"
+                    Margin="10,0"
+                    VerticalOptions="CenterAndExpand">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="Auto"/>
                         <ColumnDefinition Width="*"/>
@@ -74,11 +77,28 @@
                         VerticalOptions="Center"
                         FontAttributes="Bold"
                         FontSize="Medium"
+                        Text="{i18n:Translate Category}">
+                    </Label>
+                    <Picker
+                        Grid.Column="1"
+                        Grid.Row="2"
+                        ItemDisplayBinding="{Binding Description}"
+                        ItemsSource="{Binding Categories}"
+                        SelectedItem="{Binding Category}"
+                        Title="{i18n:Translate CategoryPlaceholder}">
+                    </Picker>
+
+                    <Label
+                        Grid.Column="0"
+                        Grid.Row="3"
+                        VerticalOptions="Center"
+                        FontAttributes="Bold"
+                        FontSize="Medium"
                         Text="{i18n:Translate Description}">
                     </Label>
                     <Editor
                         Grid.Column="1"
-                        Grid.Row="2"
+                        Grid.Row="3"
                         Text="{Binding Product.DescripcionProducto}"
                         VerticalOptions="FillAndExpand"
                         HeightRequest="46">
@@ -86,7 +106,7 @@
                     
                     <Label
                         Grid.Column="0"
-                        Grid.Row="3"
+                        Grid.Row="4"
                         VerticalOptions="Center"
                         FontAttributes="Bold"
                         FontSize="Medium"
@@ -96,7 +116,7 @@
                     </Label>
                     <Switch
                         Grid.Column="1"
-                        Grid.Row="3"
+                        Grid.Row="4"
                         HorizontalOptions="End"
                         IsToggled="{Binding Product.Existencias}">
                         

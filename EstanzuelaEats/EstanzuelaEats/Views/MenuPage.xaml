@@ -33,29 +33,34 @@
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
-                            <Grid Padding="10">
-                                <Grid.GestureRecognizers>
-                                    <TapGestureRecognizer Command="{Binding GotoCommand}"/>
-                                </Grid.GestureRecognizers>
-                                <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="Auto"/>
-                                    <ColumnDefinition Width="*"/>
-                                </Grid.ColumnDefinitions>
-                                <Image
+                            <Frame
+                                CornerRadius="20"
+                                HasShadow="true"
+                                Margin="5">
+                                <Grid Padding="10">
+                                    <Grid.GestureRecognizers>
+                                        <TapGestureRecognizer Command="{Binding GotoCommand}"/>
+                                    </Grid.GestureRecognizers>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="Auto"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <Image
                                     Grid.Column="0"
                                     Source="{Binding Icon}"
                                     WidthRequest="40"
                                     HeightRequest="40"
                                     VerticalOptions="Center"
                                     HorizontalOptions="Start">
-                                </Image>
-                                <Label
+                                    </Image>
+                                    <Label
                                     Grid.Column="1"
                                     VerticalOptions="Center"
                                     TextColor="White"
                                     Text="{Binding Title}">
-                                </Label>
-                            </Grid>
+                                    </Label>
+                                </Grid>
+                            </Frame>
                         </ViewCell>
                     </DataTemplate>
                 </ListView.ItemTemplate>

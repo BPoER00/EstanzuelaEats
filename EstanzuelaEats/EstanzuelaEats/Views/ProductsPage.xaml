@@ -35,53 +35,58 @@
                                 <MenuItem Text="{i18n:Translate Edit}" Command="{Binding EditProductCommand}"/>
                                 <MenuItem Text="{i18n:Translate Delete}" Command="{Binding DeleteProductCommand}" IsDestructive="True"/>
                             </ViewCell.ContextActions>
-                            <Grid
+                            <Frame
+                                CornerRadius="20"
+                                HasShadow="true"
+                                Margin="5">
+                                <Grid
                                 Padding="3">
-                                <Grid.GestureRecognizers>
-                                    <TapGestureRecognizer Command="{Binding EditProductCommand}"/>
-                                </Grid.GestureRecognizers>
-                                <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="Auto"/>
-                                    <ColumnDefinition Width="2*"/>
-                                    <ColumnDefinition Width="*"/>
-                                    <ColumnDefinition Width="Auto"/>
-                                </Grid.ColumnDefinitions>
-                                <Image
+                                    <Grid.GestureRecognizers>
+                                        <TapGestureRecognizer Command="{Binding EditProductCommand}"/>
+                                    </Grid.GestureRecognizers>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="Auto"/>
+                                        <ColumnDefinition Width="2*"/>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="Auto"/>
+                                    </Grid.ColumnDefinitions>
+                                    <Image
                                     Grid.Column="0"
                                     Source="{Binding ImageFullPath}"
                                     WidthRequest="100">
-                                </Image>
-                                <StackLayout
+                                    </Image>
+                                    <StackLayout
                                     Grid.Column="1"
                                     VerticalOptions="Center">
 
-                                    <Label
+                                        <Label
                                         FontSize="Medium"
                                         FontAttributes="Bold"
                                         Text="{Binding NombreProducto}">
-                                    </Label>
+                                        </Label>
 
-                                    <Label
+                                        <Label
                                         FontSize="Body"
                                         Text="{Binding DescripcionProducto}">
-                                    </Label>
-                                    
-                                </StackLayout>
-                                <Label
+                                        </Label>
+
+                                    </StackLayout>
+                                    <Label
                                     FontSize="Body"
                                     Grid.Column="2"
                                     HorizontalOptions="End"
                                     Text="{Binding PrecioProducto, StringFormat='{0:C2}'}"
                                     VerticalOptions="Center">
-                                </Label>
-                                <Image
+                                    </Label>
+                                    <Image
                                     Grid.Column="3"
                                     Source="ic_action_arrow_forward_ios"
                                     VerticalOptions="Center"
                                     HorizontalOptions="Center">
-                                    
-                                </Image>
-                            </Grid>
+
+                                    </Image>
+                                </Grid>
+                            </Frame>
                         </ViewCell>
                     </DataTemplate>
                 </ListView.ItemTemplate>

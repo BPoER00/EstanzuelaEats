@@ -13,6 +13,8 @@ namespace EstanzuelaEats.ViewModels
     using System.Windows.Input;
     using Xamarin.Forms;
     using Plugin.Media;
+    using System.Collections.ObjectModel;
+    using System.Threading.Tasks;
 
     public class AddProductViewModel : BaseViewModel
     {
@@ -22,6 +24,8 @@ namespace EstanzuelaEats.ViewModels
         private bool isRunning;
         private bool isEnable;
         private ImageSource imageSource;
+        private ObservableCollection<Category> categories;
+        private Category category;
         #endregion
 
         #region Propiedades
@@ -46,6 +50,20 @@ namespace EstanzuelaEats.ViewModels
             get { return this.imageSource; }
             set { this.SetValue(ref this.imageSource, value); }
         }
+
+        public List<Category> MyCategories { get; set; }
+
+        public Category Category
+        {
+            get { return this.category; }
+            set { this.SetValue(ref this.category, value); }
+        }
+
+        public ObservableCollection<Category> Categories
+        {
+            get { return this.categories; }
+            set { this.SetValue(ref this.categories, value); }
+        }
         #endregion
 
         #region Constructores
@@ -54,6 +72,57 @@ namespace EstanzuelaEats.ViewModels
             this.api = new ApiService();
             this.IsEnable = true;
             this.ImageSource = "NoProducto.png";
+            this.LoadCategories();
+        }
+        #endregion
+
+        #region Metodos
+        private async void LoadCategories()
+        {
+            this.IsRunning = true;
+            this.IsEnable = false;
+
+            var connection = await this.api.CheckConnection();
+            if (!connection.Logrado)
+            {
+                this.IsRunning = false;
+                this.IsEnable = true;
+                await Application.Current.MainPage.DisplayAlert
+                    (Languages.Error, 
+                     connection.Mensaje, 
+                     Languages.Accept
+                     );
+                return;
+            }
+
+            var answer = await this.LoadCategoriesFromAPI();
+            if (answer)
+            {
+                this.RefreshList();
+            }
+
+            this.IsRunning = false;
+            this.IsEnable = true;
+        }
+
+        private void RefreshList()
+        {
+            this.Categories = new ObservableCollection<Category>(this.MyCategories.OrderBy(c => c.Description));
+        }
+
+        private async Task<bool> LoadCategoriesFromAPI()
+        {
+            var url = Application.Current.Resources["UrlAPI"].ToString();
+            var prefix = Application.Current.Resources["UrlPrefix"].ToString();
+            var controller = Application.Current.Resources["UrlCategoriesController"].ToString();
+            var response = await this.api.GetList<Category>(url, prefix, controller, Settings.TokenType, Settings.AccessToken);
+            if (!response.Logrado)
+            {
+                return false;
+            }
+
+            this.MyCategories = (List<Category>)response.Resultado;
+            return true;
         }
         #endregion
 
@@ -157,6 +226,15 @@ namespace EstanzuelaEats.ViewModels
                 return;
             }
 
+            if (this.Category == null)
+            {
+                await Application.Current.MainPage.DisplayAlert(
+                    Languages.Error,
+                    Languages.CategoryError,
+                    Languages.Accept);
+                return;
+            }
+
             this.IsRunning = true;
             this.IsEnable = false;
 
@@ -180,7 +258,9 @@ namespace EstanzuelaEats.ViewModels
                 NombreProducto = this.Name,
                 PrecioProducto = price,
                 DescripcionProducto = this.Description,
-                ImageArray = imageArray
+                ImageArray = imageArray,
+                IdCategoria = this.Category.CategoriaId,
+                UserId = MainViewModel.GetInstance().UserASP.Id,
             };
 
             //conectamos con el diccionario de recursos para traer la url de nuestro backend de datos

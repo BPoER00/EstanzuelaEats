@@ -159,7 +159,9 @@
                     Existencias = p.Existencias,
                     PublicacionProducto = p.PublicacionProducto,
                     ImagePath = p.ImagePath,
-                    ImageArray = p.ImageArray
+                    ImageArray = p.ImageArray,
+                    IdCategoria = p.IdCategoria,
+                    UserId = p.UserId
                 });
                 this.Productos = new ObservableCollection<ProductItemViewModel>(myListProductItemViewModel.OrderBy(p => p.NombreProducto));
             }
@@ -174,7 +176,9 @@
                     Existencias = p.Existencias,
                     PublicacionProducto = p.PublicacionProducto,
                     ImagePath = p.ImagePath,
-                    ImageArray = p.ImageArray
+                    ImageArray = p.ImageArray,
+                    IdCategoria = p.IdCategoria,
+                    UserId = p.UserId
                 }).Where(p => p.NombreProducto.ToLower().Contains(this.Filter.ToLower())).ToList();
                 this.Productos = new ObservableCollection<ProductItemViewModel>(myListProductItemViewModel.OrderBy(p => p.NombreProducto));
             }
