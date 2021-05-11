@@ -46,6 +46,10 @@ namespace EstanzuelaEats.Common.Modelos
 
         public bool Existencias { get; set; }
 
+        public double Latitud { get; set; }
+
+        public double Longitude { get; set; }
+
         #endregion
 
 

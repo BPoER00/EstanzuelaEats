@@ -49,6 +49,8 @@ namespace EstanzuelaEats
             }
         }
 
+        public static MasterPage Master { get; internal set; }
+
         public static async Task NavigateToProfile(TokenResponse token)
         {
             if (token == null)
