@@ -29,7 +29,7 @@
                     return "NoProducto";
                 }
 
-                return $"https://estanzuelaeats.azurewebsites.net{this.ImagePath.Substring(1)}";
+                return $"https://estanzuelaeatsbackend2021.azurewebsites.net{this.ImagePath.Substring(1)}";
             }
         }
     }

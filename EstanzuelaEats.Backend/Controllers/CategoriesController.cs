@@ -111,7 +111,7 @@ namespace EstanzuelaEats.Backend.Controllers
             if (ModelState.IsValid)
             {
                 var pic = view.ImagePath;
-                var folder = "~/Content/Categories";
+                var folder = "~/Content/Categorias";
 
                 if (view.ImageFile != null)
                 {

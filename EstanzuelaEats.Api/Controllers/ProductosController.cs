@@ -29,13 +29,7 @@ namespace EstanzuelaEats.Api.Controllers
         [ResponseType(typeof(Productos))]
         public async Task<IHttpActionResult> GetProductos(int id)
         {
-            var productos = await db.Productos.FindAsync(id);
-
-            if (productos == null)
-            {
-                return NotFound();
-            }
-
+            var productos = await db.Productos.Where(p => p.IdCategoria == id).ToListAsync(); 
             return Ok(productos);
         }
 

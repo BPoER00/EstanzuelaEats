@@ -14,7 +14,7 @@
                 Source="{Binding ImageSource}"
                 WidthRequest="200"
                 HeightRequest="175"
-                Aspect="AspectFit"    >
+                Aspect="AspectFit">
                     <Image.GestureRecognizers>
                         <TapGestureRecognizer Command="{Binding ChangeImageCommand}"/>
                     </Image.GestureRecognizers>

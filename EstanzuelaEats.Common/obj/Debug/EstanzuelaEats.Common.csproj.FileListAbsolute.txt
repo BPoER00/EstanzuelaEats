@@ -6,3 +6,4 @@ C:\Projects\EstanzuelaEats\EstanzuelaEats.Common\obj\Debug\EstanzuelaEats.Common
 C:\Projects\EstanzuelaEats\EstanzuelaEats.Common\obj\Debug\EstanzuelaEats.Common.csproj.CopyComplete
 C:\Projects\EstanzuelaEats\EstanzuelaEats.Common\obj\Debug\EstanzuelaEats.Common.dll
 C:\Projects\EstanzuelaEats\EstanzuelaEats.Common\obj\Debug\EstanzuelaEats.Common.pdb
+C:\Projects\EstanzuelaEats\EstanzuelaEats.Common\obj\Debug\EstanzuelaEats.Common.csprojAssemblyReference.cache

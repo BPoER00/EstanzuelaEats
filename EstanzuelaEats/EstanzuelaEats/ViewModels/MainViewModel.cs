@@ -16,11 +16,12 @@ namespace EstanzuelaEats.ViewModels
 
         public LoginViewModel Login { get; set; }
         public ProductsViewModel Productos { get; set; }
-        public AddProductViewModel AddProduct { get; set; }
+        public AddProductViewModel AddProduct { get; set; } 
         public EditProductViewModel EditProduct { get; set; }
         public RegisterViewModel Register { get; set; }
         public UsuariosASP UserASP { get; set; }
         public ObservableCollection<MenuItemViewModel> Menu { get; set; } 
+        public CategoriesViewModel Categories { get; set; }
 
         public string UserFullName
         {

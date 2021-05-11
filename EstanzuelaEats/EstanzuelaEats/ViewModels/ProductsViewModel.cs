@@ -59,13 +59,20 @@
             get { return this.isRefreshing; }
             set { this.SetValue(ref this.isRefreshing, value); }
         }
+
+        public Category Category
+        {
+            get;
+            set;
+        }
         #endregion
 
 
         #region Constructores
-        public ProductsViewModel()
+        public ProductsViewModel(Category category)
         {
             instance = this;
+            this.Category = category;
             this.apiService = new ApiService();
             this.dataService = new DataService();
             this.LoadProducts();
@@ -76,13 +83,9 @@
         #region Singleton
 
         private static ProductsViewModel instance;
+
         public static ProductsViewModel GetInstance()
         {
-            if(instance == null)
-            {
-                return new ProductsViewModel();
-            }
-
             return instance;
         }
 
@@ -92,35 +95,27 @@
         #region Metodos
         private async void LoadProducts()
         {
-            //activamos el refresh
             this.IsRefreshing = true;
 
-            //comprobamos si el usuario tiene conexion a internet
-            var Connection = await this.apiService.CheckConnection();
-            if (Connection.Logrado)
-            {
-                var answer = await this.LoadProductsFromApi();
-                if(answer)
-                {
-                    this.SaveProductsDB();
-                }
-            }
-            else
-            {
-                await this.LoadProductsFromDB();
-            }
-
-            if(this.MyProducts == null || this.MyProducts.Count == 0)
+            var connection = await this.apiService.CheckConnection();
+            if (!connection.Logrado)
             {
                 this.IsRefreshing = false;
-                await Application.Current.MainPage.DisplayAlert(
-                    Languages.Error, 
-                    Languages.NoProductsMessage, 
-                    Languages.Accept);
+                await Application.Current.MainPage.DisplayAlert
+                    (Languages.Error, 
+                     connection.Mensaje, 
+                     Languages.Accept
+                     );
                 return;
             }
 
-            this.RefreshList();
+            var answer = await this.LoadProductsFromApi();
+            if (answer)
+            {
+                this.RefreshList();
+            }
+
+            this.IsRefreshing = false;
             this.IsRefreshing = false;
         }
 
@@ -137,23 +132,15 @@
 
         private async Task<bool> LoadProductsFromApi()
         {
-
-            //conectamos con el diccionario de recursos para traer la url de nuestro backend de datos
-
             var url = Application.Current.Resources["UrlAPI"].ToString();
-            var urlPrefix = Application.Current.Resources["UrlPrefix"].ToString();
-            var urlProductsController = Application.Current.Resources["UrlProductsController"].ToString();
-
-            //hacemos nuestra conexion al backend para traer una lista de datos de la clase products que esta en el Common
-            var response = await this.apiService.GetList<Productos>(url, urlPrefix, urlProductsController, Settings.TokenType, Settings.AccessToken);
-
-            //revisamos si realizo correctamenta la accion
+            var prefix = Application.Current.Resources["UrlPrefix"].ToString();
+            var controller = Application.Current.Resources["UrlProductsController"].ToString();
+            var response = await this.apiService.GetList<Productos>(url, prefix, controller, this.Category.CategoriaId, Settings.TokenType, Settings.AccessToken);
             if (!response.Logrado)
             {
-               return false;
+                return false;
             }
 
-            //si lo hizo devuelve la lista y la muestra en pantalla
             this.MyProducts = (List<Productos>)response.Resultado;
             return true;
         }

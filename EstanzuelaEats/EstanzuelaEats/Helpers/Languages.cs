@@ -333,5 +333,25 @@ namespace EstanzuelaEats.Helpers
         {
             get { return Resource.RegisterConfirmation; }
         }
+    
+        public static string Categories
+        {
+            get { return Resource.Categories; }
+        }
+
+        public static string Category
+        {
+            get { return Resource.Category; }
+        }
+
+        public static string CategoryPlaceholder
+        {
+            get { return Resource.CategoryPlaceholder; }
+        }
+
+        public static string CategoryError
+        {
+            get { return Resource.CategoryError; }
+        }
     }
 }

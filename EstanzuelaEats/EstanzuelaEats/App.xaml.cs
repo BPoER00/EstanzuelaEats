@@ -30,7 +30,7 @@ namespace EstanzuelaEats
                     mainViewModel.UserASP = JsonConvert.DeserializeObject<UsuariosASP>(Settings.UserASP);
                 }
 
-                mainViewModel.Productos = new ProductsViewModel();
+                mainViewModel.Categories = new CategoriesViewModel();
                 this.MainPage = new MasterPage();
             }
             else
@@ -72,7 +72,7 @@ namespace EstanzuelaEats
                 MainViewModel.GetInstance().UserASP = userASP;
                 Settings.UserASP = JsonConvert.SerializeObject(userASP);
             }
-            MainViewModel.GetInstance().Productos = new ProductsViewModel();
+            MainViewModel.GetInstance().Categories = new CategoriesViewModel();
             Application.Current.MainPage = new MasterPage();
         }
 

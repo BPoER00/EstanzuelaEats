@@ -17,6 +17,9 @@
             
             <!-- Usuarios -->
             <x:String x:Key="UrlUsersController">/Users</x:String>
+            
+            <!-- Categorias -->
+            <x:String x:Key="UrlCategoriesController">/Categories</x:String>
 
             <!-- Facebook -->
             <x:String x:Key="FacebookAppID">751560988843832</x:String>

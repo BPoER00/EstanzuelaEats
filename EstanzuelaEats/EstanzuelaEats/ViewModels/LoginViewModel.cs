@@ -142,11 +142,13 @@ namespace EstanzuelaEats.ViewModels
                 Settings.UserASP = JsonConvert.SerializeObject(userASP);
             }
 
+            MainViewModel.GetInstance().Categories = new CategoriesViewModel();
+            Application.Current.MainPage = new MasterPage();
+
             this.IsRunning = false;
             this.IsEnable = true;
 
-            MainViewModel.GetInstance().Productos = new ProductsViewModel();
-            Application.Current.MainPage = new MasterPage();
+            
         }
 
         public ICommand LoginFacebookComand
