@@ -8,8 +8,15 @@
              Title="{i18n:Translate Menu}"
              BackgroundColor="Gray">
     <ContentPage.Content>
-        <StackLayout
+        <Frame
+                CornerRadius="20"
+                HasShadow="true"
+                Margin="5"
+                BorderColor="DarkOliveGreen">
+            
+            <StackLayout
             Padding="10">
+
             <controls:CircleImage
                 Source="{Binding UserImageFullPath}"
                 Aspect="AspectFit"
@@ -25,47 +32,48 @@
                 TextColor="White">
                 
             </Label>
-            <ListView
+                <ListView
                 BackgroundColor="Transparent"
                 ItemsSource="{Binding Menu}"
                 HasUnevenRows="True"
                 SeparatorVisibility="None">
-                <ListView.ItemTemplate>
-                    <DataTemplate>
-                        <ViewCell>
-                            <Frame
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <Frame
                                 CornerRadius="20"
                                 HasShadow="true"
                                 Margin="5"
                                 BorderColor="DarkOliveGreen">
-                                <Grid Padding="10">
-                                    <Grid.GestureRecognizers>
-                                        <TapGestureRecognizer Command="{Binding GotoCommand}"/>
-                                    </Grid.GestureRecognizers>
-                                    <Grid.ColumnDefinitions>
-                                        <ColumnDefinition Width="Auto"/>
-                                        <ColumnDefinition Width="*"/>
-                                    </Grid.ColumnDefinitions>
-                                    <Image
+                                    <Grid Padding="10">
+                                        <Grid.GestureRecognizers>
+                                            <TapGestureRecognizer Command="{Binding GotoCommand}"/>
+                                        </Grid.GestureRecognizers>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="Auto"/>
+                                            <ColumnDefinition Width="*"/>
+                                        </Grid.ColumnDefinitions>
+                                        <Image
                                     Grid.Column="0"
                                     Source="{Binding Icon}"
                                     WidthRequest="40"
                                     HeightRequest="40"
                                     VerticalOptions="Center"
                                     HorizontalOptions="Start">
-                                    </Image>
-                                    <Label
+                                        </Image>
+                                        <Label
                                     Grid.Column="1"
                                     VerticalOptions="Center"
                                     TextColor="White"
                                     Text="{Binding Title}">
-                                    </Label>
-                                </Grid>
-                            </Frame>
-                        </ViewCell>
-                    </DataTemplate>
-                </ListView.ItemTemplate>
-            </ListView>
+                                        </Label>
+                                    </Grid>
+                                </Frame>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
         </StackLayout>
+        </Frame>
     </ContentPage.Content>
 </ContentPage>

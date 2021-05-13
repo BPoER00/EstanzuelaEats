@@ -321,4 +321,13 @@
   <data name="CategoryError" xml:space="preserve">
     <value>You must select a category.</value>
   </data>
+  <data name="RegisterLabel" xml:space="preserve">
+    <value>Still Not Connected?</value>
+  </data>
+  <data name="RegisterSignUp" xml:space="preserve">
+    <value>Sign Up</value>
+  </data>
+  <data name="OrLabel" xml:space="preserve">
+    <value>Or</value>
+  </data>
 </root>

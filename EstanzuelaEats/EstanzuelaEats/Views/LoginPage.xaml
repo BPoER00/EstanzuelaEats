@@ -149,12 +149,12 @@
                                 HorizontalOptions="CenterAndExpand">
                                 
                                 <Label 
-                                    Text="Still Not Connected ?" 
+                                    Text="{i18n:Translate RegisterLabel}" 
                                     TextColor="DarkGray" 
                                     FontSize="Small"/>
                                 
                                 <Label 
-                                    Text="Sign Up" 
+                                    Text="{i18n:Translate RegisterSignUp}" 
                                     TextColor="GreenYellow" 
                                     FontAttributes="Bold" 
                                     FontSize="Small">
@@ -196,7 +196,7 @@
                                         Padding="0">
                                         
                                         <Label 
-                                            Text="OR" 
+                                            Text="{i18n:Translate OrLabel}" 
                                             TextColor="DarkGray" 
                                             FontSize="Small" 
                                             VerticalTextAlignment="Center" 

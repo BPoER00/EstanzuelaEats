@@ -457,6 +457,15 @@ namespace EstanzuelaEats.Resources {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Or.
+        /// </summary>
+        public static string OrLabel {
+            get {
+                return ResourceManager.GetString("OrLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Password.
         /// </summary>
         public static string Password {
@@ -606,6 +615,24 @@ namespace EstanzuelaEats.Resources {
         public static string RegisterConfirmation {
             get {
                 return ResourceManager.GetString("RegisterConfirmation", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Still Not Connected?.
+        /// </summary>
+        public static string RegisterLabel {
+            get {
+                return ResourceManager.GetString("RegisterLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Sign Up.
+        /// </summary>
+        public static string RegisterSignUp {
+            get {
+                return ResourceManager.GetString("RegisterSignUp", resourceCulture);
             }
         }
         

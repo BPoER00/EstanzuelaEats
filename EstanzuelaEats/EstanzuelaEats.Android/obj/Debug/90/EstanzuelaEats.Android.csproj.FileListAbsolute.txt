@@ -625,3 +625,6 @@ C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats.Android\obj\Debug\90\st
 C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats.Android\obj\Debug\90\stamp\_GeneratePackageManagerJava.stamp
 C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats.Android\obj\Debug\90\stamp\_ResolveLibraryProjectImports.stamp
 C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats.Android\bin\Debug\EstanzuelaEats.Common.dll.mdb
+C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats.Android\obj\Debug\90\res\drawable\fotoasies.jpg
+C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats.Android\obj\Debug\90\res\drawable\imagehttp.png
+C:\Projects\EstanzuelaEats\EstanzuelaEats\EstanzuelaEats.Android\obj\Debug\90\res\drawable\imagerepository.png

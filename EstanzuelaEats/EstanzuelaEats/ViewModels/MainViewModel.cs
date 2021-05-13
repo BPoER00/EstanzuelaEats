@@ -22,6 +22,8 @@ namespace EstanzuelaEats.ViewModels
         public UsuariosASP UserASP { get; set; }
         public ObservableCollection<MenuItemViewModel> Menu { get; set; } 
         public CategoriesViewModel Categories { get; set; }
+        public ObservableCollection<InformationViewModel> Info { get; set; } 
+        public ObservableCollection<SetupViewModel> Setup { get; set; }
 
         public string UserFullName
         {
@@ -64,6 +66,8 @@ namespace EstanzuelaEats.ViewModels
         {
             instance = this;
             this.LoadMenu();
+            this.LoadInfo();
+            this.LoadSetup();
         }
  
         #endregion
@@ -124,6 +128,57 @@ namespace EstanzuelaEats.ViewModels
                 PageName = "LoginPage",
                 Title = Languages.Exit,
             });
+        }
+
+        private void LoadInfo()
+        {
+            this.Info = new ObservableCollection<InformationViewModel>();
+
+            this.Info.Add(new InformationViewModel
+            {
+                Nombre = "Nombre: Bryan Emanuel Paz Ramirez"
+            });
+
+            this.Info.Add(new InformationViewModel
+            {
+                Nombre = "Carnet: 1190-19-3929"
+            });
+
+            this.Info.Add(new InformationViewModel
+            {
+                Nombre = "Tarea: Proyecto Final"
+            });
+
+            this.Info.Add(new InformationViewModel
+            {
+                Nombre = "Curso: Programacion III"
+            });
+
+            this.Info.Add(new InformationViewModel
+            {
+                Nombre = "Catedratico: Ing Jose Vinicio Peña Roman"
+            });
+        }
+        
+        private void LoadSetup()
+        {
+            this.Setup = new ObservableCollection<SetupViewModel>();
+
+            this.Setup.Add(new SetupViewModel
+            {
+                Foto = "imagehttp.png",
+                Titulo = "Visitanos nuestra Pagina",
+                PageName = "SetupHttp"
+            });
+
+            this.Setup.Add(new SetupViewModel
+            {
+                Foto = "imagerepository.png",
+                Titulo = "Nuestro Repositorio",
+                PageName = "SetupRepository"
+            });
+
+
         }
         #endregion
 

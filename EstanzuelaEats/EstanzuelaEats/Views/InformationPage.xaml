@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:controls="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin"
+             xmlns:i18n="clr-namespace:EstanzuelaEats.Helpers"
+             x:Class="EstanzuelaEats.Views.InformationPage"
+             BindingContext="{Binding Main, Source={StaticResource Locator}}"
+             Title="Informacion">
+    <ContentPage.Content>
+        <StackLayout
+            Padding="10">
+            <controls:CircleImage
+                Source="FotoAsies.jpg"
+                Aspect="AspectFit"
+                WidthRequest="200"
+                HeightRequest="175">
+
+            </controls:CircleImage>
+            
+            <ListView
+                BackgroundColor="Transparent"
+                ItemsSource="{Binding Info}"
+                HasUnevenRows="True"
+                SeparatorVisibility="None">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Frame
+                                CornerRadius="20"
+                                HasShadow="true"
+                                Margin="5"
+                                BorderColor="DarkOliveGreen">
+                                <Grid Padding="10">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="Auto"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <Label
+                                    Grid.Column="1"
+                                    VerticalOptions="Center"
+                                    TextColor="White"
+                                    Text="{Binding Nombre}">
+                                    </Label>
+                                </Grid>
+                            </Frame>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

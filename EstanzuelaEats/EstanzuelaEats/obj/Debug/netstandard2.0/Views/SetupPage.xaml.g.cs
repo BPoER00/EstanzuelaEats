@@ -8,17 +8,17 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("EstanzuelaEats.Views.MapPage.xaml", "Views/MapPage.xaml", typeof(global::EstanzuelaEats.Views.MapPage))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("EstanzuelaEats.Views.SetupPage.xaml", "Views/SetupPage.xaml", typeof(global::EstanzuelaEats.Views.SetupPage))]
 
 namespace EstanzuelaEats.Views {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Views\\MapPage.xaml")]
-    public partial class MapPage : global::Xamarin.Forms.ContentPage {
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Views\\SetupPage.xaml")]
+    public partial class SetupPage : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private void InitializeComponent() {
-            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(MapPage));
+            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(SetupPage));
         }
     }
 }

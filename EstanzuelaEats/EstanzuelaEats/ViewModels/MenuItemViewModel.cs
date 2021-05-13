@@ -25,7 +25,8 @@ namespace EstanzuelaEats.ViewModels
         #region Comandos
 
         public ICommand GotoCommand 
-        { get 
+        { 
+            get 
             {
                 return new RelayCommand(Goto);
             }
@@ -46,7 +47,12 @@ namespace EstanzuelaEats.ViewModels
             else if (this.PageName == "AboutPage")
             {
                 App.Master.IsPresented = false;
-                await App.Navigator.PushAsync(new MapPage());
+                await App.Navigator.PushAsync(new InformationPage());
+            }
+            else if(this.PageName == "SetupPage")
+            {
+                App.Master.IsPresented = false;
+                await App.Navigator.PushAsync(new SetupPage());
             }
         }
 

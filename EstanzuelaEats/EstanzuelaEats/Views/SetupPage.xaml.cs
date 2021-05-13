@@ -10,9 +10,9 @@ using Xamarin.Forms.Xaml;
 namespace EstanzuelaEats.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class MapPage : ContentPage
+    public partial class SetupPage : ContentPage
     {
-        public MapPage()
+        public SetupPage()
         {
             InitializeComponent();
         }

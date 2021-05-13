@@ -353,5 +353,20 @@ namespace EstanzuelaEats.Helpers
         {
             get { return Resource.CategoryError; }
         }
+
+        public static string RegisterLabel
+        {
+            get { return Resource.RegisterLabel; }
+        }
+
+        public static string RegisterSignUp
+        {
+            get { return Resource.RegisterSignUp; }
+        }
+
+        public static string OrLabel
+        {
+            get { return Resource.OrLabel; }
+        }
     }
 }
