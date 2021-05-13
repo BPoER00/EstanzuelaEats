@@ -12,7 +12,7 @@
             Padding="5">
             <SearchBar
                 BackgroundColor="Transparent"
-                HeightRequest="40"
+                HeightRequest="50"
                 Placeholder="{i18n:Translate Search}"
                 SearchCommand="{Binding SearchCommand}"
                 Text="{Binding Filter}">
@@ -31,7 +31,8 @@
                             <Frame
                                 CornerRadius="20"
                                 HasShadow="true"
-                                Margin="5">
+                                Margin="5"
+                                BorderColor="DarkOliveGreen">
                                 <Grid>
                                     <Grid.GestureRecognizers>
                                         <TapGestureRecognizer Command="{Binding GotoCategoryCommand}"/>

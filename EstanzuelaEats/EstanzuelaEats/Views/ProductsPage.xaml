@@ -15,7 +15,7 @@
             BindingContext="{Binding Productos}"
             Padding="5">
             <SearchBar
-                HeightRequest="30 "
+                HeightRequest="50"
                 Placeholder="{i18n:Translate Search}"
                 SearchCommand="{Binding SearchCommand}"
                 Text="{Binding Filter}">
@@ -38,7 +38,8 @@
                             <Frame
                                 CornerRadius="20"
                                 HasShadow="true"
-                                Margin="5">
+                                Margin="5"
+                                BorderColor="DarkOliveGreen">
                                 <Grid
                                 Padding="3">
                                     <Grid.GestureRecognizers>

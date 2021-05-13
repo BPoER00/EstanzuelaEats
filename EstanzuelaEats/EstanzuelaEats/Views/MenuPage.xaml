@@ -36,7 +36,8 @@
                             <Frame
                                 CornerRadius="20"
                                 HasShadow="true"
-                                Margin="5">
+                                Margin="5"
+                                BorderColor="DarkOliveGreen">
                                 <Grid Padding="10">
                                     <Grid.GestureRecognizers>
                                         <TapGestureRecognizer Command="{Binding GotoCommand}"/>

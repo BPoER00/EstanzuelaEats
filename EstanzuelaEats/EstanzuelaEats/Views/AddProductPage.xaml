@@ -9,9 +9,14 @@
 
         <ScrollView
             BindingContext="{Binding AddProduct}">
-            <StackLayout
+            <Frame
+                    CornerRadius="20"
+                    HasShadow="true"
+                    Margin="5"
+                    BorderColor="DarkOliveGreen">
+                    <StackLayout
                 Padding="5">
-
+                
                 <Image
                     HeightRequest="400"
                     Source="{Binding ImageSource}">
@@ -19,109 +24,121 @@
                         <TapGestureRecognizer Command="{Binding ChangeImageCommand}"/>
                     </Image.GestureRecognizers>
                 </Image>
-                <Label
-                    FontSize="Small"
-                    HorizontalOptions="Center"
-                    Text="{i18n:Translate CambiarImagen}">
-                    
-                </Label>
-                <Grid Padding="10"
+
+
+                        
+                    <Label
+                        FontSize="Small"
+                        HorizontalOptions="Center"
+                        Text="{i18n:Translate CambiarImagen}">
+
+                    </Label>
+
+
+                    <Frame
+                        CornerRadius="20"
+                        HasShadow="true"
+                        Margin="5"
+                        BorderColor="DarkOliveGreen">
+                    <Grid Padding="10"
                     Margin="10,0"
                     VerticalOptions="CenterAndExpand">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="Auto"/>
-                        <ColumnDefinition Width="*"/>
-                    </Grid.ColumnDefinitions>
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="*"/>
-                        <RowDefinition Height="*"/>
-                        <RowDefinition Height="2*"/>
-                    </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="2*"/>
+                            </Grid.RowDefinitions>
 
-                    <Label
-                        Grid.Column="0"
-                        Grid.Row="0"
-                        VerticalOptions="Center"
-                        FontAttributes="Bold"
-                        FontSize="Medium"
-                        Text="{i18n:Translate Name}">
-                    </Label>
-                    <Entry
-                        Grid.Column="1"
-                        Grid.Row="0"
+                            <Label
+                                Grid.Column="0"
+                                Grid.Row="0"
+                                VerticalOptions="Center"
+                                FontAttributes="Bold"
+                                FontSize="Medium"
+                                Text="{i18n:Translate Name}">
+                            </Label>
+                            <Entry
+                                Grid.Column="1"
+                                Grid.Row="0"
+                                HeightRequest= "46"
+                                Text="{Binding Name}"
+                                Placeholder="{i18n:Translate NamePlaceHolder}">
+                            </Entry>
+
+                            <Label
+                                Grid.Column="0"
+                                Grid.Row="1"
+                                VerticalOptions="Center"
+                                FontAttributes="Bold"
+                                FontSize="Medium"
+                                Text="{i18n:Translate Price}">
+                            </Label>
+                            <Entry
+                                Grid.Column="1"
+                                Grid.Row="1"
+                                Keyboard="Numeric"
+                                HeightRequest= "46"
+                                Text="{Binding Price}"
+                                Placeholder="{i18n:Translate PricePlaceHolder}">
+                            </Entry>
+
+                            <Label
+                                Grid.Column="0"
+                                Grid.Row="2"
+                                VerticalOptions="Center"
+                                FontAttributes="Bold"
+                                FontSize="Medium"
+                                Text="{i18n:Translate Category}">
+                            </Label>
+                            <Picker
+                                Grid.Column="1"
+                                Grid.Row="2"
+                                ItemDisplayBinding="{Binding Description}"
+                                ItemsSource="{Binding Categories}"
+                                SelectedItem="{Binding Category}"
+                                Title="{i18n:Translate CategoryPlaceholder}">
+                            </Picker>
+
+                            <Label
+                                Grid.Column="0"
+                                Grid.Row="3"
+                                VerticalOptions="Center"
+                                FontAttributes="Bold"
+                                FontSize="Medium"
+                                Text="{i18n:Translate Description}">
+                            </Label>
+                            <Editor
+                                Grid.Column="1"
+                                Grid.Row="3"
+                                Text="{Binding Description}"
+                                VerticalOptions="FillAndExpand"
+                                HeightRequest="46">
+                            </Editor>
+                        </Grid>
+                    </Frame>
+
+
+                    <ActivityIndicator
+                            IsRunning="{Binding IsRunning}"
+                            VerticalOptions="CenterAndExpand">
+                        </ActivityIndicator>
+
+                    <Button
+                        BackgroundColor="Navy"
+                        BorderRadius = "23"
                         HeightRequest= "46"
-                        Text="{Binding Name}"
-                        Placeholder="{i18n:Translate NamePlaceHolder}">
-                    </Entry>
+                        Command="{Binding SaveCommand}"
+                        IsEnabled="{Binding IsEnable}"
+                        Text="{i18n:Translate Save}"
+                        TextColor = "White">
 
-                    <Label
-                        Grid.Column="0"
-                        Grid.Row="1"
-                        VerticalOptions="Center"
-                        FontAttributes="Bold"
-                        FontSize="Medium"
-                        Text="{i18n:Translate Price}">
-                    </Label>
-                    <Entry
-                        Grid.Column="1"
-                        Grid.Row="1"
-                        Keyboard="Numeric"
-                        HeightRequest= "46"
-                        Text="{Binding Price}"
-                        Placeholder="{i18n:Translate PricePlaceHolder}">
-                    </Entry>
-
-                    <Label
-                        Grid.Column="0"
-                        Grid.Row="2"
-                        VerticalOptions="Center"
-                        FontAttributes="Bold"
-                        FontSize="Medium"
-                        Text="{i18n:Translate Category}">
-                    </Label>
-                    <Picker
-                        Grid.Column="1"
-                        Grid.Row="2"
-                        ItemDisplayBinding="{Binding Description}"
-                        ItemsSource="{Binding Categories}"
-                        SelectedItem="{Binding Category}"
-                        Title="{i18n:Translate CategoryPlaceholder}">
-                    </Picker>
-
-                    <Label
-                        Grid.Column="0"
-                        Grid.Row="3"
-                        VerticalOptions="Center"
-                        FontAttributes="Bold"
-                        FontSize="Medium"
-                        Text="{i18n:Translate Description}">
-                    </Label>
-                    <Editor
-                        Grid.Column="1"
-                        Grid.Row="3"
-                        Text="{Binding Description}"
-                        VerticalOptions="FillAndExpand"
-                        HeightRequest="46">
-                    </Editor>
-                </Grid>
-                
-
-                <ActivityIndicator
-                    IsRunning="{Binding IsRunning}"
-                    VerticalOptions="CenterAndExpand">
-                </ActivityIndicator>
-
-                <Button
-                    BackgroundColor="Navy"
-                    BorderRadius = "23"
-                    HeightRequest= "46"
-                    Command="{Binding SaveCommand}"
-                    IsEnabled="{Binding IsEnable}"
-                    Text="{i18n:Translate Save}"
-                    TextColor = "White">  
-
-                </Button>
-            </StackLayout>
+                    </Button>
+                </StackLayout>
+            </Frame>
         </ScrollView>
     </ContentPage.Content>
 </ContentPage>
