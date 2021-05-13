@@ -8,7 +8,12 @@
     <ContentPage.Content>
         <ScrollView
             BindingContext="{Binding EditProduct}">
-            <StackLayout
+            <Frame
+                    CornerRadius="20"
+                    HasShadow="true"
+                    Margin="5"
+                    BorderColor="DarkOliveGreen">
+                <StackLayout
                 Padding="5">
 
                 <Image
@@ -24,87 +29,93 @@
                     Text="{i18n:Translate CambiarImagen}">
 
                 </Label>
-                <Grid
+
+                    <Frame
+                    CornerRadius="20"
+                    HasShadow="true"
+                    Margin="5"
+                    BorderColor="DarkOliveGreen">
+                        <Grid
                     Padding="10"
                     Margin="10,0"
                     VerticalOptions="CenterAndExpand">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="Auto"/>
-                        <ColumnDefinition Width="*"/>
-                    </Grid.ColumnDefinitions>
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="*"/>
-                        <RowDefinition Height="*"/>
-                        <RowDefinition Height="2*"/>
-                    </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="2*"/>
+                            </Grid.RowDefinitions>
 
-                    <Label
+                            <Label
                         Grid.Column="0"
                         Grid.Row="0"
                         VerticalOptions="Center"
                         FontAttributes="Bold"
                         FontSize="Medium"
                         Text="{i18n:Translate Name}">
-                    </Label>
-                    <Entry
+                            </Label>
+                            <Entry
                         Grid.Column="1"
                         Grid.Row="0"
                         HeightRequest= "46"
                         Text="{Binding Product.NombreProducto}"
                         Placeholder="{i18n:Translate NamePlaceHolder}">
-                    </Entry>
+                            </Entry>
 
-                    <Label
+                            <Label
                         Grid.Column="0"
                         Grid.Row="1"
                         VerticalOptions="Center"
                         FontAttributes="Bold"
                         FontSize="Medium"
                         Text="{i18n:Translate Price}">
-                    </Label>
-                    <Entry
+                            </Label>
+                            <Entry
                         Grid.Column="1"
                         Grid.Row="1"
                         Keyboard="Numeric"
                         HeightRequest= "46"
                         Text="{Binding Product.PrecioProducto}"
                         Placeholder="{i18n:Translate PricePlaceHolder}">
-                    </Entry>
+                            </Entry>
 
-                    <Label
+                            <Label
                         Grid.Column="0"
                         Grid.Row="2"
                         VerticalOptions="Center"
                         FontAttributes="Bold"
                         FontSize="Medium"
                         Text="{i18n:Translate Category}">
-                    </Label>
-                    <Picker
+                            </Label>
+                            <Picker
                         Grid.Column="1"
                         Grid.Row="2"
                         ItemDisplayBinding="{Binding Description}"
                         ItemsSource="{Binding Categories}"
                         SelectedItem="{Binding Category}"
                         Title="{i18n:Translate CategoryPlaceholder}">
-                    </Picker>
+                            </Picker>
 
-                    <Label
+                            <Label
                         Grid.Column="0"
                         Grid.Row="3"
                         VerticalOptions="Center"
                         FontAttributes="Bold"
                         FontSize="Medium"
                         Text="{i18n:Translate Description}">
-                    </Label>
-                    <Editor
+                            </Label>
+                            <Editor
                         Grid.Column="1"
                         Grid.Row="3"
                         Text="{Binding Product.DescripcionProducto}"
                         VerticalOptions="FillAndExpand"
                         HeightRequest="46">
-                    </Editor>
-                    
-                    <Label
+                            </Editor>
+
+                            <Label
                         Grid.Column="0"
                         Grid.Row="4"
                         VerticalOptions="Center"
@@ -112,19 +123,19 @@
                         FontSize="Medium"
                         Text="{i18n:Translate Available}"
                         HeightRequest="46">
-                        
-                    </Label>
-                    <Switch
+
+                            </Label>
+                            <Switch
                         Grid.Column="1"
                         Grid.Row="4"
                         HorizontalOptions="End"
                         IsToggled="{Binding Product.Existencias}">
-                        
-                    </Switch>
-                </Grid>
 
+                            </Switch>
+                        </Grid>
+                    </Frame>
 
-                <ActivityIndicator
+                    <ActivityIndicator
                     IsRunning="{Binding IsRunning}"
                     VerticalOptions="CenterAndExpand">
                 </ActivityIndicator>
@@ -155,6 +166,7 @@
                 </StackLayout>
 
             </StackLayout>
+            </Frame>
         </ScrollView>
     </ContentPage.Content>
 </ContentPage>

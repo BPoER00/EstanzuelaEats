@@ -14,7 +14,7 @@
                     HasShadow="true"
                     Margin="5"
                     BorderColor="DarkOliveGreen">
-                    <StackLayout
+                <StackLayout
                 Padding="5">
                 
                 <Image

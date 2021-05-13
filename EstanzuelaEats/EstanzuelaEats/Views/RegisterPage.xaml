@@ -9,7 +9,12 @@
     <ContentPage.Content>
         <ScrollView
             BindingContext="{Binding Register}">
-            <StackLayout>
+            <Frame
+                    CornerRadius="20"
+                    HasShadow="true"
+                    Margin="5"
+                    BorderColor="DarkOliveGreen">
+                <StackLayout>
                 <controls:CircleImage
                 Source="{Binding ImageSource}"
                 WidthRequest="200"
@@ -181,6 +186,7 @@
                 </Button>
                 
             </StackLayout>
+            </Frame>
         </ScrollView>
     </ContentPage.Content>
 </ContentPage>
